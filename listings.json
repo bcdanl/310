@@ -7,7 +7,8 @@
     "listing": "/listing-danl-310-cw.html",
     "items": [
       "/danl-cw/danl-310-cw-02.html",
-      "/danl-cw/danl-310-cw-01.html"
+      "/danl-cw/danl-310-cw-01.html",
+      "/danl-cw/danl-310-cw-03.html"
     ]
   },
   {
@@ -20,14 +21,14 @@
     ]
   },
   {
-    "listing": "/listing-danl-310-rw.html",
-    "items": []
-  },
-  {
     "listing": "/listing-danl-310-lec.html",
     "items": [
       "/danl-lec/danl-310-lec-01-2025-0122.html"
     ]
+  },
+  {
+    "listing": "/listing-danl-310-rw.html",
+    "items": []
   },
   {
     "listing": "/blog-listing.html",
