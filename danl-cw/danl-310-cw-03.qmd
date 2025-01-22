@@ -75,7 +75,7 @@ from: markdown+emoji
   - Add the picture (`png`) file of your profile photo to `img` directory. Then correct `img/profile.png` in `index.qmd` accordingly.
   - Correct links for your resumé, linkedin, email, and social media.
 
-2. Add a link of page of "R Basics" to the navigation bar using `danl-399-quarto-r.qmd`.
+2. Add a link of page of "R Basics" to the navigation bar using `danl-310-quarto-r.qmd`.
 
 3. Use the 3-step git commands (`git add`, `git commit`, and `git push`) to update your website.
 

@@ -596,10 +596,9 @@ $\quad$
 ## Installing the Tools
 ### R Studio
 
-:::{}
 - The RStudio Desktop is available as a free download from the following webpage:
     - [https://www.rstudio.com/products/rstudio/download/#download](https://www.rstudio.com/products/rstudio/download/#download){target="_blank"}
-:::
+    
 
 :::: {.columns}
 
