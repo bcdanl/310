@@ -172,7 +172,7 @@
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#instructor-2",
     "title": "Lecture 1",
     "section": "Instructor",
-    "text": "Instructor\nEconomics, Data Science, and Climate Change\n\nChoe, B.H., 2025. “Social Media Campaigns, Lobbying and Legislation: Evidence from #climatechange and Energy Lobbies.”\nQuestion: To what extent do social media campaigns compete with fossil fuel lobbying on climate change legislation?\nData include:\n\n5.0 million tweets with #climatechange/#globalwarming around the globe;\n12.0 million retweets/likes to those tweets;\n0.8 million Twitter users who wrote those tweets;\n1.4 million Twitter users who retweeted or liked those tweets;\n0.3 million US Twitter users with their location at a city level;\nFirm-level lobbying data (expenses, targeted bills, etc.)."
+    "text": "Instructor\nEconomics and Data Science\n\nChoe, B.H., Newbold, S. and James, A., “Estimating the Value of Statistical Life through Big Data”\n\nQuestion: How much is the society willing to pay to reduce the likelihood of fatality?\n\nChoe, B.H., “Social Media Campaigns, Lobbying and Legislation: Evidence from #climatechange and Energy Lobbies.”\n\nQuestion: To what extent do social media campaigns compete with fossil fuel lobbying on climate change legislation?\n\nChoe, B.H. and Ore-Monago, T., 2024. “Governance and Climate Finance in the Developing World”\n\nQuestion: In what ways and through what forms does poor governance act as a significant barrier to reducing greenhouse gas emissions in developing countries?"
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#instructor-3",
@@ -249,21 +249,21 @@
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-9",
     "title": "Lecture 1",
     "section": "Syllabus",
-    "text": "Syllabus\nWhy Personal Website?\n\nHere are the example websites:\n\nByeong-Hak’s Website\nDANL Website Template\n\nProfessional Showcase: Display skills and projects\nVisibility and Networking: Increase online presence\nContent Sharing and Engagement: Publish articles, insights\nJob Opportunities: Attract potential employers and clients\nLong-term Asset: A growing repository of your career journey\nReproducible Research: Showcase data-driven reports"
+    "text": "Syllabus\nWhy Personal Website?\n\n\nHere are the example websites:\n\nByeong-Hak’s Website\nDANL Website Template\n\nProfessional Showcase: Display skills and projects\nVisibility and Networking: Increase online presence\nContent Sharing and Engagement: Publish articles, insights\nJob Opportunities: Attract potential employers and clients\nLong-term Asset: A growing repository of your career journey"
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-10",
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-10",
     "title": "Lecture 1",
     "section": "Syllabus",
-    "text": "Syllabus\nTeam Project\n\nTeam formation is scheduled for late March.\n\nEach team must have one to two students.\n\nFor the team project, a team must choose data related to business or socioeconomic issues.\nThe project report should include exploratory data analysis using summary statistics, visual representations, and data wrangling.\nThe document for the team project must be published in each member’s website.\nThe project for the team project must include a Shiny dashboard.\nAny changes to team composition require approval from Byeong-Hak Choe.\n\n:::"
+    "text": "Syllabus\nTeam Project\n\nTeam formation is scheduled for late March.\n\nEach team must have one to two students.\n\nFor the team project, a team must choose data related to business or socioeconomic issues.\nThe project report should include exploratory data analysis using summary statistics, visual representations, and data wrangling.\nThe document for the team project must be published in each member’s website.\nThe project for the team project must include a Shiny dashboard.\nAny changes to team composition require approval from Byeong-Hak Choe."
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-11",
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-11",
     "title": "Lecture 1",
     "section": "Syllabus",
-    "text": "Syllabus\nClass Schedule and Exams\n\nThere will be tentatively 28 class sessions.\nThe Midterm Exam is scheduled on March 12, 2025, Wednesday, during the class time.\nThe Final Exam is scheduled on May 9, 2025, Friday, 3:30 P.M.-5:30 P.M.\nThe due for the team project is May 16, 2024, Thursday."
+    "text": "Syllabus\nClass Schedule and Exams\n\nThere will be tentatively 28 class sessions.\nThe Midterm Exam is scheduled on March 31, 2025, Wednesday, during the class time.\nThe Project Presentation is scheduled on May 9, 2025, Friday, 3:30 P.M.-5:30 P.M.\nThe due for the Project write-up is May 16, 2024, Friday."
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-12",
@@ -284,7 +284,7 @@
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-14",
     "title": "Lecture 1",
     "section": "Syllabus",
-    "text": "Syllabus\nGrading\n\\[\n\\begin{align}\n(\\text{Total Percentage Grade}) =&\\quad\\;\\, 0.05\\times(\\text{Total Attendance Score})\\notag\\\\\n&\\,+\\, 0.05\\times(\\text{Discussion Score})\\notag\\\\\n&\\,+\\, 0.05\\times(\\text{Website Score})\\notag\\\\\n&\\,+\\, 0.15\\times(\\text{Team Project and Website Score})\\notag\\\\\n&\\,+\\, 0.20\\times(\\text{Total Homework Score})\\notag\\\\\n&\\,+\\, 0.50\\times(\\text{Total Exam Score}).\\notag\n\\end{align}\n\\]"
+    "text": "Syllabus\nGrading\n\\[\n\\begin{align}\n(\\text{Total Percentage Grade}) =&\\quad\\;\\, 0.05\\times(\\text{Total Attendance Score})\\notag\\\\\n&\\,+\\, 0.05\\times(\\text{Total Participation Score})\\notag\\\\\n&\\,+\\, 0.10\\times(\\text{Website Score})\\notag\\\\\n&\\,+\\, 0.30\\times(\\text{Total Homework Score})\\notag\\\\\n&\\,+\\, 0.50\\times(\\text{Total Exam and Project Score}).\\notag\n\\end{align}\n\\]"
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-15",
@@ -382,77 +382,77 @@
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-1",
     "title": "Lecture 1",
     "section": "Installing the Tools",
-    "text": "Installing the Tools\nAnaconda\n\nTo install Anaconda, go to the following download page:\n\nhttps://www.anaconda.com/products/distribution.\nClick the “Download” button."
+    "text": "Installing the Tools\nR programming\n\nThe R language is available as a free download from the R Project website at:\n\nWindows: https://cran.r-project.org/bin/windows/base/\nMac: https://cran.r-project.org/bin/macosx/\nDownload the file of R that corresponds to your Mac OS (Big Sur, Apple silicon arm64, High Sierra, El Capitan, Mavericks, etc.)"
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-2",
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-2",
     "title": "Lecture 1",
     "section": "Installing the Tools",
-    "text": "Installing the Tools\nR programming\n\nThe R language is available as a free download from the R Project website at:\n\nWindows: https://cran.r-project.org/bin/windows/base/\nMac: https://cran.r-project.org/bin/macosx/\nDownload the file of R that corresponds to your Mac OS (Big Sur, Apple silicon arm64, High Sierra, El Capitan, Mavericks, etc.)"
+    "text": "Installing the Tools\nR Studio\n\nThe RStudio Desktop is available as a free download from the following webpage:\n\nhttps://www.rstudio.com/products/rstudio/download/#download\n\n\n\n\n\nFor Mac users, try the following steps:\n\nRun RStudio-*.dmg file.\nFrom the Pop-up menu, click the RStudio icon.\nWhile clicking the RStudio icon, drag it to the Applications directory."
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-3",
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-3",
     "title": "Lecture 1",
     "section": "Installing the Tools",
-    "text": "Installing the Tools\nR Studio\n\nThe RStudio Desktop is available as a free download from the following webpage:\n\nhttps://www.rstudio.com/products/rstudio/download/#download\n\n\n\n\n\nFor Mac users, try the following steps:\n\nRun RStudio-*.dmg file.\nFrom the Pop-up menu, click the RStudio icon.\nWhile clicking the RStudio icon, drag it to the Applications directory."
+    "text": "Installing the Tools\nRStudio Environment\n\n\n\n\n\nScript Pane is where you write R commands in a script file that you can save.\n\nAn R script is simply a text file containing R commands.\nRStudio will color-code different elements of your code to make it easier to read.\n\n\n\n\n\n\n\nTo open an R script,\n\nFile \\(&gt;\\) New File \\(&gt;\\) R Script\n\n\n\n\nTo save the R script,\n\nFile \\(&gt;\\) Save"
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-4",
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-4",
     "title": "Lecture 1",
     "section": "Installing the Tools",
-    "text": "Installing the Tools\nRStudio Environment\n\n\n\n\n\nScript Pane is where you write R commands in a script file that you can save.\n\nAn R script is simply a text file containing R commands.\nRStudio will color-code different elements of your code to make it easier to read.\n\n\n\n\n\n\n\nTo open an R script,\n\nFile \\(&gt;\\) New File \\(&gt;\\) R Script\n\n\n\n\nTo save the R script,\n\nFile \\(&gt;\\) Save"
+    "text": "Installing the Tools\nRStudio Environment\n\n\n\n\n\nConsole Pane allows you to interact directly with the R interpreter and type commands where R will immediately execute them."
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-5",
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-5",
     "title": "Lecture 1",
     "section": "Installing the Tools",
-    "text": "Installing the Tools\nRStudio Environment\n\n\n\n\n\nConsole Pane allows you to interact directly with the R interpreter and type commands where R will immediately execute them."
+    "text": "Installing the Tools\nRStudio Environment\n\n\n\n\n\nEnvironment Pane is where you can see the values of variables, data frames, and other objects that are currently stored in memory.\nType below in the Console Pane, and then hit Enter:\n\na &lt;- 1"
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-6",
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-6",
     "title": "Lecture 1",
     "section": "Installing the Tools",
-    "text": "Installing the Tools\nRStudio Environment\n\n\n\n\n\nEnvironment Pane is where you can see the values of variables, data frames, and other objects that are currently stored in memory.\nType below in the Console Pane, and then hit Enter:\n\na &lt;- 1"
+    "text": "Installing the Tools\nRStudio Environment\n\n\n\n\n\nPlots Pane contains any graphics that you generate from your R code."
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-7",
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-7",
     "title": "Lecture 1",
     "section": "Installing the Tools",
-    "text": "Installing the Tools\nRStudio Environment\n\n\n\n\n\nPlots Pane contains any graphics that you generate from your R code."
+    "text": "Installing the Tools\nR Packages and tidyverse\n\nR packages are collections of R functions, compiled code, and data that are combined in a structured format.\nThe tidyverse is a collection of R packages designed for data science that share an underlying design philosophy, grammar, and data structures.\n\nThe tidyverse packages work harmoniously together to make data manipulation, exploration, and visualization more.\nWe will use several R packages from tidyverse throughout the course. (e.g., ggplot2, dplyr, tidyr)"
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-8",
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-8",
     "title": "Lecture 1",
     "section": "Installing the Tools",
-    "text": "Installing the Tools\nR Packages and tidyverse\n\nR packages are collections of R functions, compiled code, and data that are combined in a structured format.\nThe tidyverse is a collection of R packages designed for data science that share an underlying design philosophy, grammar, and data structures.\n\nThe tidyverse packages work harmoniously together to make data manipulation, exploration, and visualization more.\nWe will use several R packages from tidyverse throughout the course. (e.g., ggplot2, dplyr, tidyr)"
+    "text": "Installing the Tools\nInstalling R packages with install.packages(\"packageName\")\n\nR packages can be easily installed from within R using functions install.packages(\"packageName\").\n\nTo install the R package tidyverse, type and run the following from R console:\n\n\ninstall.packages(\"tidyverse\")\n\nWhile running the above codes, you may encounter the question below from the R Console:\n\n\n\n\nMac: “Do you want to install from sources the packages which need compilation?” from Console Pane.\n\n\n\nWindows: “Would you like to use a personal library instead?” from Pop-up message.\n\n\n\n\nType no in the R Console, and then hit Enter."
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-9",
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-9",
     "title": "Lecture 1",
     "section": "Installing the Tools",
-    "text": "Installing the Tools\nInstalling R packages with install.packages(\"packageName\")\n\nR packages can be easily installed from within R using functions install.packages(\"packageName\").\n\nTo install the R package tidyverse, type and run the following from R console:\n\n\ninstall.packages(\"tidyverse\")\n\nWhile running the above codes, you may encounter the question below from the R Console:\n\n\n\n\nMac: “Do you want to install from sources the packages which need compilation?” from Console Pane.\n\n\n\nWindows: “Would you like to use a personal library instead?” from Pop-up message.\n\n\n\n\nType no in the R Console, and then hit Enter."
+    "text": "Installing the Tools\nLoading R packages with library(packageName)\n\nOnce installed, a package is loaded into an R session using library(packageName) so that its functions and data can be used.\n\nTo load the R package tidyverse, type and run the following command from a R script:\n\n\nlibrary(tidyverse)\ndf_mpg &lt;- mpg\n\nmpg is the data.frame provided by the R package ggplot2, one of the R pakcages in tidyverse."
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-10",
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-10",
     "title": "Lecture 1",
     "section": "Installing the Tools",
-    "text": "Installing the Tools\nLoading R packages with library(packageName)\n\nOnce installed, a package is loaded into an R session using library(packageName) so that its functions and data can be used.\n\nTo load the R package tidyverse, type and run the following command from a R script:\n\n\nlibrary(tidyverse)\ndf_mpg &lt;- mpg\n\nmpg is the data.frame provided by the R package ggplot2, one of the R pakcages in tidyverse."
+    "text": "Installing the Tools\nRStudio Options Setting\n\n\n\n\n\nThis option menu is found by menus as follows:\n\nTools \\(&gt;\\) Global Options\n\nCheck the boxes as in the left.\nChoose the option Never for  Save workspace to .RData on exit:"
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-11",
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-11",
     "title": "Lecture 1",
     "section": "Installing the Tools",
-    "text": "Installing the Tools\nPython in RStudio\n::: {.panel-tabset} ## Python Option\n\nWe can run Python codes within RStudio.\nSelect Python interpreter in RStudio from Tools \\(&gt;\\) Global Options \\(&gt;\\) Python:"
+    "text": "Installing the Tools\nAnaconda\n\nTo install Anaconda, go to the following download page:\n\nhttps://www.anaconda.com/products/distribution.\nClick the “Download” button."
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#r-package-reticulate",
@@ -466,7 +466,7 @@
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-12",
     "title": "Lecture 1",
     "section": "Installing the Tools",
-    "text": "Installing the Tools\nRStudio Options Setting\n\n\n\n\n\nThis option menu is found by menus as follows:\n\nTools \\(&gt;\\) Global Options\n\nCheck the boxes as in the left.\nChoose the option Never for  Save workspace to .RData on exit:"
+    "text": "Installing the Tools\nPython in RStudio\n::: {.panel-tabset} ## Python Option\n\nWe can run Python codes within RStudio.\nSelect Python interpreter in RStudio from Tools \\(&gt;\\) Global Options \\(&gt;\\) Python:"
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#building-a-personal-website-on-github",
@@ -480,7 +480,7 @@
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#lets-practice-markdown",
     "title": "Lecture 1",
     "section": "Let’s Practice Markdown!",
-    "text": "Let’s Practice Markdown!\n\nJupyter Notebook, Quarto, and GitHub-based Discussion Boards use markdown as its underlying document syntax.\nLet’s do Classwork 2."
+    "text": "Let’s Practice Markdown!\n\nQuarto, Jupyter Notebook, and GitHub-based Discussion Boards use markdown as its underlying document syntax.\nLet’s do Classwork 2."
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#rstudio-workflow",
