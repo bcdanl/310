@@ -215,10 +215,9 @@ theme_set(theme_fivethirtyeight()+
 
 - **Homework**: There will be six homework assignments.
 
-- **Project**: There will be one project on a *personal website*.    
+- **Project**: There will be one project presentation and a write-up on a *personal website*.  
 
-- **Exams**: There will be one Midterm Exam and one final exam. 
-  - The final exam is comprehensive.
+- **Exams**: There will be one Midterm Exam. 
 
 - **Discussions**: You are encouraged to participate in GitHub-based online discussions and class discussion, and office hours.
   - Checkout the netiquette policy in the syllabus.
