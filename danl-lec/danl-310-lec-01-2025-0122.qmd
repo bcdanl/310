@@ -212,8 +212,6 @@ theme_set(theme_fivethirtyeight()+
 
 - **Laptop**: You should bring your own laptop (**Mac** or **Windows**) to the classroom. 
   - The minimum specification for your laptop in this course is 2+ core CPU, 4+ GB RAM, and 500+ GB disk storage.
-  
-::: {.incremental}
 
 - **Homework**: There will be six homework assignments.
 
@@ -224,8 +222,6 @@ theme_set(theme_fivethirtyeight()+
 
 - **Discussions**: You are encouraged to participate in GitHub-based online discussions and class discussion, and office hours.
   - Checkout the netiquette policy in the syllabus.
-
-:::
 
 
 
@@ -262,16 +258,26 @@ theme_set(theme_fivethirtyeight()+
 - References:
   - [Quarto Guide](https://quarto.org/docs/guide)
 
+## Syllabus
+### Why Personal Website?
+
+- Here are the example websites:
+  - [Byeong-Hak's Website](https://bcecon.github.io)
+  - [DANL Website Template](https://bcdanl.github.io/danl-website-template)
+
+- **Professional Showcase**: Display skills and projects
+- **Visibility and Networking**: Increase online presence
+- **Content Sharing and Engagement**: Publish articles, insights
+- **Job Opportunities**: Attract potential employers and clients
+- **Long-term Asset**: A growing repository of your career journey
+- **Reproducible Research**: Showcase data-driven reports
 
 
 ## Syllabus
 ### Team Project
 
 - Team formation is scheduled for late March. 
-
-::: {.incremental}
-
-- Each team must have one to two students. 
+  - Each team must have one to two students. 
 
 - For the team project, a team must choose data related to business or socioeconomic issues. 
 
@@ -461,16 +467,12 @@ $$
 - You are allowed up to 2 absences without penalty. 
   - Send me an email if you have standard excused reasons (illness, family emergency, transportation problems, etc.).
 
-
-::: {.incremental}
-
 - For each absence beyond the initial two, there will be a deduction of 1% from the Total Percentage Grade.
 
 - Participation will be evaluated by quantity and quality of GitHub-based online discussions and in-person discussion.
 
 - The single lowest homework score will be dropped when calculating the total homework score. 
 
-::: 
   
 
 
@@ -481,8 +483,6 @@ $$
 
 -  Make-up exams will not be given unless you have either a medically verified excuse or an absence excused by the University.
 
-::: {.incremental}
-
 - If you cannot take exams because of religious obligations, notify me by email at least two weeks in advance so that an alternative exam time may be set.
 
 - A missed exam without an excused absence earns a grade of zero.
@@ -491,33 +491,9 @@ $$
 
 - A zero will be recorded for a missed assignment.
 
-:::
-
-
 
 
 # Prologue {background-color="#1c4982"}
-
-
-## Why Personal Website?
-### Benefits of a Personal Website in Data Analytics
-
-:::{}
-- Here are the example websites:
-  - [Byeong-Hak's Website](https://bcecon.github.io)
-  - [DANL Website Template](https://bcdanl.github.io/danl-website-template)
-:::
-
-:::{.incremental}
-- **Professional Showcase**: Display skills and projects
-- **Visibility and Networking**: Increase online presence
-- **Controlled Narrative**: Manage your professional brand
-- **Content Sharing and Engagement**: Publish articles, insights
-- **Job Opportunities**: Attract potential employers and clients
-- **Long-term Asset**: A growing repository of your career journey
-- **Reproducible Research**: Showcase data-driven reports
-:::
-
 
 
 
@@ -554,41 +530,6 @@ $$
 
 
 
-
-
-## Why R, Python, and Databases?
-
-![](https://bcdanl.github.io/lec_figs/indeed-py-r-sql.png)
-
-## Why R, Python, and Databases?
-
-- [Stack Overflow](https://stackoverflow.com){target="_blank"}  is the most popular Q & A website specifically for programmers and software developers in the world.
-
-- See how programming languages have trended over time based on use of their tags in Stack Overflow from 2008 to 2022.
-
-
-:::: {.columns}
-
-::: {.column width="50%"}
-### Most Popular Languagues
-
-![](https://bcdanl.github.io/lec_figs/stackoverflow-py-r-sql.png)
-:::
-
-
-::: {.column width="50%"}
-### Data Science and Big Data
-
-![](https://bcdanl.github.io/lec_figs/stackoverflow-datascience-r-sql.png)
-
-:::
-
-:::: 
-
-
-
-
-
 ## The State of the Art
 ### Generative AI and ChatGPT
 
@@ -618,47 +559,19 @@ From 2008 to 2023
 
 
 
-
-
-
-
-## The State of the Art
-### Generative AI and ChatGPT
-
-- **Generative AI** refers to a category of artificial intelligence (AI) that is capable of generating new content, ranging from text, images, and videos to music and code. 
-
-:::{.incremental}
-
-- In the early 2020s, advances in transformer-based deep neural networks enabled a number of generative AI systems notable for accepting natural language prompts as input.
-  - These include large language model (LLM) chatbots (e.g., ChatGPT, Claude, Copilot, Gemini, LLaMA, Grok).
-
-- **ChatGPT** (Chat Generative Pre-trained Transformer) is a chatbot developed by OpenAI and launched on November 30, 2022. 
-  - By January 2023, it had become what was then the fastest-growing consumer software application in history.
-
-:::
-
-
-
 ## The State of the Art
 ### Generative AI and ChatGPT
 
   
 - Users around the world have explored how to best utilize GPT for writing essays and programming codes.
 
-
-::::{.incremental}
-
-:::{}
 - Is AI a threat to data analytics?
   - Fundamental understanding of the subject matter is still crucial for effectively utilizing AI's capabilities.
-:::
-
-:::{}
+  
 - If you use Generative AI such as ChatGPT, please try to understand what ChatGPT gives you.
   - Copying and pasting it without any understanding harms your learning opportunity.
-:::
 
-::::
+
 
 
 # DANL Tools {background-color="#1c4982"}
@@ -705,24 +618,15 @@ $\quad$
 {{< video https://www.youtube.com/watch?v=pBy1zgt0XPc width="100%" height="100%">}}
 
 
-## What is R?
-
-- **R** is a programming language and software environment designed for statistical computing and graphics. 
-
-- R has become a major tool in data analysis, statistical modeling, and visualization. 
-  - It is widely used among statisticians and data scientists for developing statistical software and performing data analysis. 
-  - R is open source and freely available. 
-
 
 ## What is RStudio?
 
-- **RStudio** is an integrated development environment (IDE) for R. 
+- **RStudio** is an integrated development environment (IDE) mainly for R programming. 
   - An IDE is a software application that provides comprehensive facilities (e.g., text code editor, graphical user interface (GUI)) to computer programmers for software development. 
 
 - RStudio is a user-friendly interface that makes using R easier and more interactive. 
   - It provides a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging, and workspace management.
 
-- We will use a free cloud version of RStudio, which is [**Posit Cloud**](https://posit.cloud).
 
 
 
@@ -738,51 +642,20 @@ $\quad$
 
 ## What is Jupyter?
 
-- **Jupyter** is an open-source integrated development environment (IDE) primarily for Python, though it supports many other languages.
+- **Jupyter** is an open-source IDE primarily for Python, though it supports many other languages.
   - Jupyter provides a notebook interface that allows users to write and execute code in a more interactive and visual format.
 
-- Jupyter Notebook is a user-friendly environment that enhances coding, data analysis, and visualization.
+- Jupyter Notebook (`*.ipynb`) is a user-friendly environment that enhances coding, data analysis, and visualization.
   - It offers a web-based interface that combines live code, equations, visualizations, and narrative text.
-  - Jupyter is widely used for data science, machine learning, and research, enabling easy sharing and collaboration.
+  - Jupyter Notebook is widely used for data science, machine learning, and research, enabling easy sharing and collaboration.
 
 - We will use a free cloud version of Jupyter, which is [**Google Colab**](https://colab.research.google.com).
-
-
-
-## Python vs. R
-
-{{< video https://www.youtube.com/watch?v=4lcwTGA7MZw width="100%" height="100%">}}
-
-
 
 
 
 
 
 # Installing the Tools {background-color="#1c4982"}
-
-## Installing the Tools
-### Getting a GitHub account
-
-:::: {.incremental}
-
-::: {}
-- Create the GitHub account with your Geneseo email.
-  1. Go to [GitHub](https://github.com){target="_blank"}.
-  2. Click "Sign up for GitHub".
-:::
-
-::: {}
-- Choose your GitHub username carefully:
-  - `https://YOUR_GITHUB_USERNAME.github.io` will be the address for your website.
-  - Byeong-Hak's GitHub username is `bcdanl`, so that Byeong-Hak owns the web address `https://bcdanl.github.io`.
-:::
-
-::: {}
-- It is better to have a username with *all lower cases*.
-:::
-
-::::
 
 ## Installing the Tools
 ### Anaconda
@@ -839,12 +712,9 @@ $\quad$
 
 - **Script Pane** is where you write R commands in a script file that you can save.
 
-:::{.incremental}
   - An R script is simply a text file containing R commands. 
   - RStudio will color-code different elements of your code to make it easier to read.
-
-:::
-
+  
 :::
 ::::
 
@@ -852,19 +722,18 @@ $\quad$
 :::: {.columns}
 
 ::: {.column width="50%"}
-:::{.incremental}
+
 - To open an R script, 
   - File $>$ New File  $>$ R Script
 
-:::
+
 :::
 
 ::: {.column width="50%"}
-:::{.incremental}
+
 - To save the R script, 
   - File $>$ Save
 
-:::
 :::
 
 ::::
@@ -920,14 +789,10 @@ a <- 1
 
 - **R packages** are collections of R functions, compiled code, and data that are combined in a structured format.
 
-
-:::{.incremental}
-
 - The `tidyverse` is a collection of R packages designed for data science that share an underlying design philosophy, grammar, and data structures. 
   - The `tidyverse` packages work harmoniously together to make data manipulation, exploration, and visualization more.
   - We will use several R packages from `tidyverse` throughout the course. (e.g., `ggplot2`, `dplyr`, `tidyr`)
 
-:::
 
 
 ## Installing the Tools
@@ -936,7 +801,6 @@ a <- 1
 - R packages can be easily installed from within R using functions  `install.packages("packageName")`. 
   - To install the R package `tidyverse`, type and run the following from R console:
 
-:::{.incremental}
 ```{.r}
 install.packages("tidyverse")
 ```
@@ -959,7 +823,7 @@ install.packages("tidyverse")
 
 - Type `no` in the R Console, and then hit *Enter*.
 
-:::
+
 
 ## Installing the Tools
 ### Loading R packages with `library(packageName)`
@@ -972,9 +836,8 @@ library(tidyverse)
 df_mpg <- mpg
 ```
 
-:::{.incremental}
+
 - `mpg` is the data.frame provided by the R package `ggplot2`, one of the R pakcages in `tidyverse`.
-:::
 
 
 
@@ -998,6 +861,8 @@ install.packages("reticulate")
 ```
 
 - This package allows `Quarto` to use Python and R objects interactively within one Quarto document.
+
+
 
 
 
@@ -1034,5 +899,368 @@ install.packages("reticulate")
 
 
 
+
+## RStudio Workflow
+### Shortcuts for RStudio and RScript
+
+
+:::: {.columns}
+::: {.column width="50%"}
+**Mac**
+
+- **command + shift + N** opens a new RScript.
+- **command + return** runs a current line or selected lines.
+- **command + shift + C** is the shortcut for # (commenting).
+- **option + - ** is the shortcut for `<-`.
+
+:::
+
+::: {.column width="50%"}
+
+**Windows**
+
+- **Ctrl + Shift + N** opens a new RScript.
+- **Ctrl + return** runs a current line or selected lines.
+- **Ctrl + Shift + C** is the shortcut for # (commenting).
+- **Alt + - ** is the shortcut for `<-`.
+
+:::
+::::
+
+
+
+
+## Workflow
+### Shortcuts for Lecture Slides
+
+- **o** or **Esc** overviews lecture slides
+  - Use arrow keys to move around.
+  
+- You can also click the menu button at the top-right corner, and go to a specific slide.
+ 
+ - **Ctrl + Shift + F** to search.
+
+
+
+
+# Getting Started with Quarto {background-color="#1c4982"}
+
+
+## Getting Started with Quarto
+### YAML
+
+
+:::: {.columns}
+::: {.column width="25%"}
+![](https://bcdanl.github.io/lec_figs/quarto-yml-engine.jpg){width="75%"}
+:::
+
+
+::: {.column width="70%"}
+
+:::{}
+- An YAML (yet another markup language) header surrounded by `---`.
+  - It is commonly used for document configuration (e.g., title, author, date, style, ...).
+
+- Chunks of Python/R code surrounded by three backticks, $\text{```}$.
+
+:::
+
+:::
+::::
+
+
+
+## Getting Started with Quarto
+### Knitting / Rendering
+
+- When we knit the document, Quarto sends the `.qmd` file to **jupyter**/**knitr**, which executes all of the code chunks and creates a new markdown (`.md`) document which includes the code and its output. 
+
+- The markdown file (`*.md`) generated by **jupyter**/**knitr** is then processed by **pandoc**, which is responsible for creating the output file.
+
+![](https://bcdanl.github.io/lec_figs/quarto-flow.png)
+
+
+
+
+
+## Getting Started with Quarto
+### Markdown, Quarto, and HTML
+
+- The very original version of **Markdown** was invented mainly to write HTML content more easily.
+  - For example, `- SOME_TEXT` in "*.md" is equivalent to `<ul><li> SOME_TEXT </li>` in "*.html"
+  
+  
+- Pandoc makes it possible to convert a Markdown document to a large variety of output formats, such as HTML.
+
+
+
+## Getting Started with Quarto and HTML
+### Markdown, Quarto, and HTML
+
+
+```{.bash}
+---
+title: "Habits"
+author: YOUR_NAME
+date: January 30, 2024
+format: 
+  html
+---
+```
+
+
+
+
+- To create an HTML document from Quarto, we specify the `html` output format in the YAML metadata of our document.
+  - By default, `format: html` is set.
+
+- In RStudio, we can create a new Quarto file from the menu, File -> New File -> Quarto Document.
+
+- Open an empty Quarto file.
+  - Type the following YAML metadata to the empty Quarto file.
+
+
+
+
+
+## Getting Started with Quarto
+### Quarto Basics
+
+
+- In RStudio, close the project `USERNAME.github.io.Rporj` if it is on.
+  1. Click `USERNAME.github.io.Rporj` at the top-right corner.
+  2. Click *Close Project*.
+  
+
+- Download the Quarto file, `danl-310-quarto-r.qmd` from Brightspace, and open it from RStudio.
+
+
+
+
+## Getting Started with Quarto
+### Quarto Basics
+
+```{.bash}
+---
+title: 
+subtitle: 
+author: 
+date: last-modified
+
+format: 
+  html:
+  
+execute: 
+  echo: true
+  eval: true
+---
+```
+
+
+
+- The following syntax is part of YAML metadata in `danl-310-quarto-r.qmd`.
+  - In YAML, indentation really matters!
+  - **tab** (or four spaces) defines a level in YAML.
+
+
+# Managing a Website with Quarto (and Jupyter Notebook) {background-color="#1c4982"}
+
+## Quarto Websites
+
+
+- In RStudio, open the project `USERNAME.github.io.Rporj`.
+  1. Click `Project: (None)` at the top-right corner.
+  2. Click `USERNAME.github.io.Rporj`.
+
+
+- Your website has a `_quarto.yml` configuration file.
+  - This file provides options for HTML documents within the website.
+
+
+:::: {.columns}
+::: {.column width="50%"}
+```{.bash}
+---
+project:
+  type: website
+
+website:
+  title: "YOUR NAME"
+  navbar:
+    left:
+      - text: Project
+        href: project.qmd
+      - text: Blog
+        href: blog-listing.qmd
+```
+
+:::
+
+::: {.column width="50%"}
+
+```{.bash}
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+---
+```
+
+- The `_quarto.yml` file configures the website settings.
+
+- Indentation matters!
+
+:::
+
+::::
+
+
+
+## Quarto Websites
+### Custom CSS
+
+- Cascading Style Sheets (CSS) is used to format the layout of a webpage (color, font, text size, background, display, etc.). 
+
+  - HTML will format the architecture of the house.
+  
+  - CSS will be the carpet and walls to decorate the house.
+  
+  - JavaScript adds interactive elements in the house, such as opening doors and lighting.
+
+  
+- We are not front-end web developers. 
+
+  - We will not cover the use of CSS and JavaScript.
+
+
+
+## Quarto Websites
+### Rendering
+
+- The **Render** button (**command/Ctrl + shift + K**) renders a single Quarto file.
+
+- `quarto render` from Terminal renders all Quarto/Jupyter Notebook files in your local working directory:
+
+```{.bash}
+quarto render
+```
+
+- We should use `quarto render` when we have changes in `_quarto.yml`.
+
+- Make changes only from your local laptop. 
+  - Do not make any change from the GitHub repo webpage.
+
+
+
+
+## Quarto Websites
+### Adding `*.ipynb` to Quarto websites
+
+
+- By default, `quarto render` doesn’t execute any code in `.ipynb` notebooks. 
+
+- `quarto render` renders `.ipynb` notebooks, so that corresponding `html` files are rendered. 
+
+  - If we need to update cell outputs in `*.ipynb`, run that `*.ipynb` on Google Colab, and save the notebook.
+
+
+
+
+## Quarto Websites
+### Appearance and Style
+
+- `theme` specifies the Bootstrap theme to use for the page (themes are drawn from the [Bootswatch](https://bootswatch.com) theme library).
+  - Valid themes include `default`, `bootstrap`, `cerulean`, `cosmo`, `darkly`, `flatly`, `journal`, `lumen`, `paper`, `readable`, `sandstone`, `simplex`, `spacelab`, `united`, and `yeti`. 
+
+  
+- `highlight-style` specifies the code highlighting style. 
+  - Supported styles include `default`, `tango`, `pygments`, `kate`, `monochrome`, `espresso`, `zenburn`, `haddock`, `breezedark`, and `textmate`. 
+
+
+
+## Quarto Websites
+### About
+
+- Your `index.qmd` sets a page about you.
+  - Details in about pages are available here:
+  - [https://quarto.org/docs/websites/website-about.html](https://quarto.org/docs/websites/website-about.html).
+
+
+- Quarto includes 5 built in templates:
+  - `jolla`
+  - `trestles`
+  - `solana`
+  - `marquee`
+  - `broadside`
+
+
+
+## Quarto Websites
+### Icons and Emojis
+
+- A ton of Bootstrap icons are available here:
+  - [https://icons.getbootstrap.com](https://icons.getbootstrap.com).
+
+
+- A ton of markdown emojis are available here `r emo::ji('smile')`:
+  - [https://github.com/ikatyang/emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet)
+  - [https://gist.github.com/rxaviers/7360908](https://gist.github.com/rxaviers/7360908)
+
+
+
+
+## Quarto Websites
+### Naviation and Adding Pages
+
+- We can add a new page to the website through `navbar` in `_quarto.yml`
+
+```{.bash}
+left:
+- text: Project
+  href: project.qmd
+- text: Blog
+  href: blog-listing.qmd
+- text: Homeowrk
+  href: hw.qmd
+```
+
+
+
+
+## Quarto Websites
+### Naviation and Adding Pages
+
+- We can also create a navigation bar menu by including a `menu`
+
+```{.bash}
+left:
+  - text: "Projects"
+    menu:
+      - project_1.qmd
+      - project_2.qmd 
+```
+
+
+- More details about navbar are available here:
+  - [https://quarto.org/docs/websites/website-navigation.html](https://quarto.org/docs/websites/website-navigation.html)
+
+
+
+
+## Quarto Websites  {background-color="#6497b1"}
+### Colors
+
+
+- A ton of hex codes for colors are available here:
+  - [https://www.color-hex.com](https://www.color-hex.com)
+
+
+
+
+## Quarto Website Basics
+
+- Let's do [Classwork 3](https://bcdanl.github.io/310/danl-cw/danl-310-cw-03.html).
 
 

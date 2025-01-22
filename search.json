@@ -67,7 +67,7 @@
     "href": "index.html#bullet-classwork",
     "title": "DANL 310-01: Data Visualization and Presentation, Spring 2025",
     "section": "\\(\\bullet\\,\\) Classwork ⌨️",
-    "text": "\\(\\bullet\\,\\) Classwork ⌨️\n\n\n\n\n\n\nTitle\n\n\nDate\n\n\n\n\n\n\nClasswork 2\n\n\nJanuary 24, 2025\n\n\n\n\nClasswork 1\n\n\nJanuary 24, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "\\(\\bullet\\,\\) Classwork ⌨️\n\n\n\n\n\n\nTitle\n\n\nDate\n\n\n\n\n\n\nClasswork 2\n\n\nJanuary 24, 2025\n\n\n\n\nClasswork 1\n\n\nJanuary 24, 2025\n\n\n\n\nClasswork 3\n\n\nJanuary 22, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html#bullet-homework",
@@ -263,7 +263,7 @@
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-7",
     "title": "Lecture 1",
     "section": "Syllabus",
-    "text": "Syllabus\nCourse Requirements\n\nLaptop: You should bring your own laptop (Mac or Windows) to the classroom.\n\nThe minimum specification for your laptop in this course is 2+ core CPU, 4+ GB RAM, and 500+ GB disk storage.\n\n\n\n\nHomework: There will be six homework assignments.\nProject: There will be one project on a personal website.\nExams: There will be one Midterm Exam and one final exam.\n\nThe final exam is comprehensive.\n\nDiscussions: You are encouraged to participate in GitHub-based online discussions and class discussion, and office hours.\n\nCheckout the netiquette policy in the syllabus."
+    "text": "Syllabus\nCourse Requirements\n\nLaptop: You should bring your own laptop (Mac or Windows) to the classroom.\n\nThe minimum specification for your laptop in this course is 2+ core CPU, 4+ GB RAM, and 500+ GB disk storage.\n\nHomework: There will be six homework assignments.\nProject: There will be one project on a personal website.\nExams: There will be one Midterm Exam and one final exam.\n\nThe final exam is comprehensive.\n\nDiscussions: You are encouraged to participate in GitHub-based online discussions and class discussion, and office hours.\n\nCheckout the netiquette policy in the syllabus."
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-8",
@@ -277,84 +277,56 @@
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-9",
     "title": "Lecture 1",
     "section": "Syllabus",
-    "text": "Syllabus\nTeam Project\n\nTeam formation is scheduled for late March.\n\n\n\nEach team must have one to two students.\nFor the team project, a team must choose data related to business or socioeconomic issues.\nThe project report should include exploratory data analysis using summary statistics, visual representations, and data wrangling.\nThe document for the team project must be published in each member’s website.\nThe project for the team project must include a Shiny dashboard.\nAny changes to team composition require approval from Byeong-Hak Choe."
+    "text": "Syllabus\nWhy Personal Website?\n\nHere are the example websites:\n\nByeong-Hak’s Website\nDANL Website Template\n\nProfessional Showcase: Display skills and projects\nVisibility and Networking: Increase online presence\nContent Sharing and Engagement: Publish articles, insights\nJob Opportunities: Attract potential employers and clients\nLong-term Asset: A growing repository of your career journey\nReproducible Research: Showcase data-driven reports"
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-10",
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-10",
     "title": "Lecture 1",
     "section": "Syllabus",
-    "text": "Syllabus\nClass Schedule and Exams\n\nThere will be tentatively 28 class sessions.\nThe Midterm Exam is scheduled on March 12, 2025, Wednesday, during the class time.\nThe Final Exam is scheduled on May 9, 2025, Friday, 3:30 P.M.-5:30 P.M.\nThe due for the team project is May 16, 2024, Thursday."
+    "text": "Syllabus\nTeam Project\n\nTeam formation is scheduled for late March.\n\nEach team must have one to two students.\n\nFor the team project, a team must choose data related to business or socioeconomic issues.\nThe project report should include exploratory data analysis using summary statistics, visual representations, and data wrangling.\nThe document for the team project must be published in each member’s website.\nThe project for the team project must include a Shiny dashboard.\nAny changes to team composition require approval from Byeong-Hak Choe.\n\n:::"
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-11",
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-11",
     "title": "Lecture 1",
     "section": "Syllabus",
-    "text": "Syllabus\nCourse Contents\n\nThe first half of the course covers fundamentals of data visualization:"
+    "text": "Syllabus\nClass Schedule and Exams\n\nThere will be tentatively 28 class sessions.\nThe Midterm Exam is scheduled on March 12, 2025, Wednesday, during the class time.\nThe Final Exam is scheduled on May 9, 2025, Friday, 3:30 P.M.-5:30 P.M.\nThe due for the team project is May 16, 2024, Thursday."
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-12",
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-12",
     "title": "Lecture 1",
     "section": "Syllabus",
-    "text": "Syllabus\nCourse Contents\n\nThe second half of the course covers advanced data visualization and Shiny apps:"
+    "text": "Syllabus\nCourse Contents\n\nThe first half of the course covers fundamentals of data visualization:"
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-13",
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-13",
     "title": "Lecture 1",
     "section": "Syllabus",
-    "text": "Syllabus\nGrading\n\\[\n\\begin{align}\n(\\text{Total Percentage Grade}) =&\\quad\\;\\, 0.05\\times(\\text{Total Attendance Score})\\notag\\\\\n&\\,+\\, 0.05\\times(\\text{Discussion Score})\\notag\\\\\n&\\,+\\, 0.05\\times(\\text{Website Score})\\notag\\\\\n&\\,+\\, 0.15\\times(\\text{Team Project and Website Score})\\notag\\\\\n&\\,+\\, 0.20\\times(\\text{Total Homework Score})\\notag\\\\\n&\\,+\\, 0.50\\times(\\text{Total Exam Score}).\\notag\n\\end{align}\n\\]"
+    "text": "Syllabus\nCourse Contents\n\nThe second half of the course covers advanced data visualization and Shiny apps:"
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-14",
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-14",
     "title": "Lecture 1",
     "section": "Syllabus",
-    "text": "Syllabus\nGrading\n\nYou are allowed up to 2 absences without penalty.\n\nSend me an email if you have standard excused reasons (illness, family emergency, transportation problems, etc.).\n\n\n\n\nFor each absence beyond the initial two, there will be a deduction of 1% from the Total Percentage Grade.\nParticipation will be evaluated by quantity and quality of GitHub-based online discussions and in-person discussion.\nThe single lowest homework score will be dropped when calculating the total homework score."
+    "text": "Syllabus\nGrading\n\\[\n\\begin{align}\n(\\text{Total Percentage Grade}) =&\\quad\\;\\, 0.05\\times(\\text{Total Attendance Score})\\notag\\\\\n&\\,+\\, 0.05\\times(\\text{Discussion Score})\\notag\\\\\n&\\,+\\, 0.05\\times(\\text{Website Score})\\notag\\\\\n&\\,+\\, 0.15\\times(\\text{Team Project and Website Score})\\notag\\\\\n&\\,+\\, 0.20\\times(\\text{Total Homework Score})\\notag\\\\\n&\\,+\\, 0.50\\times(\\text{Total Exam Score}).\\notag\n\\end{align}\n\\]"
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-15",
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-15",
     "title": "Lecture 1",
     "section": "Syllabus",
-    "text": "Syllabus\nMake-up Policy\n\nMake-up exams will not be given unless you have either a medically verified excuse or an absence excused by the University.\n\n\n\nIf you cannot take exams because of religious obligations, notify me by email at least two weeks in advance so that an alternative exam time may be set.\nA missed exam without an excused absence earns a grade of zero.\nLate submissions for homework assignment will be accepted with a penalty.\nA zero will be recorded for a missed assignment."
+    "text": "Syllabus\nGrading\n\nYou are allowed up to 2 absences without penalty.\n\nSend me an email if you have standard excused reasons (illness, family emergency, transportation problems, etc.).\n\nFor each absence beyond the initial two, there will be a deduction of 1% from the Total Percentage Grade.\nParticipation will be evaluated by quantity and quality of GitHub-based online discussions and in-person discussion.\nThe single lowest homework score will be dropped when calculating the total homework score."
   },
   {
-    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-16",
-    "href": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-16",
+    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#why-personal-website",
+    "href": "danl-lec/danl-310-lec-01-2025-0122.html#why-personal-website",
     "title": "Lecture 1",
-    "section": "Syllabus",
-    "text": "Syllabus\nMake-up Policy\n\nMake-up exams will not be given unless you have either a medically verified excuse or an absence excused by the University.\n\n\n\nIf you cannot take exams because of religious obligations, notify me by email at least two weeks in advance so that an alternative exam time may be set.\nA missed exam without an excused absence earns a grade of zero.\nLate submissions for homework assignment will be accepted with a penalty.\nA zero will be recorded for a missed assignment."
-  },
-  {
-    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-17",
-    "href": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-17",
-    "title": "Lecture 1",
-    "section": "Syllabus",
-    "text": "Syllabus\nAcademic Integrity and Plagiarism\n\nAll homework assignments and exams must be the original work by you.\nExamples of academic dishonesty include:\n\nrepresenting the work, thoughts, and ideas of another person as your own\nallowing others to represent your work, thoughts, or ideas as theirs, and\nbeing complicit in academic dishonesty by suspecting or knowing of it and not taking action.\n\nGeneseo’s Library offers frequent workshops to help you understand how to paraphrase, quote, and cite outside sources properly.\n\nSee https://www.geneseo.edu/library/library-workshops."
-  },
-  {
-    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-18",
-    "href": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-18",
-    "title": "Lecture 1",
-    "section": "Syllabus",
-    "text": "Syllabus\nAccessibility\n\nThe Office of Accessibility will coordinate reasonable accommodations for persons with physical, emotional, or cognitive disabilities to ensure equal access to academic programs, activities, and services at Geneseo.\nPlease contact me and the Office of Accessibility Services for questions related to access and accommodations."
-  },
-  {
-    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-19",
-    "href": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-19",
-    "title": "Lecture 1",
-    "section": "Syllabus",
-    "text": "Syllabus\nWell-being\n\nYou are strongly encouraged to communicate your needs to faculty and staff and seek support if you are experiencing unmanageable stress or are having difficulties with daily functioning.\nLiz Felski, the School of Business Student Advocate (felski@geneseo.edu, South Hall 303), or the Dean of Students (585-245-5706) can assist and provide direction to appropriate campus resources.\nFor more information, see https://www.geneseo.edu/dean_students."
-  },
-  {
-    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-20",
-    "href": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-20",
-    "title": "Lecture 1",
-    "section": "Syllabus",
-    "text": "Syllabus\nCareer Design\n\nTo get information about career development, you can visit the Career Development Events Calendar (https://www.geneseo.edu/career_development/events/calendar).\nYou can stop by South 112 to get assistance in completing your Handshake Profile https://app.joinhandshake.com/login.\n\nHandshake is ranked #1 by students as the best place to find full-time jobs.\n50% of the 2018-2020 graduates received a job or internship offer on Handshake.\nHandshake is trusted by all 500 of the Fortune 500."
+    "section": "Why Personal Website?",
+    "text": "Why Personal Website?\nBenefits of a Personal Website in Data Analytics\n\n\nHere are the example websites:\n\nByeong-Hak’s Website\nDANL Website Template\n\n\n\n\n\nProfessional Showcase: Display skills and projects\nVisibility and Networking: Increase online presence\nControlled Narrative: Manage your professional brand\nContent Sharing and Engagement: Publish articles, insights\nJob Opportunities: Attract potential employers and clients\nLong-term Asset: A growing repository of your career journey\nReproducible Research: Showcase data-driven reports"
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#why-data-analytics",
@@ -403,7 +375,7 @@
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#the-state-of-the-art-1",
     "title": "Lecture 1",
     "section": "The State of the Art",
-    "text": "The State of the Art\nGenerative AI and ChatGPT\n\nGenerative AI refers to a category of artificial intelligence (AI) that is capable of generating new content, ranging from text, images, and videos to music and code.\n\n\n\nIn the early 2020s, advances in transformer-based deep neural networks enabled a number of generative AI systems notable for accepting natural language prompts as input.\n\nThese include large language model (LLM) chatbots (e.g., ChatGPT, Claude, Copilot, Gemini, LLaMA, Grok).\n\nChatGPT (Chat Generative Pre-trained Transformer) is a chatbot developed by OpenAI and launched on November 30, 2022.\n\nBy January 2023, it had become what was then the fastest-growing consumer software application in history."
+    "text": "The State of the Art\nGenerative AI and ChatGPT\n\nUsers around the world have explored how to best utilize GPT for writing essays and programming codes.\nIs AI a threat to data analytics?\n\nFundamental understanding of the subject matter is still crucial for effectively utilizing AI’s capabilities.\n\nIf you use Generative AI such as ChatGPT, please try to understand what ChatGPT gives you.\n\nCopying and pasting it without any understanding harms your learning opportunity."
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#the-state-of-the-art-2",
@@ -445,7 +417,7 @@
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#what-is-rstudio",
     "title": "Lecture 1",
     "section": "What is RStudio?",
-    "text": "What is RStudio?\n\nRStudio is an integrated development environment (IDE) for R.\n\nAn IDE is a software application that provides comprehensive facilities (e.g., text code editor, graphical user interface (GUI)) to computer programmers for software development.\n\nRStudio is a user-friendly interface that makes using R easier and more interactive.\n\nIt provides a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging, and workspace management.\n\nWe will use a free cloud version of RStudio, which is Posit Cloud."
+    "text": "What is RStudio?\n\nRStudio is an integrated development environment (IDE) mainly for R programming.\n\nAn IDE is a software application that provides comprehensive facilities (e.g., text code editor, graphical user interface (GUI)) to computer programmers for software development.\n\nRStudio is a user-friendly interface that makes using R easier and more interactive.\n\nIt provides a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging, and workspace management."
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#what-is-python",
@@ -459,7 +431,7 @@
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#what-is-jupyter",
     "title": "Lecture 1",
     "section": "What is Jupyter?",
-    "text": "What is Jupyter?\n\nJupyter is an open-source integrated development environment (IDE) primarily for Python, though it supports many other languages.\n\nJupyter provides a notebook interface that allows users to write and execute code in a more interactive and visual format.\n\nJupyter Notebook is a user-friendly environment that enhances coding, data analysis, and visualization.\n\nIt offers a web-based interface that combines live code, equations, visualizations, and narrative text.\nJupyter is widely used for data science, machine learning, and research, enabling easy sharing and collaboration.\n\nWe will use a free cloud version of Jupyter, which is Google Colab."
+    "text": "What is Jupyter?\n\nJupyter is an open-source IDE primarily for Python, though it supports many other languages.\n\nJupyter provides a notebook interface that allows users to write and execute code in a more interactive and visual format.\n\nJupyter Notebook (*.ipynb) is a user-friendly environment that enhances coding, data analysis, and visualization.\n\nIt offers a web-based interface that combines live code, equations, visualizations, and narrative text.\nJupyter Notebook is widely used for data science, machine learning, and research, enabling easy sharing and collaboration.\n\nWe will use a free cloud version of Jupyter, which is Google Colab."
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#python-vs.-r",
@@ -473,84 +445,91 @@
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-1",
     "title": "Lecture 1",
     "section": "Installing the Tools",
-    "text": "Installing the Tools\nGetting a GitHub account\n\n\n\nCreate the GitHub account with your Geneseo email.\n\nGo to GitHub.\nClick “Sign up for GitHub”.\n\n\n\n\n\nChoose your GitHub username carefully:\n\nhttps://YOUR_GITHUB_USERNAME.github.io will be the address for your website.\nByeong-Hak’s GitHub username is bcdanl, so that Byeong-Hak owns the web address https://bcdanl.github.io.\n\n\n\n\n\nIt is better to have a username with all lower cases."
+    "text": "Installing the Tools\nAnaconda\n\nTo install Anaconda, go to the following download page:\n\nhttps://www.anaconda.com/products/distribution.\nClick the “Download” button."
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-2",
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-2",
     "title": "Lecture 1",
     "section": "Installing the Tools",
-    "text": "Installing the Tools\nAnaconda\n\nTo install Anaconda, go to the following download page:\n\nhttps://www.anaconda.com/products/distribution.\nClick the “Download” button."
+    "text": "Installing the Tools\nR programming\n\nThe R language is available as a free download from the R Project website at:\n\nWindows: https://cran.r-project.org/bin/windows/base/\nMac: https://cran.r-project.org/bin/macosx/\nDownload the file of R that corresponds to your Mac OS (Big Sur, Apple silicon arm64, High Sierra, El Capitan, Mavericks, etc.)"
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-3",
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-3",
     "title": "Lecture 1",
     "section": "Installing the Tools",
-    "text": "Installing the Tools\nR programming\n\nThe R language is available as a free download from the R Project website at:\n\nWindows: https://cran.r-project.org/bin/windows/base/\nMac: https://cran.r-project.org/bin/macosx/\nDownload the file of R that corresponds to your Mac OS (Big Sur, Apple silicon arm64, High Sierra, El Capitan, Mavericks, etc.)"
+    "text": "Installing the Tools\nR Studio\n\n\nThe RStudio Desktop is available as a free download from the following webpage:\n\nhttps://www.rstudio.com/products/rstudio/download/#download\n\n\n\n\n\n\nFor Mac users, try the following steps:\n\nRun RStudio-*.dmg file.\nFrom the Pop-up menu, click the RStudio icon.\nWhile clicking the RStudio icon, drag it to the Applications directory."
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-4",
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-4",
     "title": "Lecture 1",
     "section": "Installing the Tools",
-    "text": "Installing the Tools\nR Studio\n\n\nThe RStudio Desktop is available as a free download from the following webpage:\n\nhttps://www.rstudio.com/products/rstudio/download/#download\n\n\n\n\n\n\nFor Mac users, try the following steps:\n\nRun RStudio-*.dmg file.\nFrom the Pop-up menu, click the RStudio icon.\nWhile clicking the RStudio icon, drag it to the Applications directory."
+    "text": "Installing the Tools\nRStudio Environment\n\n\n\n\n\nScript Pane is where you write R commands in a script file that you can save.\n\nAn R script is simply a text file containing R commands.\nRStudio will color-code different elements of your code to make it easier to read.\n\n\n\n\n\n\n\nTo open an R script,\n\nFile \\(&gt;\\) New File \\(&gt;\\) R Script\n\n\n\n\nTo save the R script,\n\nFile \\(&gt;\\) Save"
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-5",
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-5",
     "title": "Lecture 1",
     "section": "Installing the Tools",
-    "text": "Installing the Tools\nRStudio Environment\n\n\n\n\n\nScript Pane is where you write R commands in a script file that you can save.\n\n\n\nAn R script is simply a text file containing R commands.\nRStudio will color-code different elements of your code to make it easier to read.\n\n\n\n\n\n\n\n\nTo open an R script,\n\nFile \\(&gt;\\) New File \\(&gt;\\) R Script\n\n\n\n\n\n\nTo save the R script,\n\nFile \\(&gt;\\) Save"
+    "text": "Installing the Tools\nRStudio Environment\n\n\n\n\n\nConsole Pane allows you to interact directly with the R interpreter and type commands where R will immediately execute them."
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-6",
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-6",
     "title": "Lecture 1",
     "section": "Installing the Tools",
-    "text": "Installing the Tools\nRStudio Environment\n\n\n\n\n\nConsole Pane allows you to interact directly with the R interpreter and type commands where R will immediately execute them."
+    "text": "Installing the Tools\nRStudio Environment\n\n\n\n\n\nEnvironment Pane is where you can see the values of variables, data frames, and other objects that are currently stored in memory.\nType below in the Console Pane, and then hit Enter:\n\na &lt;- 1"
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-7",
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-7",
     "title": "Lecture 1",
     "section": "Installing the Tools",
-    "text": "Installing the Tools\nRStudio Environment\n\n\n\n\n\nEnvironment Pane is where you can see the values of variables, data frames, and other objects that are currently stored in memory.\nType below in the Console Pane, and then hit Enter:\n\na &lt;- 1"
+    "text": "Installing the Tools\nRStudio Environment\n\n\n\n\n\nPlots Pane contains any graphics that you generate from your R code."
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-8",
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-8",
     "title": "Lecture 1",
     "section": "Installing the Tools",
-    "text": "Installing the Tools\nRStudio Environment\n\n\n\n\n\nPlots Pane contains any graphics that you generate from your R code."
+    "text": "Installing the Tools\nR Packages and tidyverse\n\nR packages are collections of R functions, compiled code, and data that are combined in a structured format.\nThe tidyverse is a collection of R packages designed for data science that share an underlying design philosophy, grammar, and data structures.\n\nThe tidyverse packages work harmoniously together to make data manipulation, exploration, and visualization more.\nWe will use several R packages from tidyverse throughout the course. (e.g., ggplot2, dplyr, tidyr)"
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-9",
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-9",
     "title": "Lecture 1",
     "section": "Installing the Tools",
-    "text": "Installing the Tools\nR Packages and tidyverse\n\nR packages are collections of R functions, compiled code, and data that are combined in a structured format.\n\n\n\nThe tidyverse is a collection of R packages designed for data science that share an underlying design philosophy, grammar, and data structures.\n\nThe tidyverse packages work harmoniously together to make data manipulation, exploration, and visualization more.\nWe will use several R packages from tidyverse throughout the course. (e.g., ggplot2, dplyr, tidyr)"
+    "text": "Installing the Tools\nInstalling R packages with install.packages(\"packageName\")\n\nR packages can be easily installed from within R using functions install.packages(\"packageName\").\n\nTo install the R package tidyverse, type and run the following from R console:\n\n\ninstall.packages(\"tidyverse\")\n\nWhile running the above codes, you may encounter the question below from the R Console:\n\n\n\n\nMac: “Do you want to install from sources the packages which need compilation?” from Console Pane.\n\n\n\nWindows: “Would you like to use a personal library instead?” from Pop-up message.\n\n\n\n\nType no in the R Console, and then hit Enter."
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-10",
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-10",
     "title": "Lecture 1",
     "section": "Installing the Tools",
-    "text": "Installing the Tools\nInstalling R packages with install.packages(\"packageName\")\n\nR packages can be easily installed from within R using functions install.packages(\"packageName\").\n\nTo install the R package tidyverse, type and run the following from R console:\n\n\n\ninstall.packages(\"tidyverse\")\n\nWhile running the above codes, you may encounter the question below from the R Console:\n\n\n\n\nMac: “Do you want to install from sources the packages which need compilation?” from Console Pane.\n\n\n\nWindows: “Would you like to use a personal library instead?” from Pop-up message.\n\n\n\n\nType no in the R Console, and then hit Enter."
+    "text": "Installing the Tools\nLoading R packages with library(packageName)\n\nOnce installed, a package is loaded into an R session using library(packageName) so that its functions and data can be used.\n\nTo load the R package tidyverse, type and run the following command from a R script:\n\n\nlibrary(tidyverse)\ndf_mpg &lt;- mpg\n\nmpg is the data.frame provided by the R package ggplot2, one of the R pakcages in tidyverse."
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-11",
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-11",
     "title": "Lecture 1",
     "section": "Installing the Tools",
-    "text": "Installing the Tools\nLoading R packages with library(packageName)\n\nOnce installed, a package is loaded into an R session using library(packageName) so that its functions and data can be used.\n\nTo load the R package tidyverse, type and run the following command from a R script:\n\n\nlibrary(tidyverse)\ndf_mpg &lt;- mpg\n\n\nmpg is the data.frame provided by the R package ggplot2, one of the R pakcages in tidyverse."
+    "text": "Installing the Tools\nPython in RStudio\n::: {.panel-tabset} ## Python Option\n\nWe can run Python codes within RStudio.\nSelect Python interpreter in RStudio from Tools \\(&gt;\\) Global Options \\(&gt;\\) Python:"
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-12",
     "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-12",
     "title": "Lecture 1",
     "section": "Installing the Tools",
-    "text": "Installing the Tools\nPython in RStudio\n::: {.panel-tabset} ## Python Option\n\nWe can run Python codes within RStudio.\nSelect Python interpreter in RStudio from Tools \\(&gt;\\) Global Options \\(&gt;\\) Python:"
+    "text": "Installing the Tools\nRStudio Options Setting\n\n\n\n\n\nThis option menu is found by menus as follows:\n\nTools \\(&gt;\\) Global Options\n\nCheck the boxes as in the left.\nChoose the option Never for  Save workspace to .RData on exit:"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#r-package-reticulate",
+    "href": "danl-lec/danl-310-lec-01-2025-0122.html#r-package-reticulate",
+    "title": "Lecture 1",
+    "section": "R package, reticulate",
+    "text": "R package, reticulate\n\nInstall the R package, reticulate\n\ninstall.packages(\"reticulate\")\n\nThis package allows Quarto to use Python and R objects interactively within one Quarto document."
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-13",
@@ -560,88 +539,18 @@
     "text": "Installing the Tools\nRStudio Options Setting\n\n\n\n\n\nThis option menu is found by menus as follows:\n\nTools \\(&gt;\\) Global Options\n\nCheck the boxes as in the left.\nChoose the option Never for  Save workspace to .RData on exit:"
   },
   {
-    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-14",
-    "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-14",
+    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#building-a-personal-website-on-github",
+    "href": "danl-lec/danl-310-lec-01-2025-0122.html#building-a-personal-website-on-github",
     "title": "Lecture 1",
-    "section": "Installing the Tools",
-    "text": "Installing the Tools\nInstall git if you do not have it.\n\n\nMac\n\nGo to http://git-scm.com/downloads, and download the file.\nRun the downloaded file.\n\n\nWindows\n\nGo to https://gitforwindows.org, and download the file.\nRun the downloaded file.\n\n\n\n\nKeep clicking “Next” to complete installation of git.\nAfter the git installation is done, close RStudio and re-open it."
+    "section": "Building a Personal Website on GitHub",
+    "text": "Building a Personal Website on GitHub\n\nFollow steps described in Classwork 1."
   },
   {
-    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-15",
-    "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-15",
+    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#lets-practice-markdown",
+    "href": "danl-lec/danl-310-lec-01-2025-0122.html#lets-practice-markdown",
     "title": "Lecture 1",
-    "section": "Installing the Tools",
-    "text": "Installing the Tools\nEstablishing GitHub Credential on your local Git.\nStep 0. In Terminal, run the following commands one by one:\ngit config --global user.email \"YOUR_GITHUB_EMAIL_ADDRESS\"\ngit config --global user.name \"YOUR_GITHUB_USERNAME\""
-  },
-  {
-    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-16",
-    "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-16",
-    "title": "Lecture 1",
-    "section": "Installing the Tools",
-    "text": "Installing the Tools\nEstablishing GitHub Credential on your local Git.\nStep 1. Obtain a personal access token (PAT) for GitHub.\n\nIn RStudio Console, run the followings line by line:\n\n\ninstall.packages(\"usethis\")\nusethis::create_github_token()\n\n\nThen, click “Generate token” in the pop-upped web browser.\nThen, copy the generated PAT to your clipboard or R script."
-  },
-  {
-    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-17",
-    "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-17",
-    "title": "Lecture 1",
-    "section": "Installing the Tools",
-    "text": "Installing the Tools\nEstablishing GitHub Credential on your local Git.\nStep 2. Set the GitHub credential using the PAT.\n\nIn RStudio Console, run the followings line by line:\n\n\ninstall.packages(\"gitcreds\")\ngitcreds::gitcreds_set()\n\n\nThen, paste your PAT to the RStudio Console"
-  },
-  {
-    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-18",
-    "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-18",
-    "title": "Lecture 1",
-    "section": "Installing the Tools",
-    "text": "Installing the Tools\nEstablishing the connection between GitHub repo and your local laptop\nStep 3. Login to your GitHib and make the repository.\n\nFrom https://github.com, click the plus (+) icon in the upper right corner and select “New repository”.\nName this repo YOUR_GITHUB_NAME.github.io, which will be the domain for your website.\nThen, copy the web address of your GitHub repo."
-  },
-  {
-    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-19",
-    "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-19",
-    "title": "Lecture 1",
-    "section": "Installing the Tools",
-    "text": "Installing the Tools\nEstablishing the connection between GitHub repo and your local laptop\nStep 4. Create a RStudio project with Version Control\n\nClick “Project (None)” at the top-right corner in RStudio.\nClick “New Project” &gt; “Version Control” &gt; “Git”\nPaste the web address of your GitHub repo to the Repository URL menu.\nClick “Browse” to select the parent directory for your local project directory (I recommend “Documents” folder.)\nClick “Create”"
-  },
-  {
-    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-20",
-    "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-20",
-    "title": "Lecture 1",
-    "section": "Installing the Tools",
-    "text": "Installing the Tools\nEstablishing the connection between GitHub repo and your local laptop\n\nFor users who can’t create the R project with version control, do the following alternative Steps 4-1 and 4-2:\n\nStep 4-1. Use git clone to establish the connection between GitHub repo and your local laptop 1. Change the directory to “Documents” in Terminal.\n\n\ncd /Users/USERNAME/Documents\n\ncd C:\\Users\\USERNAME\\Documents\n\n\n\nUse git clone to creates a local copy of the GitHub Repository.\n\ngit clone &lt;repository-url&gt;\n\nFor example,\n\ngit clone https://github.com/YOUR_USERNAME/YOUR_USERNAME.github.io"
-  },
-  {
-    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-21",
-    "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-21",
-    "title": "Lecture 1",
-    "section": "Installing the Tools",
-    "text": "Installing the Tools\nEstablishing the connection between GitHub repo and your local laptop\n\nFor users who can’t create the R project with version control, do the following alternative Steps 4-1 and 4-2:\n\nStep 4-2. Create a RStudio project from Existing Directory\n\nClick “Project (None)” at the top-right corner in RStudio.\nClick “New Project” &gt; “Existing Directory”\nClick “Browse” to select a local copy of the GitHub Repository\nClick “Create Project”"
-  },
-  {
-    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-22",
-    "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-22",
-    "title": "Lecture 1",
-    "section": "Installing the Tools",
-    "text": "Installing the Tools\nWebsite Template Files\nStep 5. Download the files of website template:\n\nGo to the following webpage: https://github.com/bcdanl/danl-website-template\nFrom the webpage above, click the green icon “&lt; &gt; Code”, and then click “Download ZIP”\nExtract the ZIP file you have downloaded\nIf there are the files, .gitignore, .DS_Store, or *.Rproj, in the folder, delete them.\nMove all the files that were compressed the ZIP file to your local project directory.\n\n\nCtrl/cmd + A selects all files in a folder."
-  },
-  {
-    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-23",
-    "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-23",
-    "title": "Lecture 1",
-    "section": "Installing the Tools",
-    "text": "Installing the Tools\nWebsite Template Files\n\nAll the website files should be located at the same level with the R Project file (YOUR_USERNAME.github.io.Rproj)."
-  },
-  {
-    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-24",
-    "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-24",
-    "title": "Lecture 1",
-    "section": "Installing the Tools",
-    "text": "Installing the Tools\nPushing the website files to the GitHub repository\nStep 6. Push the files to your GitHub repository\n\nOn Terminal within RStudio, execute the following three git commands, which will stage, commit, and push all the files to your GitHub repository:\n\ngit add .\ngit commit -m \"ANY_MASSAGE\"\ngit push\nIf git push gives error, try the following:\ngit push"
-  },
-  {
-    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-25",
-    "href": "danl-lec/danl-310-lec-01-2025-0122.html#installing-the-tools-25",
-    "title": "Lecture 1",
-    "section": "Installing the Tools",
-    "text": "Installing the Tools\nPushing the website files to the GitHub repository\nStep 7. Check whether the files are well uploaded\n\nGo to the webpages of your GitHub repository and your website:\n\nhttps://github.com/YOUR_USERNAME/YOUR_USERNAME.github.io.git\nhttps://YOUR_USERNAME.github.io\nRefresh the webpage (cmd/Ctrl + R)"
+    "section": "Let’s Practice Markdown!",
+    "text": "Let’s Practice Markdown!\n\nJupyter Notebook, Quarto, and GitHub-based Discussion Boards use markdown as its underlying document syntax.\nLet’s do Classwork 2."
   },
   {
     "objectID": "listing-danl-310-lec.html",
@@ -714,31 +623,143 @@
     "text": "Title\n\n\nSubtitle\n\n\nDate\n\n\n\n\n\n\nDANL 210 - Discussion and Q & A Board\n\n\nundefined\n\n\nJanuary 21, 2025\n\n\n\n\n\n\nNo matching items\n\n Back to top"
   },
   {
-    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#why-personal-website",
-    "href": "danl-lec/danl-310-lec-01-2025-0122.html#why-personal-website",
+    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-16",
+    "href": "danl-lec/danl-310-lec-01-2025-0122.html#syllabus-16",
     "title": "Lecture 1",
-    "section": "Why Personal Website?",
-    "text": "Why Personal Website?\nBenefits of a Personal Website in Data Analytics\n\n\nHere are the example websites:\n\nByeong-Hak’s Website\nDANL Website Template\n\n\n\n\n\nProfessional Showcase: Display skills and projects\nVisibility and Networking: Increase online presence\nControlled Narrative: Manage your professional brand\nContent Sharing and Engagement: Publish articles, insights\nJob Opportunities: Attract potential employers and clients\nLong-term Asset: A growing repository of your career journey\nReproducible Research: Showcase data-driven reports"
+    "section": "Syllabus",
+    "text": "Syllabus\nMake-up Policy\n\nMake-up exams will not be given unless you have either a medically verified excuse or an absence excused by the University.\nIf you cannot take exams because of religious obligations, notify me by email at least two weeks in advance so that an alternative exam time may be set.\nA missed exam without an excused absence earns a grade of zero.\nLate submissions for homework assignment will be accepted with a penalty.\nA zero will be recorded for a missed assignment."
   },
   {
-    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#r-package-reticulate",
-    "href": "danl-lec/danl-310-lec-01-2025-0122.html#r-package-reticulate",
+    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#rstudio-workflow",
+    "href": "danl-lec/danl-310-lec-01-2025-0122.html#rstudio-workflow",
     "title": "Lecture 1",
-    "section": "R package, reticulate",
-    "text": "R package, reticulate\n\nInstall the R package, reticulate\n\ninstall.packages(\"reticulate\")\n\nThis package allows Quarto to use Python and R objects interactively within one Quarto document."
+    "section": "RStudio Workflow",
+    "text": "RStudio Workflow\nShortcuts for RStudio and RScript\n\n\nMac\n\ncommand + shift + N opens a new RScript.\ncommand + return runs a current line or selected lines.\ncommand + shift + C is the shortcut for # (commenting).\noption + -  is the shortcut for &lt;-.\n\n\nWindows\n\nCtrl + Shift + N opens a new RScript.\nCtrl + return runs a current line or selected lines.\nCtrl + Shift + C is the shortcut for # (commenting).\nAlt + -  is the shortcut for &lt;-."
   },
   {
-    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#building-a-personal-website-on-github",
-    "href": "danl-lec/danl-310-lec-01-2025-0122.html#building-a-personal-website-on-github",
+    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#workflow",
+    "href": "danl-lec/danl-310-lec-01-2025-0122.html#workflow",
     "title": "Lecture 1",
-    "section": "Building a Personal Website on GitHub",
-    "text": "Building a Personal Website on GitHub\n\nFollow steps described in Classwork 1."
+    "section": "Workflow",
+    "text": "Workflow\nShortcuts for Lecture Slides\n\no or Esc overviews lecture slides\n\nUse arrow keys to move around.\n\nYou can also click the menu button at the top-right corner, and go to a specific slide.\nCtrl + Shift + F to search."
   },
   {
-    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#lets-practice-markdown",
-    "href": "danl-lec/danl-310-lec-01-2025-0122.html#lets-practice-markdown",
+    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#getting-started-with-quarto-1",
+    "href": "danl-lec/danl-310-lec-01-2025-0122.html#getting-started-with-quarto-1",
     "title": "Lecture 1",
-    "section": "Let’s Practice Markdown!",
-    "text": "Let’s Practice Markdown!\n\nJupyter Notebook, Quarto, and GitHub-based Discussion Boards use markdown as its underlying document syntax.\nLet’s do Classwork 2."
+    "section": "Getting Started with Quarto",
+    "text": "Getting Started with Quarto\nYAML\n\n\n\n\n\n\nAn YAML (yet another markup language) header surrounded by ---.\n\nIt is commonly used for document configuration (e.g., title, author, date, style, …).\n\nChunks of Python/R code surrounded by three backticks, \\(\\text{```}\\)."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#getting-started-with-quarto-2",
+    "href": "danl-lec/danl-310-lec-01-2025-0122.html#getting-started-with-quarto-2",
+    "title": "Lecture 1",
+    "section": "Getting Started with Quarto",
+    "text": "Getting Started with Quarto\nKnitting / Rendering\n\nWhen we knit the document, Quarto sends the .qmd file to jupyter/knitr, which executes all of the code chunks and creates a new markdown (.md) document which includes the code and its output.\nThe markdown file (*.md) generated by jupyter/knitr is then processed by pandoc, which is responsible for creating the output file."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#getting-started-with-quarto-3",
+    "href": "danl-lec/danl-310-lec-01-2025-0122.html#getting-started-with-quarto-3",
+    "title": "Lecture 1",
+    "section": "Getting Started with Quarto",
+    "text": "Getting Started with Quarto\nMarkdown, Quarto, and HTML\n\nThe very original version of Markdown was invented mainly to write HTML content more easily.\n\nFor example, - SOME_TEXT in “.md” is equivalent to &lt;ul&gt;&lt;li&gt; SOME_TEXT &lt;/li&gt; in ”.html”\n\nPandoc makes it possible to convert a Markdown document to a large variety of output formats, such as HTML."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#getting-started-with-quarto-and-html",
+    "href": "danl-lec/danl-310-lec-01-2025-0122.html#getting-started-with-quarto-and-html",
+    "title": "Lecture 1",
+    "section": "Getting Started with Quarto and HTML",
+    "text": "Getting Started with Quarto and HTML\nMarkdown, Quarto, and HTML\n---\ntitle: \"Habits\"\nauthor: YOUR_NAME\ndate: January 30, 2024\nformat: \n  html\n---\n\nTo create an HTML document from Quarto, we specify the html output format in the YAML metadata of our document.\n\nBy default, format: html is set.\n\nIn RStudio, we can create a new Quarto file from the menu, File -&gt; New File -&gt; Quarto Document.\nOpen an empty Quarto file.\n\nType the following YAML metadata to the empty Quarto file."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#getting-started-with-quarto-4",
+    "href": "danl-lec/danl-310-lec-01-2025-0122.html#getting-started-with-quarto-4",
+    "title": "Lecture 1",
+    "section": "Getting Started with Quarto",
+    "text": "Getting Started with Quarto\nQuarto Basics\n\nIn RStudio, close the project USERNAME.github.io.Rporj if it is on.\n\nClick USERNAME.github.io.Rporj at the top-right corner.\nClick Close Project.\n\nDownload the Quarto file, danl-310-quarto-r.qmd from Brightspace, and open it from RStudio."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#getting-started-with-quarto-5",
+    "href": "danl-lec/danl-310-lec-01-2025-0122.html#getting-started-with-quarto-5",
+    "title": "Lecture 1",
+    "section": "Getting Started with Quarto",
+    "text": "Getting Started with Quarto\nQuarto Basics\n---\ntitle: \nsubtitle: \nauthor: \ndate: last-modified\n\nformat: \n  html:\n  \nexecute: \n  echo: true\n  eval: true\n---\n\nThe following syntax is part of YAML metadata in danl-310-quarto-r.qmd.\n\nIn YAML, indentation really matters!\ntab (or four spaces) defines a level in YAML."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#quarto-websites",
+    "href": "danl-lec/danl-310-lec-01-2025-0122.html#quarto-websites",
+    "title": "Lecture 1",
+    "section": "Quarto Websites",
+    "text": "Quarto Websites\n\nIn RStudio, open the project USERNAME.github.io.Rporj.\n\nClick Project: (None) at the top-right corner.\nClick USERNAME.github.io.Rporj.\n\nYour website has a _quarto.yml configuration file.\n\nThis file provides options for HTML documents within the website.\n\n\n\n\n---\nproject:\n  type: website\n\nwebsite:\n  title: \"YOUR NAME\"\n  navbar:\n    left:\n      - text: Project\n        href: project.qmd\n      - text: Blog\n        href: blog-listing.qmd\n\nformat:\n  html:\n    theme: cosmo\n    css: styles.css\n    toc: false\n---\n\nThe _quarto.yml file configures the website settings.\nIndentation matters!"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#quarto-websites-1",
+    "href": "danl-lec/danl-310-lec-01-2025-0122.html#quarto-websites-1",
+    "title": "Lecture 1",
+    "section": "Quarto Websites",
+    "text": "Quarto Websites\nCustom CSS\n\nCascading Style Sheets (CSS) is used to format the layout of a webpage (color, font, text size, background, display, etc.).\n\nHTML will format the architecture of the house.\nCSS will be the carpet and walls to decorate the house.\nJavaScript adds interactive elements in the house, such as opening doors and lighting.\n\nWe are not front-end web developers.\n\nWe will not cover the use of CSS and JavaScript."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#quarto-websites-2",
+    "href": "danl-lec/danl-310-lec-01-2025-0122.html#quarto-websites-2",
+    "title": "Lecture 1",
+    "section": "Quarto Websites",
+    "text": "Quarto Websites\nRendering\n\nThe Render button (command/Ctrl + shift + K) renders a single Quarto file.\nquarto render from Terminal renders all Quarto/Jupyter Notebook files in your local working directory:\n\nquarto render\n\nWe should use quarto render when we have changes in _quarto.yml.\nMake changes only from your local laptop.\n\nDo not make any change from the GitHub repo webpage."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#quarto-websites-3",
+    "href": "danl-lec/danl-310-lec-01-2025-0122.html#quarto-websites-3",
+    "title": "Lecture 1",
+    "section": "Quarto Websites",
+    "text": "Quarto Websites\nAdding *.ipynb to Quarto websites\n\nBy default, quarto render doesn’t execute any code in .ipynb notebooks.\nquarto render renders .ipynb notebooks, so that corresponding html files are rendered.\n\nIf we need to update cell outputs in *.ipynb, run that *.ipynb on Google Colab, and save the notebook."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#quarto-websites-4",
+    "href": "danl-lec/danl-310-lec-01-2025-0122.html#quarto-websites-4",
+    "title": "Lecture 1",
+    "section": "Quarto Websites",
+    "text": "Quarto Websites\nAppearance and Style\n\ntheme specifies the Bootstrap theme to use for the page (themes are drawn from the Bootswatch theme library).\n\nValid themes include default, bootstrap, cerulean, cosmo, darkly, flatly, journal, lumen, paper, readable, sandstone, simplex, spacelab, united, and yeti.\n\nhighlight-style specifies the code highlighting style.\n\nSupported styles include default, tango, pygments, kate, monochrome, espresso, zenburn, haddock, breezedark, and textmate."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#quarto-websites-5",
+    "href": "danl-lec/danl-310-lec-01-2025-0122.html#quarto-websites-5",
+    "title": "Lecture 1",
+    "section": "Quarto Websites",
+    "text": "Quarto Websites\nAbout\n\nYour index.qmd sets a page about you.\n\nDetails in about pages are available here:\nhttps://quarto.org/docs/websites/website-about.html.\n\nQuarto includes 5 built in templates:\n\njolla\ntrestles\nsolana\nmarquee\nbroadside"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#quarto-websites-6",
+    "href": "danl-lec/danl-310-lec-01-2025-0122.html#quarto-websites-6",
+    "title": "Lecture 1",
+    "section": "Quarto Websites",
+    "text": "Quarto Websites\nIcons and Emojis\n\nA ton of Bootstrap icons are available here:\n\nhttps://icons.getbootstrap.com.\n\nA ton of markdown emojis are available here 😄:\n\nhttps://github.com/ikatyang/emoji-cheat-sheet\nhttps://gist.github.com/rxaviers/7360908"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#quarto-websites-7",
+    "href": "danl-lec/danl-310-lec-01-2025-0122.html#quarto-websites-7",
+    "title": "Lecture 1",
+    "section": "Quarto Websites",
+    "text": "Quarto Websites\nNaviation and Adding Pages\n\nWe can add a new page to the website through navbar in _quarto.yml\n\nleft:\n- text: Project\n  href: project.qmd\n- text: Blog\n  href: blog-listing.qmd\n- text: Homeowrk\n  href: hw.qmd"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#quarto-websites-8",
+    "href": "danl-lec/danl-310-lec-01-2025-0122.html#quarto-websites-8",
+    "title": "Lecture 1",
+    "section": "Quarto Websites",
+    "text": "Quarto Websites\nNaviation and Adding Pages\n\nWe can also create a navigation bar menu by including a menu\n\nleft:\n  - text: \"Projects\"\n    menu:\n      - project_1.qmd\n      - project_2.qmd \n\nMore details about navbar are available here:\n\nhttps://quarto.org/docs/websites/website-navigation.html"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#quarto-websites-9",
+    "href": "danl-lec/danl-310-lec-01-2025-0122.html#quarto-websites-9",
+    "title": "Lecture 1",
+    "section": "Quarto Websites",
+    "text": "Quarto Websites\nColors\n\nA ton of hex codes for colors are available here:\n\nhttps://www.color-hex.com"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#quarto-website-basics",
+    "href": "danl-lec/danl-310-lec-01-2025-0122.html#quarto-website-basics",
+    "title": "Lecture 1",
+    "section": "Quarto Website Basics",
+    "text": "Quarto Website Basics\n\nLet’s do Classwork 3."
   }
 ]
