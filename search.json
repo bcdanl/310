@@ -60,7 +60,7 @@
     "href": "index.html#bullet-lecture-slides",
     "title": "DANL 310-01: Data Visualization and Presentation, Spring 2025",
     "section": "\\(\\bullet\\,\\) Lecture Slides 🚀",
-    "text": "\\(\\bullet\\,\\) Lecture Slides 🚀\n\n\n\n\n\n\nTitle\n\n\nDate\n\n\n\n\n\n\nLecture 2\n\n\nJanuary 27, 2025\n\n\n\n\nLecture 1\n\n\nJanuary 22, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "\\(\\bullet\\,\\) Lecture Slides 🚀\n\n\n\n\n\n\nTitle\n\n\nDate\n\n\n\n\n\n\nLecture 3\n\n\nJanuary 29, 2025\n\n\n\n\nLecture 2\n\n\nJanuary 27, 2025\n\n\n\n\nLecture 1\n\n\nJanuary 22, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html#bullet-classwork",
@@ -116,7 +116,7 @@
     "href": "danl-cw/danl-310-cw-01.html",
     "title": "Classwork 1",
     "section": "",
-    "text": "Getting a GitHub account\nStep 1. Create the GitHub account with your Geneseo email.\n\nGo to GitHub.\nClick “Sign up for GitHub”.\n\n\nChoose your GitHub username carefully:\n\nhttps://USERNAME.github.io will be the address for your website.\nByeong-Hak’s GitHub username is bcdanl, so that Byeong-Hak owns the web address https://bcdanl.github.io.\n\nIt is recommended to have a username with all lower cases.\n\n\n\n\n\nInstalling git if you do not have one.\nStep 2.\n\nCheck whether git is installed in your laptop.\n\n\nFrom the Console Pane in RStudio, click Terminal tab.\n\n\n\n\n\nFrom the Terminal, run the following command to check if your laptop has git installed.\n\ngit --version\n\nIf your computer has git installed, you will see the message below and you do not need to install git:\n\ngit version 2.xx\n\nIf your computer does not have git installed, you will see the message below and you need to install git:\n\n'git' is not recognized as an internal or external command\n\n\nInstall git if you do not have one. Move to the next step if you have git installed in your laptop.\n\n\n\n\nMac\n\nGo to http://git-scm.com/downloads, and download the file.\nClick “macOS”, scroll down the webpage, and then click “installer” from the Binary installer section.\nRun the downloaded file.\n\n\n\n\nWindows\n\nGo to https://gitforwindows.org, and download the file.\nRun the downloaded file.\n\n\n\n\n\nKeep clicking “Next” to complete the installation of git.\nAfter the git installation is done, close RStudio and re-open it.\n\n\nHow to open git installation file on Mac?\n\nRun the downloaded file.\nClick Okay\nGo to “Setting” &gt; “Privacy and Security”\nGo to “General” or scroll down\nClick “Open Anyway”\n\n\n\n\n\n\n\n\nSetting up GitHub Credential on your local Git.\nStep 3. In Terminal, run the following commands one by one:\ngit config --global user.email \"YOUR_EMAIL_ADDRESS\"\ngit config --global user.name \"YOUR_USERNAME\"\nFor example, the email address for my GitHub account is bchoe@geneseo.edu, and my GitHub username is bcdanl, so that I ran below:\ngit config --global user.email \"bchoe@geneseo.edu\"\ngit config --global user.name \"bcdanl\"\n\nStep 4. Obtain a personal access token (PAT) from GitHub.\n\nIn RStudio Console, run the followings line by line:\n\ninstall.packages(\"usethis\")\nusethis::create_github_token()\n\nThen, click “Generate token” in the pop-upped web browser.\nWe can think of GitHub’s personal access token as a password that expires. You can decide how long it remains valid. My recommendation is to set its expiration for May 31, 2024, or later.\n\n\n\n\n\nThen, copy the generated PAT, and paste it to your clipboard or R script.\n\n\nStep 5. Set the GitHub credential using the PAT.\n\nIn RStudio Console, run the followings line by line:\n\ninstall.packages(\"gitcreds\")\ngitcreds::gitcreds_set()\n\nYou will be asked to provide your PAT.\nPaste your PAT to the RStudio Console, and then hit Enter.\n\n\n\n\n\n\n\nNote\n\n\n\n\nIt does not harm to create multiple PAT for one GitHub account.\nAfter the PAT expires, you should repeat the following if you want to update your GitHub website:\n\n\nCreate a new PAT:\n\nusethis::create_github_token()\n\nReplace the current PAT with the new PAT:\n\ngitcreds::gitcreds_set()\n\nSelect the option 2: Replace these credentials by typing 2 and hitting Enter on R Console.\n\n\n\n\n\n\nEstablishing the Connection between GitHub repo and your local Git\nStep 6. Login to your GitHib and make the repository.\n\nFrom https://github.com, click the plus [+] icon in the upper right corner and select “New repository”.\nName this repo USERNAME.github.io, which will be the domain for your website.\n\n\ne.g., If your GitHub username is abc9, the name of your repo should be abc9.github.io, not abc_9.github.io.\n\n\nThen, copy the web address of your GitHub repo, https://github.com/USERNAME/USERNAME.github.io\n\n\nFor example, the web address for Byeong-Hak’s GitHub repo is https://github.com/bcdanl/bcdanl.github.io.\n\n\nStep 7. Create a RStudio project with Version Control\n\n\n\n\nClick “Project (None)” at the top-right corner in RStudio.\nClick “New Project” &gt; “Version Control” &gt; “Git”\nPaste the web address of your GitHub repo to the Repository URL menu.\nClick “Browse” to select the parent directory for your local project directory (I recommend “Documents” folder.)\nClick “Create”\n\n\n\n\n\n\n\nNote\n\n\n\nIf Step 7 does not work on your laptop, try below Steps 7-1 and 7-2 instead. If Step 7 DOES work well, skip Steps 7-1 and 7-2.\n\n\nStep 7-1. Use git clone to establish the connection between GitHub repo and your local laptop:\n\nChange directory to “Documents” in Terminal using cd command.\n\ncd &lt;pathname of \"Documents\" directory&gt;\n\nHere, you need to know the pathname of “Documents” directory.\nFor example, LAPTOP_USERNAME below is not your GitHub username but one for your local laptop.\n\nMac\ncd /Users/LAPTOP_USERNAME/Documents\nWindows\ncd C:/Users/LAPTOP_USERNAME/Documents\n\nUse git clone to creates a local copy of the GitHub Repository.\n\ngit clone &lt;repository-url&gt;\n\nFor example,\n\ngit clone https://github.com/USERNAME/USERNAME.github.io\n\nStep 7-2. Create a RStudio project from Existing Directory\n\nClick “Project (None)” at the top-right corner in RStudio.\nClick “New Project” &gt; “Existing Directory”\nClick “Browse” to select the local copy of the GitHub Repository\nClick “Create Project”\n\n\n\n\nDownloading Website Template Files\nStep 8. Download the files of website template:\n\nGo to the following webpage: https://github.com/bcdanl/danl-website-template\nFrom the webpage above, click the green icon &lt; &gt; Code, and then click “Download Zip”\nExtract the Zip file you have downloaded\nIf there are the files, .gitignore, .DS_Store, or *.Rproj, in the folder, delete all of them.\nMove all the files that were compressed in the Zip file to your local project directory, USERNAME.github.io.\n\n\nSelect all the files in the danl-website-template folder (Tip: Ctrl + A (Windows) / command + A (Mac) selects all files in a directory).\nThen, Ctrl + C (Windows) / command + C (Mac) to copy them.\nThen, go to your local project directory USERNAME.github.io.\nThen, Ctrl + V (Windows) / command + V (Mac) to paste them to your local project directory USERNAME.github.io.\n\n\nRemove the danl-website-template directory from your local project directory, if you have one.\n\n\nAll the website files should be located at the same level with the R Project file (USERNAME.github.io.Rproj), shown below.\n\n\n\n\n\n\n\nPushing the Website Files to the GitHub repository\n\n\n\nStep 8. Push the files to your GitHub repository\n\nOn Terminal within RStudio, execute the following 3-step git commands, which will stage, commit, and push all the files in the local working directory to your GitHub repository:\n\n\ngit add . adds changes in your local working directory (e.g., edited files, new files, deleted files) to the staging area, which is a temporary area where you can prepare your next commit\n\ngit add .\n\ngit commit -m \"...\" records the changes in the staging area as a new snapshot in the local working directory, along with a message describing the changes.\n\ngit commit -m \"any message to describe the changes\"\n\ngit push uploads the local changes to the online repository in GitHub.\n\ngit push\n\nStep 9. Check whether the files are well uploaded.\n\nGo to the webpages of your GitHub repository and your website:\n\nhttps://github.com/USERNAME/USERNAME.github.io.git\nhttps://USERNAME.github.io\nRefresh the webpages (Ctrl + R for Windows users; cmd + R for Mac users)\n\nAdd a URL for your website (https://YOUR_GITHUB_USERNAME.github.io/) in About section in your GihtHub repository webpage by clicking the setting. Below describes how to do it:\n\n\n\n\nDiscussion\nWelcome to our Classwork 1 Discussion Board! 👋 \nThis space is designed for you to engage with your classmates about the material covered in Classwork 1.\nWhether you are looking to delve deeper into the content, share insights, or have questions about the content, this is the perfect place for you.\nIf you have any specific questions for Byeong-Hak (@bcdanl) regarding the Classwork 1 materials or need clarification on any points, don’t hesitate to ask here.\nLet’s collaborate and learn from each other!\n\n\n\n\n Back to top"
+    "text": "Getting a GitHub account\nStep 1. Create the GitHub account with your Geneseo email.\n\nGo to GitHub.\nClick “Sign up for GitHub”.\n\n\nChoose your GitHub username carefully:\n\nhttps://USERNAME.github.io will be the address for your website.\nByeong-Hak’s GitHub username is bcdanl, so that Byeong-Hak owns the web address https://bcdanl.github.io.\n\nIt is recommended to have a username with all lower cases.\n\n\n\n\n\nInstalling git if you do not have one.\nStep 2.\n\nCheck whether git is installed in your laptop.\n\n\nFrom the Console Pane in RStudio, click Terminal tab.\n\n\n\n\n\nFrom the Terminal, run the following command to check if your laptop has git installed.\n\ngit --version\n\nIf your computer has git installed, you will see the message below and you do not need to install git:\n\ngit version 2.xx\n\nIf your computer does not have git installed, you will see the message below and you need to install git:\n\n'git' is not recognized as an internal or external command\n\n\nInstall git if you do not have one. Move to the next step if you have git installed in your laptop.\n\n\n\n\nMac\n\nGo to http://git-scm.com/downloads, and download the file.\nClick “macOS”, scroll down the webpage, and then click “installer” from the Binary installer section.\nRun the downloaded file.\n\n\n\n\nWindows\n\nGo to https://gitforwindows.org, and download the file.\nRun the downloaded file.\n\n\n\n\n\nKeep clicking “Next” to complete the installation of git.\nAfter the git installation is done, close RStudio and re-open it.\n\n\nHow to open git installation file on Mac?\n\nRun the downloaded file.\nClick Okay\nGo to “Setting” &gt; “Privacy and Security”\nGo to “General” or scroll down\nClick “Open Anyway”\n\n\n\n\n\n\n\n\nSetting up GitHub Credential on your local Git.\nStep 3. In Terminal, run the following commands one by one:\ngit config --global user.email \"YOUR_EMAIL_ADDRESS\"\ngit config --global user.name \"YOUR_USERNAME\"\nFor example, the email address for my GitHub account is bchoe@geneseo.edu, and my GitHub username is bcdanl, so that I ran below:\ngit config --global user.email \"bchoe@geneseo.edu\"\ngit config --global user.name \"bcdanl\"\n\nStep 4. Obtain a personal access token (PAT) from GitHub.\n\nIn RStudio Console, run the followings line by line:\n\ninstall.packages(\"usethis\")\nusethis::create_github_token()\n\nThen, click “Generate token” in the pop-upped web browser.\nWe can think of GitHub’s personal access token as a password that expires. You can decide how long it remains valid. My recommendation is to set its expiration for May 31, 2025, or later.\n\n\n\n\n\nThen, copy the generated PAT, and paste it to your clipboard or R script.\n\n\nStep 5. Set the GitHub credential using the PAT.\n\nIn RStudio Console, run the followings line by line:\n\ninstall.packages(\"gitcreds\")\ngitcreds::gitcreds_set()\n\nYou will be asked to provide your PAT.\nPaste your PAT to the RStudio Console, and then hit Enter.\n\n\n\n\n\n\n\nNote\n\n\n\n\nIt does not harm to create multiple PAT for one GitHub account.\nAfter the PAT expires, you should repeat the following if you want to update your GitHub website:\n\n\nCreate a new PAT:\n\nusethis::create_github_token()\n\nReplace the current PAT with the new PAT:\n\ngitcreds::gitcreds_set()\n\nSelect the option 2: Replace these credentials by typing 2 and hitting Enter on R Console.\n\n\n\n\n\n\nEstablishing the Connection between GitHub repo and your local Git\nStep 6. Login to your GitHib and make the repository.\n\nFrom https://github.com, click the plus [+] icon in the upper right corner and select “New repository”.\nName this repo USERNAME.github.io, which will be the domain for your website.\n\n\ne.g., If your GitHub username is abc9, the name of your repo should be abc9.github.io, not abc_9.github.io.\n\n\nThen, copy the web address of your GitHub repo, https://github.com/USERNAME/USERNAME.github.io\n\n\nFor example, the web address for Byeong-Hak’s GitHub repo is https://github.com/bcdanl/bcdanl.github.io.\n\n\nStep 7. Create a RStudio project with Version Control\n\n\n\n\nClick “Project (None)” at the top-right corner in RStudio.\nClick “New Project” &gt; “Version Control” &gt; “Git”\nPaste the web address of your GitHub repo to the Repository URL menu.\nClick “Browse” to select the parent directory for your local project directory (I recommend “Documents” folder.)\nClick “Create”\n\n\n\n\n\n\n\nNote\n\n\n\nIf Step 7 does not work on your laptop, try below Steps 7-1 and 7-2 instead. If Step 7 DOES work well, skip Steps 7-1 and 7-2.\n\n\nStep 7-1. Use git clone to establish the connection between GitHub repo and your local laptop:\n\nChange directory to “Documents” in Terminal using cd command.\n\ncd &lt;pathname of \"Documents\" directory&gt;\n\nHere, you need to know the pathname of “Documents” directory.\nFor example, LAPTOP_USERNAME below is not your GitHub username but one for your local laptop.\n\nMac\ncd /Users/LAPTOP_USERNAME/Documents\nWindows\ncd C:/Users/LAPTOP_USERNAME/Documents\n\nUse git clone to creates a local copy of the GitHub Repository.\n\ngit clone &lt;repository-url&gt;\n\nFor example,\n\ngit clone https://github.com/USERNAME/USERNAME.github.io\n\nStep 7-2. Create a RStudio project from Existing Directory\n\nClick “Project (None)” at the top-right corner in RStudio.\nClick “New Project” &gt; “Existing Directory”\nClick “Browse” to select the local copy of the GitHub Repository\nClick “Create Project”\n\n\n\n\nDownloading Website Template Files\nStep 8. Download the files of website template:\n\nGo to the following webpage: https://github.com/bcdanl/danl-website-template\nFrom the webpage above, click the green icon &lt; &gt; Code, and then click “Download Zip”\nExtract the Zip file you have downloaded\nIf there are the files, .gitignore, .DS_Store, or *.Rproj, in the folder, delete all of them.\nMove all the files that were compressed in the Zip file to your local project directory, USERNAME.github.io.\n\n\nSelect all the files in the danl-website-template folder (Tip: Ctrl + A (Windows) / command + A (Mac) selects all files in a directory).\nThen, Ctrl + C (Windows) / command + C (Mac) to copy them.\nThen, go to your local project directory USERNAME.github.io.\nThen, Ctrl + V (Windows) / command + V (Mac) to paste them to your local project directory USERNAME.github.io.\n\n\nRemove the danl-website-template directory from your local project directory, if you have one.\n\n\nAll the website files should be located at the same level with the R Project file (USERNAME.github.io.Rproj), shown below.\n\n\n\n\n\n\n\nPushing the Website Files to the GitHub repository\n\n\n\nStep 8. Push the files to your GitHub repository\n\nOn Terminal within RStudio, execute the following 3-step git commands, which will stage, commit, and push all the files in the local working directory to your GitHub repository:\n\n\ngit add . adds changes in your local working directory (e.g., edited files, new files, deleted files) to the staging area, which is a temporary area where you can prepare your next commit\n\ngit add .\n\ngit commit -m \"...\" records the changes in the staging area as a new snapshot in the local working directory, along with a message describing the changes.\n\ngit commit -m \"any message to describe the changes\"\n\ngit push uploads the local changes to the online repository in GitHub.\n\ngit push\n\nStep 9. Check whether the files are well uploaded.\n\nGo to the webpages of your GitHub repository and your website:\n\nhttps://github.com/USERNAME/USERNAME.github.io.git\nhttps://USERNAME.github.io\nRefresh the webpages (Ctrl + R for Windows users; cmd + R for Mac users)\n\nAdd a URL for your website (https://YOUR_GITHUB_USERNAME.github.io/) in About section in your GihtHub repository webpage by clicking the setting. Below describes how to do it:\n\n\n\n\nDiscussion\nWelcome to our Classwork 1 Discussion Board! 👋 \nThis space is designed for you to engage with your classmates about the material covered in Classwork 1.\nWhether you are looking to delve deeper into the content, share insights, or have questions about the content, this is the perfect place for you.\nIf you have any specific questions for Byeong-Hak (@bcdanl) regarding the Classwork 1 materials or need clarification on any points, don’t hesitate to ask here.\nLet’s collaborate and learn from each other!\n\n\n\n\n Back to top"
   },
   {
     "objectID": "posts/beer-markets/beer-markets.html",
@@ -158,7 +158,7 @@
     "href": "listing-danl-310-lec.html",
     "title": "DANL 310 - Lecture",
     "section": "",
-    "text": "Title\n\n\nSubtitle\n\n\nDate\n\n\n\n\n\n\nLecture 1\n\n\nSyllabus, Course Outline, and Introduction\n\n\nJanuary 22, 2025\n\n\n\n\nLecture 2\n\n\nGetting Started with Quarto\n\n\nJanuary 27, 2025\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+    "text": "Title\n\n\nSubtitle\n\n\nDate\n\n\n\n\n\n\nLecture 1\n\n\nSyllabus, Course Outline, and Introduction\n\n\nJanuary 22, 2025\n\n\n\n\nLecture 2\n\n\nGetting Started with Quarto\n\n\nJanuary 27, 2025\n\n\n\n\nLecture 3\n\n\nMake a plot with ggplot\n\n\nJanuary 29, 2025\n\n\n\n\n\n\nNo matching items\n\n Back to top"
   },
   {
     "objectID": "danl-lec/danl-310-lec-01-2025-0122.html#instructor-1",
@@ -697,14 +697,14 @@
     "href": "danl-cw/danl-310-cw-02.html",
     "title": "Classwork 2",
     "section": "",
-    "text": "Markdown is a lightweight markup language with plain-text formatting syntax. Its main goal is to be readable and easy to write, even when viewed as plain text. Markdown is widely used for creating formatted text on the web and in various applications such as Quarto.\n\n\n\n\nHeadings are created by adding one or more # symbols before your heading text. The number of # symbols indicates the level of the heading.\n# Heading 1\n## Heading 2\n### Heading 3\n\n\n\nYou can make text bold by wrapping it with two asterisks **, and italic by using one asterisk *.\n*italic* or _italic_\n**bold** or __bold__\n\n\n\nUnordered lists are created using *, -, or +, while ordered lists are numbered.\n- Item 1\n- Item 2\n  - Subitem 2.1\n  - Subitem 2.2\n1. First item\n2. Second item\n\n\n\nLinks are created using [Link Text](URL)\n[DANL 210](https://bcdanl.github.io/210)\n\n\n\nImages are created using ![Alt Text](Image URL).\n![Geneseo Logo](https://bcdanl.github.io/img/geneseo-logo.gif)\n\n\n\n\n\n\n&gt; Be yourself. Everyone else is already taken. - Oscar Wilde.\n\n\n\n\nA ton of markdown emojis are available here 😄 (:smile:)\n\nhttps://github.com/ikatyang/emoji-cheat-sheet\n\n\n\n\n\nCode blocks are created by using triple backticks (```). Optionally, you can specify the language for syntax highlighting.\n```\n\"string\"\n```\n```python\n# Python code block\nimport numpy as np\n```\n\n\n\n\n\nDo the following tasks on this Classwork 2 Discussion Board:\n\nBasic Syntax: Write a comment with a heading, an unordered list, an ordered list, a link, and an image.\nAdvanced Syntax: Write a comment that includes a Python code block, a blockquote, and an emoji.\n\n\n\n\n\n\nQuarto Markdown Basics\nStart writing on GitHub"
+    "text": "Markdown is a lightweight markup language with plain-text formatting syntax. Its main goal is to be readable and easy to write, even when viewed as plain text. Markdown is widely used for creating formatted text on the web and in various applications such as Quarto.\n\n\n\n\nHeadings are created by adding one or more # symbols before your heading text. The number of # symbols indicates the level of the heading.\n# Heading 1\n## Heading 2\n### Heading 3\n\n\n\nYou can make text bold by wrapping it with two asterisks **, and italic by using one asterisk *.\n*italic* or _italic_\n**bold** or __bold__\n\n\n\nUnordered lists are created using *, -, or +, while ordered lists are numbered.\n- Item 1\n- Item 2\n  - Subitem 2.1\n  - Subitem 2.2\n1. First item\n2. Second item\n\n\n\nLinks are created using [Link Text](URL)\n[DANL 310](https://bcdanl.github.io/310)\n\n\n\nImages are created using ![Alt Text](Image URL).\n![Geneseo Logo](https://bcdanl.github.io/img/geneseo-logo.gif)\n\n\n\n\n\n\n&gt; Be yourself. Everyone else is already taken. - Oscar Wilde.\n\n\n\n\nA ton of markdown emojis are available here 😄 (:smile:)\n\nhttps://github.com/ikatyang/emoji-cheat-sheet\n\n\n\n\n\nCode blocks are created by using triple backticks (```). Optionally, you can specify the language for syntax highlighting.\n```\n\"string\"\n```\n```python\n# Python code block\nimport numpy as np\n```\n\n\n\n\n\nDo the following tasks on this Classwork 2 Discussion Board:\n\nBasic Syntax: Write a comment with a heading, an unordered list, an ordered list, a link, and an image.\nAdvanced Syntax: Write a comment that includes a Python code block, a blockquote, and an emoji.\n\n\n\n\n\n\nQuarto Markdown Basics\nStart writing on GitHub"
   },
   {
     "objectID": "danl-cw/danl-310-cw-02.html#basic-syntax",
     "href": "danl-cw/danl-310-cw-02.html#basic-syntax",
     "title": "Classwork 2",
     "section": "",
-    "text": "Headings are created by adding one or more # symbols before your heading text. The number of # symbols indicates the level of the heading.\n# Heading 1\n## Heading 2\n### Heading 3\n\n\n\nYou can make text bold by wrapping it with two asterisks **, and italic by using one asterisk *.\n*italic* or _italic_\n**bold** or __bold__\n\n\n\nUnordered lists are created using *, -, or +, while ordered lists are numbered.\n- Item 1\n- Item 2\n  - Subitem 2.1\n  - Subitem 2.2\n1. First item\n2. Second item\n\n\n\nLinks are created using [Link Text](URL)\n[DANL 210](https://bcdanl.github.io/210)\n\n\n\nImages are created using ![Alt Text](Image URL).\n![Geneseo Logo](https://bcdanl.github.io/img/geneseo-logo.gif)"
+    "text": "Headings are created by adding one or more # symbols before your heading text. The number of # symbols indicates the level of the heading.\n# Heading 1\n## Heading 2\n### Heading 3\n\n\n\nYou can make text bold by wrapping it with two asterisks **, and italic by using one asterisk *.\n*italic* or _italic_\n**bold** or __bold__\n\n\n\nUnordered lists are created using *, -, or +, while ordered lists are numbered.\n- Item 1\n- Item 2\n  - Subitem 2.1\n  - Subitem 2.2\n1. First item\n2. Second item\n\n\n\nLinks are created using [Link Text](URL)\n[DANL 310](https://bcdanl.github.io/310)\n\n\n\nImages are created using ![Alt Text](Image URL).\n![Geneseo Logo](https://bcdanl.github.io/img/geneseo-logo.gif)"
   },
   {
     "objectID": "danl-cw/danl-310-cw-02.html#advanced-syntax",
@@ -991,7 +991,7 @@
     "href": "danl-lec/danl-310-lec-02-2025-0127.html#getting-started-with-quarto-2",
     "title": "Lecture 2",
     "section": "Getting Started with Quarto",
-    "text": "Getting Started with Quarto\nKnitting / Rendering\n\nWhen we knit the document, Quarto sends the .qmd file to jupyter/knitr, which executes all of the code chunks and creates a new markdown (.md) document which includes the code and its output.\nThe markdown file (*.md) generated by jupyter/knitr is then processed by pandoc, which is responsible for creating the output file."
+    "text": "Getting Started with Quarto\nKnitting / Rendering\n\n\nWhen we knit the document, Quarto sends the .qmd file to jupyter/knitr, which executes all of the code chunks and creates a new markdown (.md) document which includes the code and its output.\nThe markdown file (*.md) generated by jupyter/knitr is then processed by pandoc, which is responsible for creating the output file."
   },
   {
     "objectID": "danl-lec/danl-310-lec-02-2025-0127.html#getting-started-with-quarto-3",
@@ -1005,7 +1005,7 @@
     "href": "danl-lec/danl-310-lec-02-2025-0127.html#getting-started-with-quarto-and-html",
     "title": "Lecture 2",
     "section": "Getting Started with Quarto and HTML",
-    "text": "Getting Started with Quarto and HTML\nMarkdown, Quarto, and HTML\n---\ntitle: \"Habits\"\nauthor: YOUR_NAME\ndate: January 30, 2024\nformat: \n  html\n---\n\nTo create an HTML document from Quarto, we specify the html output format in the YAML metadata of our document.\n\nBy default, format: html is set.\n\nIn RStudio, we can create a new Quarto file from the menu, File -&gt; New File -&gt; Quarto Document.\nOpen an empty Quarto file.\n\nType the following YAML metadata to the empty Quarto file."
+    "text": "Getting Started with Quarto and HTML\nMarkdown, Quarto, and HTML\n---\ntitle: \"Habits\"\nauthor: YOUR_NAME\ndate: January 27, 2025\nformat: \n  html\n---\n\nTo create an HTML document from Quarto, we specify the html output format in the YAML metadata of our document.\n\nBy default, format: html is set.\n\nIn RStudio, we can create a new Quarto file from the menu, File -&gt; New File -&gt; Quarto Document.\nOpen an empty Quarto file.\n\nType the above YAML metadata to the empty Quarto file."
   },
   {
     "objectID": "danl-lec/danl-310-lec-02-2025-0127.html#getting-started-with-quarto-4",
@@ -1019,14 +1019,14 @@
     "href": "danl-lec/danl-310-lec-02-2025-0127.html#getting-started-with-quarto-5",
     "title": "Lecture 2",
     "section": "Getting Started with Quarto",
-    "text": "Getting Started with Quarto\nQuarto Basics\n---\ntitle: \nsubtitle: \nauthor: \ndate: last-modified\n\nformat: \n  html:\n  \nexecute: \n  echo: true\n  eval: true\n---\n\nThe following syntax is part of YAML metadata in danl-310-quarto-r.qmd.\n\nIn YAML, indentation really matters!\ntab (or four spaces) defines a level in YAML."
+    "text": "Getting Started with Quarto\nQuarto Basics\n---\ntitle: \nsubtitle: \nauthor: \ndate: last-modified\n\nformat: \n  html:\n  \nexecute: \n  echo: true\n  eval: true\n---\n\nThe above syntax is part of YAML metadata in danl-310-quarto-r.qmd.\n\nIn YAML, indentation really matters!\ntab (or four spaces) defines a level in YAML."
   },
   {
     "objectID": "danl-lec/danl-310-lec-02-2025-0127.html#quarto-websites",
     "href": "danl-lec/danl-310-lec-02-2025-0127.html#quarto-websites",
     "title": "Lecture 2",
     "section": "Quarto Websites",
-    "text": "Quarto Websites\n\nIn RStudio, open the project USERNAME.github.io.Rporj.\n\nClick Project: (None) at the top-right corner.\nClick USERNAME.github.io.Rporj.\n\nYour website has a _quarto.yml configuration file.\n\nThis file provides options for HTML documents within the website.\n\n\n\n\n---\nproject:\n  type: website\n\nwebsite:\n  title: \"YOUR NAME\"\n  navbar:\n    left:\n      - text: Project\n        href: project.qmd\n      - text: Blog\n        href: blog-listing.qmd\n\nformat:\n  html:\n    theme: cosmo\n    css: styles.css\n    toc: false\n---\n\nThe _quarto.yml file configures the website settings.\nIndentation matters!"
+    "text": "Quarto Websites\n\n\n---\nproject:\n  type: website\n\nwebsite:\n  title: \"YOUR NAME\"\n  navbar:\n    left:\n      - text: Project\n        href: project.qmd\n      - text: Blog\n        href: blog-listing.qmd\n\nformat:\n  html:\n    theme: cosmo\n    css: styles.css\n    toc: false\n---\n\nThe _quarto.yml file configures the website settings.\nIndentation matters!\n\n\n\n\nIn RStudio, open the project USERNAME.github.io.Rporj.\n\nClick Project: (None) at the top-right corner.\nClick USERNAME.github.io.Rporj.\n\n_quarto.yml configures a website, and provides various options for HTML documents within the website."
   },
   {
     "objectID": "danl-lec/danl-310-lec-02-2025-0127.html#quarto-websites-1",
@@ -1040,49 +1040,49 @@
     "href": "danl-lec/danl-310-lec-02-2025-0127.html#quarto-websites-2",
     "title": "Lecture 2",
     "section": "Quarto Websites",
-    "text": "Quarto Websites\nRendering\n\nThe Render button (command/Ctrl + shift + K) renders a single Quarto file.\nquarto render from Terminal renders all Quarto/Jupyter Notebook files in your local working directory:\n\nquarto render\n\nWe should use quarto render when we have changes in _quarto.yml.\nMake changes only from your local laptop.\n\nDo not make any change from the GitHub repo webpage."
+    "text": "Quarto Websites\nRendering\n\n\nThe Render button (command/Ctrl + shift + K) renders a single Quarto file.\nquarto render from Terminal renders all Quarto/Jupyter Notebook files in your local working directory:\n\nquarto render\n\nWe should use quarto render when we have changes in _quarto.yml.\n\n\n\nEdit _quarto.yml and *.qmd only from your local laptop.\n\nDo not make any change in those files from the GitHub repo webpage."
   },
   {
     "objectID": "danl-lec/danl-310-lec-02-2025-0127.html#quarto-websites-3",
     "href": "danl-lec/danl-310-lec-02-2025-0127.html#quarto-websites-3",
     "title": "Lecture 2",
     "section": "Quarto Websites",
-    "text": "Quarto Websites\nAdding *.ipynb to Quarto websites\n\nBy default, quarto render doesn’t execute any code in .ipynb notebooks.\nquarto render renders .ipynb notebooks, so that corresponding html files are rendered.\n\nIf we need to update cell outputs in *.ipynb, run that *.ipynb on Google Colab, and save the notebook."
+    "text": "Quarto Websites\nAppearance and Style\n\ntheme specifies the Bootstrap theme to use for the page (themes are drawn from the Bootswatch theme library).\n\nValid themes include default, bootstrap, cerulean, cosmo, darkly, flatly, journal, lumen, paper, readable, sandstone, simplex, spacelab, united, and yeti.\n\nhighlight-style specifies the code highlighting style.\n\nSupported styles include default, tango, pygments, kate, monochrome, espresso, zenburn, haddock, breezedark, and textmate."
   },
   {
     "objectID": "danl-lec/danl-310-lec-02-2025-0127.html#quarto-websites-4",
     "href": "danl-lec/danl-310-lec-02-2025-0127.html#quarto-websites-4",
     "title": "Lecture 2",
     "section": "Quarto Websites",
-    "text": "Quarto Websites\nAppearance and Style\n\ntheme specifies the Bootstrap theme to use for the page (themes are drawn from the Bootswatch theme library).\n\nValid themes include default, bootstrap, cerulean, cosmo, darkly, flatly, journal, lumen, paper, readable, sandstone, simplex, spacelab, united, and yeti.\n\nhighlight-style specifies the code highlighting style.\n\nSupported styles include default, tango, pygments, kate, monochrome, espresso, zenburn, haddock, breezedark, and textmate."
+    "text": "Quarto Websites\nAbout\n\nYour index.qmd sets a page about you.\n\nDetails in about pages are available here:\nhttps://quarto.org/docs/websites/website-about.html.\n\nQuarto includes 5 built in templates:\n\njolla\ntrestles\nsolana\nmarquee\nbroadside"
   },
   {
     "objectID": "danl-lec/danl-310-lec-02-2025-0127.html#quarto-websites-5",
     "href": "danl-lec/danl-310-lec-02-2025-0127.html#quarto-websites-5",
     "title": "Lecture 2",
     "section": "Quarto Websites",
-    "text": "Quarto Websites\nAbout\n\nYour index.qmd sets a page about you.\n\nDetails in about pages are available here:\nhttps://quarto.org/docs/websites/website-about.html.\n\nQuarto includes 5 built in templates:\n\njolla\ntrestles\nsolana\nmarquee\nbroadside"
+    "text": "Quarto Websites\nIcons and Emojis\n\nA ton of Bootstrap icons are available here:\n\nhttps://icons.getbootstrap.com.\n\nA ton of markdown emojis are available here 😄:\n\nhttps://github.com/ikatyang/emoji-cheat-sheet\nhttps://gist.github.com/rxaviers/7360908"
   },
   {
     "objectID": "danl-lec/danl-310-lec-02-2025-0127.html#quarto-websites-6",
     "href": "danl-lec/danl-310-lec-02-2025-0127.html#quarto-websites-6",
     "title": "Lecture 2",
     "section": "Quarto Websites",
-    "text": "Quarto Websites\nIcons and Emojis\n\nA ton of Bootstrap icons are available here:\n\nhttps://icons.getbootstrap.com.\n\nA ton of markdown emojis are available here 😄:\n\nhttps://github.com/ikatyang/emoji-cheat-sheet\nhttps://gist.github.com/rxaviers/7360908"
+    "text": "Quarto Websites\nNaviation and Adding Pages\nleft:\n- text: Project\n  href: project.qmd\n- text: Blog\n  href: blog-listing.qmd\n- text: Homeowrk\n  href: hw.qmd\n\nWe can add a new page to the website through navbar in _quarto.yml"
   },
   {
     "objectID": "danl-lec/danl-310-lec-02-2025-0127.html#quarto-websites-7",
     "href": "danl-lec/danl-310-lec-02-2025-0127.html#quarto-websites-7",
     "title": "Lecture 2",
     "section": "Quarto Websites",
-    "text": "Quarto Websites\nNaviation and Adding Pages\n\nWe can add a new page to the website through navbar in _quarto.yml\n\nleft:\n- text: Project\n  href: project.qmd\n- text: Blog\n  href: blog-listing.qmd\n- text: Homeowrk\n  href: hw.qmd"
+    "text": "Quarto Websites\nNaviation and Adding Pages\nleft:\n  - text: \"Projects\"\n    menu:\n      - project_1.qmd\n      - project_2.qmd \n\nWe can also create a navigation bar menu by including a menu\nMore details about navbar are available here:\n\nhttps://quarto.org/docs/websites/website-navigation.html"
   },
   {
     "objectID": "danl-lec/danl-310-lec-02-2025-0127.html#quarto-websites-8",
     "href": "danl-lec/danl-310-lec-02-2025-0127.html#quarto-websites-8",
     "title": "Lecture 2",
     "section": "Quarto Websites",
-    "text": "Quarto Websites\nNaviation and Adding Pages\n\nWe can also create a navigation bar menu by including a menu\n\nleft:\n  - text: \"Projects\"\n    menu:\n      - project_1.qmd\n      - project_2.qmd \n\nMore details about navbar are available here:\n\nhttps://quarto.org/docs/websites/website-navigation.html"
+    "text": "Quarto Websites\nColors\n\nA ton of hex codes for colors are available here:\n\nhttps://www.color-hex.com"
   },
   {
     "objectID": "danl-lec/danl-310-lec-02-2025-0127.html#quarto-websites-9",
@@ -1097,5 +1097,278 @@
     "title": "Lecture 2",
     "section": "Quarto Website Basics",
     "text": "Quarto Website Basics\n\nLet’s do Classwork 3."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot",
+    "title": "Lecture 3",
+    "section": "Make a plot",
+    "text": "Make a plot\nggplot Themes\n\nUse theme() if you want to tweak the display of an existing theme.\nThe following lists basic ggplot themes:\n\n\n\n\ntheme\ntheme\n\n\n\n\ntheme_grey()\ntheme_gray()\n\n\ntheme_bw()\ntheme_linedraw()\n\n\ntheme_light()\ntheme_dark()\n\n\ntheme_minimal()\ntheme_classic()\n\n\ntheme_void()\ntheme_test()"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot-1",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot-1",
+    "title": "Lecture 3",
+    "section": "Make a plot",
+    "text": "Make a plot\nggplot Themes\n\nggthemes package provides the following themes:\n\ntheme_economist(), theme_wsj(), theme_fivethirtyeight(), theme_gdocs(), theme_map()\n\nhrbrthemes package provides the following themes:\n\ntheme_ipsum(), theme_ipsum_rc(), theme_ft_rc(), and more."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot-2",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot-2",
+    "title": "Lecture 3",
+    "section": "Make a plot",
+    "text": "Make a plot\ngapminder data\n\nThe gapminder package include the gapminder data frame.\n\nlibrary(gapminder)\ngapminder\nskim(gapminder)"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot-3",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot-3",
+    "title": "Lecture 3",
+    "section": "Make a plot",
+    "text": "Make a plot\nMappings link data to things we see\n\n\nFirst, we tell the core ggplot function what our data is and what our aesthetic mapping is:\n\np &lt;- ggplot(data = gapminder)\np &lt;- ggplot(data = gapminder,\n            mapping = aes(x = gdpPercap,\n                          y = lifeExp))\n\nWe can then add the geometric object (geom_*()) to the ggplot().\n\np + geom_point()"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot-4",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot-4",
+    "title": "Lecture 3",
+    "section": "Make a plot",
+    "text": "Make a plot\n\nTell the ggplot() function what our tidy data is.\n\n\nggplot(data = ...)\n\n\nTell ggplot() what relationships we want to see.\n\n\nThe ggplot(mapping = aes(...))\np &lt;- ggplot(data = ... , aes(...))\n\n\nTell ggplot() how we want to see the relationships in our data.\n\n\nChoose a geom_*().\n\n\nLayer on geoms as needed, by adding them to the p object one at a time.\nUse additional functions to adjust scales, labels, tick marks, titles, etc."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot-5",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot-5",
+    "title": "Lecture 3",
+    "section": "Make a plot",
+    "text": "Make a plot\nBuild your plots layer by layer\np + geom_point() + geom_smooth() \np + geom_point() + geom_smooth(method = \"lm\") \np + geom_point() +\n    geom_smooth(method = \"lm\")\np + geom_point() +\n    geom_smooth(method = \"gam\")"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot-6",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot-6",
+    "title": "Lecture 3",
+    "section": "Make a plot",
+    "text": "Make a plot\nMapping aesthetics vs setting them\n\n\nIn the following, we map color to continent in the aes() function:\n\np1 &lt;-  ggplot(data = gapminder,\n             mapping = aes(x = gdpPercap, y = lifeExp,\n                           color = continent))\n\nWe then add geoms.\n\np1 + geom_point() +\n     geom_smooth(method = \"lm\")"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot-7",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot-7",
+    "title": "Lecture 3",
+    "section": "Make a plot",
+    "text": "Make a plot\nMapping aesthetics vs setting them\n\n\nIn the following, we map color to \"purple\" outside of the aes() function:\n\np2 &lt;- ggplot(data = gapminder,\n            mapping = aes(x = gdpPercap, y = lifeExp))\n\nWe then add geoms, manually set aethetics, and then adjust scales.\n\np2 + geom_point(color = \"purple\") +\n     geom_smooth(method = \"lm\")"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot-8",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot-8",
+    "title": "Lecture 3",
+    "section": "Make a plot",
+    "text": "Make a plot\nMapping aesthetics vs setting them\n\n\nHere are another exmaples that set aesthetic mapping manually outside aes() function and inside geom_*() function.\n\np &lt;- ggplot(data = gapminder,\n            mapping = aes(x = gdpPercap,\n                          y = lifeExp))\n\np + geom_point(color = \"purple\") +\n    geom_smooth(method = \"loess\") \n\np + geom_point(alpha = 0.3) +\n    geom_smooth(color = \"orange\", se = F, size = 8, method = \"lm\")"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot-9",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot-9",
+    "title": "Lecture 3",
+    "section": "Make a plot",
+    "text": "Make a plot\nMapping aesthetics vs setting them\n\n\nLet’s add scale_*() and labs() functions to ggplot()\n\np + geom_point(alpha = 0.3) +\n    geom_smooth(method = \"gam\") +\n    scale_x_log10(labels = scales::dollar) +\n    labs(x = \"GDP Per Capita\", y = \"Life Expectancy in Years\",\n         title = \"Economic Growth and Life Expectancy\",\n         subtitle = \"Data points are country-years\",\n         caption = \"Source: Gapminder.\")\n\nQ. Is it really the best way to display this country-year data?\n\nWhat are we gaining and losing by ignoring the temporal and country-level structure of the data? How could we do better?"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot-10",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot-10",
+    "title": "Lecture 3",
+    "section": "Make a plot",
+    "text": "Make a plot\nAesthetics can be mapped per geom\n\nWe can have different aesthetic mappings across different geoms:\n\np &lt;- ggplot(data = gapminder, \n            mapping = aes(x = gdpPercap, y = lifeExp))\n\np + geom_point(mapping = aes(color = continent)) +\n    geom_smooth(method = \"loess\")  +\n    scale_x_continuous(trans = scales::log_trans())  # natural log"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot-11",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot-11",
+    "title": "Lecture 3",
+    "section": "Make a plot",
+    "text": "Make a plot\nSave your work\n\nWe can use ggsave() to save ggplot output as a .png or .pdf file.\n\nggsave(filename = \"my_figure.png\")\n\nWe can put our recent plot into an object called p_out and then tell ggave() that we want to save that object.\n\np_out &lt;- p + geom_point() +\n    geom_smooth(method = \"loess\") +\n    scale_x_log10()\nggsave(\"my_figure.pdf\", plot = p_out)"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot-12",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot-12",
+    "title": "Lecture 3",
+    "section": "Make a plot",
+    "text": "Make a plot\nSave your work\n\nWe can set the size of ggplot figue:\n\nggsave(\"lifexp_vs_gdp_gradient.pdf\",\n       plot = p_out, height = 8, width = 10, units = \"in\")"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot-13",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot-13",
+    "title": "Lecture 3",
+    "section": "Make a plot",
+    "text": "Make a plot\nWork a little more with gapminder data\n\nWhat happens when you put the geom_smooth() function before geom_point() instead of after it?\n\nWhat does this tell you about how the plot is drawn? Think about how this might be useful when drawing plots."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot-14",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot-14",
+    "title": "Lecture 3",
+    "section": "Make a plot",
+    "text": "Make a plot\nWork a little more with gapminder data\n\nChange the mappings in the aes() function so that you plot Life Expectancy against population (pop) rather than per capita GDP.\n\nWhat does that look like?\nWhat does it tell you about the unit of observation in the dataset?"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot-15",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot-15",
+    "title": "Lecture 3",
+    "section": "Make a plot",
+    "text": "Make a plot\nWork a little more with gapminder data\n\nWhat happens if you map color to year instead of continent?\n\nIs the result what you expected?\nThink about what class of object year is.\nRemember you can get a quick look at the top of the data, which includes some shorthand information on the class of each variable, by typing gapminder.\nInstead of mapping color = year, what happens if you try color = factor(year)?"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-1",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-1",
+    "title": "Lecture 3",
+    "section": "Show the right number",
+    "text": "Show the right number\nGrouped data and the group aesthetic\n\nLet’s get a line plot that draws the trajectory of life expectancy over time for each country in the gapminder data.frame.\n\np &lt;- ggplot(data = gapminder,\n            mapping = aes( x = year,\n                           y = gdpPercap ) )\n\np + geom_line() \n\nWhat happened?\ngeom_line() joins up all the lines for each particular year in the order they appear in the dataset."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-2",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-2",
+    "title": "Lecture 3",
+    "section": "Show the right number",
+    "text": "Show the right number\nGrouped data and the group aesthetic\n\nWithout group related parameters, ggplot() does not know that the yearly observations in the data are grouped by country.\n\np &lt;- ggplot(data = gapminder,\n            mapping = aes( x = year,\n                           y = gdpPercap ) )\n\np + geom_line( aes( group = country ) )"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-3",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-3",
+    "title": "Lecture 3",
+    "section": "Show the right number",
+    "text": "Show the right number\nGrouped data and the group aesthetic\n\nThe group aesthetic is usually only needed when the grouping information we need to tell ggplot() about is not built-in to the variables being mapped.\n\nHow about color aesthetic, instead of group?\n\n\np &lt;- ggplot(data = gapminder,\n            mapping = aes( x = year,\n                           y = gdpPercap ) )\n\np + geom_line( aes( color = country ) )"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-4",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-4",
+    "title": "Lecture 3",
+    "section": "Show the right number",
+    "text": "Show the right number\nFacet to make small multiples\n\nMaking a “small multiple” plot by faceting data based on a caterigorical variable allows a lot of information to be presented compactly, and in a consistently comparable way.\n\nfacet_wrap( VAR1 ~ . ) or facet_wrap( . ~ VAR1 )\nfacet_grid( VAR1 ~ . ): row-wise split\nfacet_grid( . ~ VAR1 ): colum-wise split\nfacet_grid( VAR1 ~ VAR2 )\n\n\np + geom_line( aes( group = country ) ) + \n  facet_wrap(~ continent)"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-5",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-5",
+    "title": "Lecture 3",
+    "section": "Show the right number",
+    "text": "Show the right number\nFacet to make small multiples\n\nLet’s have all the facetted plots in a single row:\n\np + geom_line(color=\"gray70\", aes(group = country)) +\n    geom_smooth(size = 1.1, method = \"loess\", se = FALSE) +\n    facet_[?] +\n    scale_y_log10(labels=scales::dollar) + \n    theme(axis.text.x = element_text(angle = 45),\n          axis.title.x = element_text(margin = margin(t = 25))) +\n    labs(x = \"Year\", y = \"GDP per capita\",\n         title = \"GDP per capita on Five Continents\")"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-6",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-6",
+    "title": "Lecture 3",
+    "section": "Show the right number",
+    "text": "Show the right number\nThe 2016 General Social Survey data\n\nThe socviz package includes the gss_sm data frame.\n\ngss_sm is a dataset containing an extract from the 2016 General Social Survey.\n\n\ninstall.packages(\"socviz\")\nlibrary(socviz)\n?gss_sm\nglimpse(gss_sm)\nskimr::skim(gss_sm)\ngss_sm &lt;- gss_sm"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-7",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-7",
+    "title": "Lecture 3",
+    "section": "Show the right number",
+    "text": "Show the right number\nFacet to make small multiples\n\nDescribe the relationship between the age of the respondent and the number of children they have using a scatterplot and a fitted curve.\n\np &lt;- ggplot(data = gss_sm,\n            mapping = aes( x = age, y = childs ))\n\np + [?](alpha = 0.2) +\n    [?]()"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-8",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-8",
+    "title": "Lecture 3",
+    "section": "Show the right number",
+    "text": "Show the right number\nFacet to make small multiples\n\nDescribe how the relationship between the age of the respondent and the number of children they have varies by sex and race.\n\np &lt;- ggplot(data = gss_sm,\n            mapping = aes( x = age, y = childs ))\n\np + geom_point(alpha = 0.2) +\n    geom_smooth() +\n    [?]"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-9",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-9",
+    "title": "Lecture 3",
+    "section": "Show the right number",
+    "text": "Show the right number\nFacet to make small multiples\n\nThe facet_grid() function is best used when you cross-classify some data by two categorical variables.\n\ne.g., the relationship between the age and the number of children by sex and race\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = aes( x = age, y = childs ))\n\np + geom_point(alpha = 0.2) +\n    geom_smooth() +\n    facet_grid(sex ~ race + degree)"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-10",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-10",
+    "title": "Lecture 3",
+    "section": "Show the right number",
+    "text": "Show the right number\nGeoms can transform data\n\nLet’s plot a bar char:\n\np &lt;- ggplot(data = gss_sm,\n            mapping = aes(x = bigregion))\np + geom_bar()"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-11",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-11",
+    "title": "Lecture 3",
+    "section": "Show the right number",
+    "text": "Show the right number\nGeoms can transform data\n\n\nWhere does count come from?\n\nBar charts, histograms, and frequency polygons bin your data and then plot bin counts, the number of points that fall in each bin.\nSmoothers fit a model to your data and then plot predictions from the model.\nBoxplots compute a robust summary of the distribution and then display a specially formatted box."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-12",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-12",
+    "title": "Lecture 3",
+    "section": "Show the right number",
+    "text": "Show the right number\nGeoms can transform data\n\nIf we want a chart of relative frequencies rather than counts, we will need to get the prop statistic instead.\nOur call to statistic from the aes() function generically looks like this: &lt;mapping&gt; = &lt;..statistic..&gt;.\n\np &lt;- ggplot(data = gss_sm,\n            mapping = aes(x = bigregion))\np + geom_bar(mapping = aes(y = ..prop..))\n\nWhat happened?"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-13",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-13",
+    "title": "Lecture 3",
+    "section": "Show the right number",
+    "text": "Show the right number\nGeoms can transform data\n\nWe need to tell ggplot to ignore the x-categories when calculating denominator of the proportion, and use the total number observations instead.\n\nTo do so we specify group = 1 inside the aes() call.\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = aes(x = bigregion))\np + geom_bar(mapping = aes(y = ..prop.., group = 1))"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-14",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-14",
+    "title": "Lecture 3",
+    "section": "Show the right number",
+    "text": "Show the right number\nGeoms can transform data\n\nLet’s look at another question from the survey. The gss_sm data contains a religion variable derived from a question asking:\n\n“What is your religious preference? Is it Protestant, Catholic, Jewish, some other religion, or no religion?”\n\n\ntable(gss_sm$religion)"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-15",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-15",
+    "title": "Lecture 3",
+    "section": "Show the right number",
+    "text": "Show the right number\nGeoms can transform data\np &lt;- ggplot(data = gss_sm,\n            mapping = aes(x = religion, color = religion))\np + geom_bar()\n\nIf we map religion to color, only the border lines of the bars will be assigned colors, and the insides will remain gray."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-16",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-16",
+    "title": "Lecture 3",
+    "section": "Show the right number",
+    "text": "Show the right number\nGeoms can transform data\n\nIf the gray bars look boring and we want to fill them with color instead, we can map the religion variable to fill in addition to mapping it to x.\n\np &lt;- ggplot(data = gss_sm,\n            mapping = aes(x = religion, fill = religion))\np + geom_bar() + guides( fill = \"none\" )\n\nIf we set guides(fill = \"none\"), the legend about the fill mapping is removed."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-17",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-17",
+    "title": "Lecture 3",
+    "section": "Show the right number",
+    "text": "Show the right number\nFrequency plots the slightly awkward way\n\nA more appropriate use of the fill aesthetic with geom_bar() is to cross-classify two categorical variables.\n\nThe default output of such geom_bar() is a stacked bar chart, with counts on the y-axis.\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = aes(x = bigregion, fill = religion))\np + geom_bar(position = \"fill\")\n\nAn alternative choice is to set the position argument to \"fill\".\n\nIt is to compare proportions across groups."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-18",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-18",
+    "title": "Lecture 3",
+    "section": "Show the right number",
+    "text": "Show the right number\nFrequency plots the slightly awkward way\n\nWe can use position = \"dodge\" to make the bars within each region of the country appear side by side.\n\np &lt;- ggplot(data = gss_sm,\n            mapping = aes(x = bigregion, fill = religion))\np + geom_bar(position = \"dodge\",\n             mapping = aes(y = ..prop..))\n\nWhat happened?"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-19",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-19",
+    "title": "Lecture 3",
+    "section": "Show the right number",
+    "text": "Show the right number\nFrequency plots the slightly awkward way\n\nIn this case we should consider grouping variable, religion, so we map religion to the group aesthetic.\n\np &lt;- ggplot(data = gss_sm,\n            mapping = aes(x = bigregion, fill = religion))\np + geom_bar(position = \"dodge\",\n             mapping = aes(y = ..prop.., group = religion))"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-20",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-20",
+    "title": "Lecture 3",
+    "section": "Show the right number",
+    "text": "Show the right number\nFrequency plots the slightly awkward way\n\nHow can we have a proportional bar chart such that the sum of all bars in each bigregion is 1?\n\nThere are various ways to do so, and faceting is one of them.\nThe proportions are calculated within each panel, which is the breakdown we wanted.\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = aes(x = religion))\np + geom_bar(position = \"dodge\",\n             mapping = aes(y = ..prop.., group = bigregion)) +\n    facet_wrap(~ bigregion, ncol = 1)"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-21",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-21",
+    "title": "Lecture 3",
+    "section": "Show the right number",
+    "text": "Show the right number\nHistograms and density plots\n\nggplot comes with a dataset, midwest, containing information on counties in several midwestern states of the USA.\n\n?midwest\nglimpse(midwest)\nskim(midwest)\nview(midwest)"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-22",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-22",
+    "title": "Lecture 3",
+    "section": "Show the right number",
+    "text": "Show the right number\nHistograms and density plots\n\nBy default, the geom_histogram() function will choose a bin size for us based on a rule of thumb.\n\np &lt;- ggplot(data = midwest,\n            mapping = aes(x = area))\np + geom_histogram()"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-23",
+    "href": "danl-lec/danl-310-lec-03-2025-0129.html#show-the-right-number-23",
+    "title": "Lecture 3",
+    "section": "Show the right number",
+    "text": "Show the right number\nHistograms and density plots\n\nWhen drawing histograms it is worth experimenting with bins and also optionally the origin of the x-axis.\n\np &lt;- ggplot(data = midwest,\n            mapping = aes(x = area))\np + geom_histogram(bins = 10)"
   }
 ]
