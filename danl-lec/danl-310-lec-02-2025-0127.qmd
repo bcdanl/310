@@ -151,16 +151,6 @@ format:
 
 
 
-## Getting Started with Quarto
-### Quarto Basics
-
-
-- In RStudio, close the project `USERNAME.github.io.Rporj` if it is on.
-  1. Click `USERNAME.github.io.Rporj` at the top-right corner.
-  2. Click *Close Project*.
-  
-
-- Download the Quarto file, `danl-310-quarto-r.qmd` from Brightspace, and open it from RStudio.
 
 
 
@@ -168,6 +158,9 @@ format:
 ## Getting Started with Quarto
 ### Quarto Basics
 
+
+:::: {.columns}
+::: {.column width="50%"}
 ```{.bash}
 ---
 title: 
@@ -184,10 +177,17 @@ execute:
 ---
 ```
 
-- The above syntax is part of YAML metadata in `danl-310-quarto-r.qmd`.
+:::
+::: {.column width="50%"}
+
+- Download the Quarto file, `danl-310-quarto-r.qmd` from Brightspace, and open it from RStudio.
+
+- This syntax is part of YAML metadata in `danl-310-quarto-r.qmd`.
   - In YAML, indentation really matters!
   - **tab** (or four spaces) defines a level in YAML.
 
+:::
+::::
 
 # Managing a Website with Quarto (and Jupyter Notebook) {background-color="#1c4982"}
 
@@ -298,7 +298,7 @@ quarto render
   - [https://quarto.org/docs/websites/website-about.html](https://quarto.org/docs/websites/website-about.html).
 
 
-- Quarto includes 5 built in templates:
+- Quarto includes 5 built-in templates:
   - `jolla`
   - `trestles`
   - `solana`
