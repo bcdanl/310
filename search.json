@@ -46,7 +46,7 @@
     "href": "listing-danl-310-cw.html",
     "title": "DANL 310 - Classwork",
     "section": "",
-    "text": "Title\n\n\nSubtitle\n\n\nDate\n\n\n\n\n\n\nClasswork 3\n\n\nQuarto Website Basics\n\n\nJanuary 27, 2025\n\n\n\n\nClasswork 2\n\n\nMarkdown Basics\n\n\nJanuary 27, 2025\n\n\n\n\nClasswork 1\n\n\nBuilding a Personal Website using Git, GitHub, and RStudio with Quarto\n\n\nJanuary 22, 2025\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+    "text": "Title\n\n\nSubtitle\n\n\nDate\n\n\n\n\n\n\nClasswork 4\n\n\nThe Layered Grammar of Graphics\n\n\nJanuary 29, 2025\n\n\n\n\nClasswork 3\n\n\nQuarto Website Basics\n\n\nJanuary 27, 2025\n\n\n\n\nClasswork 2\n\n\nMarkdown Basics\n\n\nJanuary 27, 2025\n\n\n\n\nClasswork 1\n\n\nBuilding a Personal Website using Git, GitHub, and RStudio with Quarto\n\n\nJanuary 22, 2025\n\n\n\n\n\n\nNo matching items\n\n Back to top"
   },
   {
     "objectID": "index.html",
@@ -67,7 +67,7 @@
     "href": "index.html#bullet-classwork",
     "title": "DANL 310-01: Data Visualization and Presentation, Spring 2025",
     "section": "\\(\\bullet\\,\\) Classwork ⌨️",
-    "text": "\\(\\bullet\\,\\) Classwork ⌨️\n\n\n\n\n\n\nTitle\n\n\nDate\n\n\n\n\n\n\nClasswork 3\n\n\nJanuary 27, 2025\n\n\n\n\nClasswork 2\n\n\nJanuary 27, 2025\n\n\n\n\nClasswork 1\n\n\nJanuary 22, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "\\(\\bullet\\,\\) Classwork ⌨️\n\n\n\n\n\n\nTitle\n\n\nDate\n\n\n\n\n\n\nClasswork 4\n\n\nJanuary 29, 2025\n\n\n\n\nClasswork 3\n\n\nJanuary 27, 2025\n\n\n\n\nClasswork 2\n\n\nJanuary 27, 2025\n\n\n\n\nClasswork 1\n\n\nJanuary 22, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html#bullet-homework",
@@ -1615,5 +1615,54 @@
     "title": "Lecture 3",
     "section": "Show the right number",
     "text": "Show the right number\nHistograms and density plots\n\nWhen drawing histograms it is worth experimenting with bins and also optionally the origin of the x-axis.\n\np &lt;- ggplot(data = midwest,\n            mapping = aes(x = area))\np + geom_histogram(bins = 10)"
+  },
+  {
+    "objectID": "danl-cw/danl-310-cw-04.html",
+    "href": "danl-cw/danl-310-cw-04.html",
+    "title": "Classwork 4",
+    "section": "",
+    "text": "Run this code in your head and predict what the output will look like. Then, run the code in R and check your predictions.\n\nggplot(data = mpg, \n       mapping = aes(x = displ, y = hwy, \n                     color = drv)) +\n  geom_point(alpha = .4) +\n  geom_smooth(se = FALSE)\n\n\n\n\n\nWhat does show.legend = FALSE do? What happens if you remove it?\n\nggplot(data = mpg) +\n  geom_point(mapping = aes(x = displ, y = hwy, \n                           color = drv),\n             alpha = .5,\n             show.legend = FALSE)\n\nAnswer:\n\n\n\n\nRecreate the R code necessary to generate the following graphs.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUse the data.frame, organdata_simple to visualize the yearly trend of the variable donors for each country.\n\n\norgandata_simple &lt;- read_csv('https://bcdanl.github.io/data/organdata_simple.csv')"
+  },
+  {
+    "objectID": "danl-cw/danl-310-cw-04.html#q1a.",
+    "href": "danl-cw/danl-310-cw-04.html#q1a.",
+    "title": "Classwork 4",
+    "section": "",
+    "text": "Run this code in your head and predict what the output will look like. Then, run the code in R and check your predictions.\n\nggplot(data = mpg, \n       mapping = aes(x = displ, y = hwy, \n                     color = drv)) +\n  geom_point(alpha = .4) +\n  geom_smooth(se = FALSE)"
+  },
+  {
+    "objectID": "danl-cw/danl-310-cw-04.html#q1b.",
+    "href": "danl-cw/danl-310-cw-04.html#q1b.",
+    "title": "Classwork 4",
+    "section": "",
+    "text": "What does show.legend = FALSE do? What happens if you remove it?\n\nggplot(data = mpg) +\n  geom_point(mapping = aes(x = displ, y = hwy, \n                           color = drv),\n             alpha = .5,\n             show.legend = FALSE)\n\nAnswer:"
+  },
+  {
+    "objectID": "danl-cw/danl-310-cw-04.html#q1c.",
+    "href": "danl-cw/danl-310-cw-04.html#q1c.",
+    "title": "Classwork 4",
+    "section": "",
+    "text": "Recreate the R code necessary to generate the following graphs."
+  },
+  {
+    "objectID": "danl-cw/danl-310-cw-04.html#q1d.",
+    "href": "danl-cw/danl-310-cw-04.html#q1d.",
+    "title": "Classwork 4",
+    "section": "",
+    "text": "Use the data.frame, organdata_simple to visualize the yearly trend of the variable donors for each country.\n\n\norgandata_simple &lt;- read_csv('https://bcdanl.github.io/data/organdata_simple.csv')"
+  },
+  {
+    "objectID": "danl-cw/danl-310-cw-04.html#q2a.",
+    "href": "danl-cw/danl-310-cw-04.html#q2a.",
+    "title": "Classwork 4",
+    "section": "Q2a.",
+    "text": "Q2a.\nWhat does geom_col() do? How is it different to geom_bar()?\nAnswer:"
+  },
+  {
+    "objectID": "danl-cw/danl-310-cw-04.html#q2b.",
+    "href": "danl-cw/danl-310-cw-04.html#q2b.",
+    "title": "Classwork 4",
+    "section": "Q2b.",
+    "text": "Q2b.\n\nInstall the R package, nycflights13, which provides the flights data.frame.\n\n\nflights &lt;- nycflights13::flights\nairlines &lt;- nycflights13::airlines\n\nflights &lt;- flights |&gt; \n  left_join(airlines)\n\n\nVisualize the distribution of carrier.\nVisualize how the distribution of carrier varies by origin.\n\nAnswer:"
   }
 ]
