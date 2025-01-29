@@ -1,5 +1,5 @@
 ---
-title: Lecture 3
+title: Lecture 4
 subtitle: Make a plot with `ggplot`
 format:
   clean-revealjs:

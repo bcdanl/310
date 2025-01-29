@@ -60,7 +60,7 @@
     "href": "index.html#bullet-lecture-slides",
     "title": "DANL 310-01: Data Visualization and Presentation, Spring 2025",
     "section": "\\(\\bullet\\,\\) Lecture Slides 🚀",
-    "text": "\\(\\bullet\\,\\) Lecture Slides 🚀\n\n\n\n\n\n\nTitle\n\n\nDate\n\n\n\n\n\n\nLecture 3\n\n\nFebruary 3, 2025\n\n\n\n\nLecture 3\n\n\nJanuary 29, 2025\n\n\n\n\nLecture 2\n\n\nJanuary 27, 2025\n\n\n\n\nLecture 1\n\n\nJanuary 22, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "\\(\\bullet\\,\\) Lecture Slides 🚀\n\n\n\n\n\n\nTitle\n\n\nDate\n\n\n\n\n\n\nLecture 4\n\n\nFebruary 3, 2025\n\n\n\n\nLecture 3\n\n\nJanuary 29, 2025\n\n\n\n\nLecture 2\n\n\nJanuary 27, 2025\n\n\n\n\nLecture 1\n\n\nJanuary 22, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html#bullet-classwork",
@@ -158,7 +158,7 @@
     "href": "listing-danl-310-lec.html",
     "title": "DANL 310 - Lecture",
     "section": "",
-    "text": "Title\n\n\nSubtitle\n\n\nDate\n\n\n\n\n\n\nLecture 1\n\n\nSyllabus, Course Outline, and Introduction\n\n\nJanuary 22, 2025\n\n\n\n\nLecture 2\n\n\nGetting Started with Quarto\n\n\nJanuary 27, 2025\n\n\n\n\nLecture 3\n\n\nggplot basics\n\n\nJanuary 29, 2025\n\n\n\n\nLecture 3\n\n\nMake a plot with ggplot\n\n\nFebruary 3, 2025\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+    "text": "Title\n\n\nSubtitle\n\n\nDate\n\n\n\n\n\n\nLecture 1\n\n\nSyllabus, Course Outline, and Introduction\n\n\nJanuary 22, 2025\n\n\n\n\nLecture 2\n\n\nGetting Started with Quarto\n\n\nJanuary 27, 2025\n\n\n\n\nLecture 3\n\n\nggplot basics\n\n\nJanuary 29, 2025\n\n\n\n\nLecture 4\n\n\nMake a plot with ggplot\n\n\nFebruary 3, 2025\n\n\n\n\n\n\nNo matching items\n\n Back to top"
   },
   {
     "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot",
@@ -1346,273 +1346,273 @@
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Make a plot",
     "text": "Make a plot\nggplot Themes\n\nUse theme() if you want to tweak the display of an existing theme.\nThe following lists basic ggplot themes:\n\n\n\n\ntheme\ntheme\n\n\n\n\ntheme_grey()\ntheme_gray()\n\n\ntheme_bw()\ntheme_linedraw()\n\n\ntheme_light()\ntheme_dark()\n\n\ntheme_minimal()\ntheme_classic()\n\n\ntheme_void()\ntheme_test()"
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot-1",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot-1",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Make a plot",
     "text": "Make a plot\nggplot Themes\n\nggthemes package provides the following themes:\n\ntheme_economist(), theme_wsj(), theme_fivethirtyeight(), theme_gdocs(), theme_map()\n\nhrbrthemes package provides the following themes:\n\ntheme_ipsum(), theme_ipsum_rc(), theme_ft_rc(), and more."
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot-2",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot-2",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Make a plot",
     "text": "Make a plot\ngapminder data\n\nThe gapminder package include the gapminder data frame.\n\nlibrary(gapminder)\ngapminder\nskim(gapminder)"
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot-3",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot-3",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Make a plot",
     "text": "Make a plot\nMappings link data to things we see\n\n\nFirst, we tell the core ggplot function what our data is and what our aesthetic mapping is:\n\np &lt;- ggplot(data = gapminder)\np &lt;- ggplot(data = gapminder,\n            mapping = aes(x = gdpPercap,\n                          y = lifeExp))\n\nWe can then add the geometric object (geom_*()) to the ggplot().\n\np + geom_point()"
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot-4",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot-4",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Make a plot",
     "text": "Make a plot\n\nTell the ggplot() function what our tidy data is.\n\n\nggplot(data = ...)\n\n\nTell ggplot() what relationships we want to see.\n\n\nThe ggplot(mapping = aes(...))\np &lt;- ggplot(data = ... , aes(...))\n\n\nTell ggplot() how we want to see the relationships in our data.\n\n\nChoose a geom_*().\n\n\nLayer on geoms as needed, by adding them to the p object one at a time.\nUse additional functions to adjust scales, labels, tick marks, titles, etc."
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot-5",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot-5",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Make a plot",
     "text": "Make a plot\nBuild your plots layer by layer\np + geom_point() + geom_smooth() \np + geom_point() + geom_smooth(method = \"lm\") \np + geom_point() +\n    geom_smooth(method = \"lm\")\np + geom_point() +\n    geom_smooth(method = \"gam\")"
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot-6",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot-6",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Make a plot",
     "text": "Make a plot\nMapping aesthetics vs setting them\n\n\nIn the following, we map color to continent in the aes() function:\n\np1 &lt;-  ggplot(data = gapminder,\n             mapping = aes(x = gdpPercap, y = lifeExp,\n                           color = continent))\n\nWe then add geoms.\n\np1 + geom_point() +\n     geom_smooth(method = \"lm\")"
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot-7",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot-7",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Make a plot",
     "text": "Make a plot\nMapping aesthetics vs setting them\n\n\nIn the following, we map color to \"purple\" outside of the aes() function:\n\np2 &lt;- ggplot(data = gapminder,\n            mapping = aes(x = gdpPercap, y = lifeExp))\n\nWe then add geoms, manually set aethetics, and then adjust scales.\n\np2 + geom_point(color = \"purple\") +\n     geom_smooth(method = \"lm\")"
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot-8",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot-8",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Make a plot",
     "text": "Make a plot\nMapping aesthetics vs setting them\n\n\nHere are another exmaples that set aesthetic mapping manually outside aes() function and inside geom_*() function.\n\np &lt;- ggplot(data = gapminder,\n            mapping = aes(x = gdpPercap,\n                          y = lifeExp))\n\np + geom_point(color = \"purple\") +\n    geom_smooth(method = \"loess\") \n\np + geom_point(alpha = 0.3) +\n    geom_smooth(color = \"orange\", se = F, size = 8, method = \"lm\")"
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot-9",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot-9",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Make a plot",
     "text": "Make a plot\nMapping aesthetics vs setting them\n\n\nLet’s add scale_*() and labs() functions to ggplot()\n\np + geom_point(alpha = 0.3) +\n    geom_smooth(method = \"gam\") +\n    scale_x_log10(labels = scales::dollar) +\n    labs(x = \"GDP Per Capita\", y = \"Life Expectancy in Years\",\n         title = \"Economic Growth and Life Expectancy\",\n         subtitle = \"Data points are country-years\",\n         caption = \"Source: Gapminder.\")\n\nQ. Is it really the best way to display this country-year data?\n\nWhat are we gaining and losing by ignoring the temporal and country-level structure of the data? How could we do better?"
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot-10",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot-10",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Make a plot",
     "text": "Make a plot\nAesthetics can be mapped per geom\n\nWe can have different aesthetic mappings across different geoms:\n\np &lt;- ggplot(data = gapminder, \n            mapping = aes(x = gdpPercap, y = lifeExp))\n\np + geom_point(mapping = aes(color = continent)) +\n    geom_smooth(method = \"loess\")  +\n    scale_x_continuous(trans = scales::log_trans())  # natural log"
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot-11",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot-11",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Make a plot",
     "text": "Make a plot\nSave your work\n\nWe can use ggsave() to save ggplot output as a .png or .pdf file.\n\nggsave(filename = \"my_figure.png\")\n\nWe can put our recent plot into an object called p_out and then tell ggave() that we want to save that object.\n\np_out &lt;- p + geom_point() +\n    geom_smooth(method = \"loess\") +\n    scale_x_log10()\nggsave(\"my_figure.pdf\", plot = p_out)"
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot-12",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot-12",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Make a plot",
     "text": "Make a plot\nSave your work\n\nWe can set the size of ggplot figue:\n\nggsave(\"lifexp_vs_gdp_gradient.pdf\",\n       plot = p_out, height = 8, width = 10, units = \"in\")"
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot-13",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot-13",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Make a plot",
     "text": "Make a plot\nWork a little more with gapminder data\n\nWhat happens when you put the geom_smooth() function before geom_point() instead of after it?\n\nWhat does this tell you about how the plot is drawn? Think about how this might be useful when drawing plots."
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot-14",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot-14",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Make a plot",
     "text": "Make a plot\nWork a little more with gapminder data\n\nChange the mappings in the aes() function so that you plot Life Expectancy against population (pop) rather than per capita GDP.\n\nWhat does that look like?\nWhat does it tell you about the unit of observation in the dataset?"
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot-15",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#make-a-plot-15",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Make a plot",
     "text": "Make a plot\nWork a little more with gapminder data\n\nWhat happens if you map color to year instead of continent?\n\nIs the result what you expected?\nThink about what class of object year is.\nRemember you can get a quick look at the top of the data, which includes some shorthand information on the class of each variable, by typing gapminder.\nInstead of mapping color = year, what happens if you try color = factor(year)?"
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-1",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-1",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Show the right number",
     "text": "Show the right number\nGrouped data and the group aesthetic\n\nLet’s get a line plot that draws the trajectory of life expectancy over time for each country in the gapminder data.frame.\n\np &lt;- ggplot(data = gapminder,\n            mapping = aes( x = year,\n                           y = gdpPercap ) )\n\np + geom_line() \n\nWhat happened?\ngeom_line() joins up all the lines for each particular year in the order they appear in the dataset."
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-2",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-2",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Show the right number",
     "text": "Show the right number\nGrouped data and the group aesthetic\n\nWithout group related parameters, ggplot() does not know that the yearly observations in the data are grouped by country.\n\np &lt;- ggplot(data = gapminder,\n            mapping = aes( x = year,\n                           y = gdpPercap ) )\n\np + geom_line( aes( group = country ) )"
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-3",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-3",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Show the right number",
     "text": "Show the right number\nGrouped data and the group aesthetic\n\nThe group aesthetic is usually only needed when the grouping information we need to tell ggplot() about is not built-in to the variables being mapped.\n\nHow about color aesthetic, instead of group?\n\n\np &lt;- ggplot(data = gapminder,\n            mapping = aes( x = year,\n                           y = gdpPercap ) )\n\np + geom_line( aes( color = country ) )"
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-4",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-4",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Show the right number",
     "text": "Show the right number\nFacet to make small multiples\n\nMaking a “small multiple” plot by faceting data based on a caterigorical variable allows a lot of information to be presented compactly, and in a consistently comparable way.\n\nfacet_wrap( VAR1 ~ . ) or facet_wrap( . ~ VAR1 )\nfacet_grid( VAR1 ~ . ): row-wise split\nfacet_grid( . ~ VAR1 ): colum-wise split\nfacet_grid( VAR1 ~ VAR2 )\n\n\np + geom_line( aes( group = country ) ) + \n  facet_wrap(~ continent)"
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-5",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-5",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Show the right number",
     "text": "Show the right number\nFacet to make small multiples\n\nLet’s have all the facetted plots in a single row:\n\np + geom_line(color=\"gray70\", aes(group = country)) +\n    geom_smooth(size = 1.1, method = \"loess\", se = FALSE) +\n    facet_[?] +\n    scale_y_log10(labels=scales::dollar) + \n    theme(axis.text.x = element_text(angle = 45),\n          axis.title.x = element_text(margin = margin(t = 25))) +\n    labs(x = \"Year\", y = \"GDP per capita\",\n         title = \"GDP per capita on Five Continents\")"
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-6",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-6",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Show the right number",
     "text": "Show the right number\nThe 2016 General Social Survey data\n\nThe socviz package includes the gss_sm data frame.\n\ngss_sm is a dataset containing an extract from the 2016 General Social Survey.\n\n\ninstall.packages(\"socviz\")\nlibrary(socviz)\n?gss_sm\nglimpse(gss_sm)\nskimr::skim(gss_sm)\ngss_sm &lt;- gss_sm"
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-7",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-7",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Show the right number",
     "text": "Show the right number\nFacet to make small multiples\n\nDescribe the relationship between the age of the respondent and the number of children they have using a scatterplot and a fitted curve.\n\np &lt;- ggplot(data = gss_sm,\n            mapping = aes( x = age, y = childs ))\n\np + [?](alpha = 0.2) +\n    [?]()"
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-8",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-8",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Show the right number",
     "text": "Show the right number\nFacet to make small multiples\n\nDescribe how the relationship between the age of the respondent and the number of children they have varies by sex and race.\n\np &lt;- ggplot(data = gss_sm,\n            mapping = aes( x = age, y = childs ))\n\np + geom_point(alpha = 0.2) +\n    geom_smooth() +\n    [?]"
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-9",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-9",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Show the right number",
     "text": "Show the right number\nFacet to make small multiples\n\nThe facet_grid() function is best used when you cross-classify some data by two categorical variables.\n\ne.g., the relationship between the age and the number of children by sex and race\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = aes( x = age, y = childs ))\n\np + geom_point(alpha = 0.2) +\n    geom_smooth() +\n    facet_grid(sex ~ race + degree)"
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-10",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-10",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Show the right number",
     "text": "Show the right number\nGeoms can transform data\n\nLet’s plot a bar char:\n\np &lt;- ggplot(data = gss_sm,\n            mapping = aes(x = bigregion))\np + geom_bar()"
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-11",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-11",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Show the right number",
     "text": "Show the right number\nGeoms can transform data\n\n\nWhere does count come from?\n\nBar charts, histograms, and frequency polygons bin your data and then plot bin counts, the number of points that fall in each bin.\nSmoothers fit a model to your data and then plot predictions from the model.\nBoxplots compute a robust summary of the distribution and then display a specially formatted box."
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-12",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-12",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Show the right number",
     "text": "Show the right number\nGeoms can transform data\n\nIf we want a chart of relative frequencies rather than counts, we will need to get the prop statistic instead.\nOur call to statistic from the aes() function generically looks like this: &lt;mapping&gt; = &lt;..statistic..&gt;.\n\np &lt;- ggplot(data = gss_sm,\n            mapping = aes(x = bigregion))\np + geom_bar(mapping = aes(y = ..prop..))\n\nWhat happened?"
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-13",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-13",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Show the right number",
     "text": "Show the right number\nGeoms can transform data\n\nWe need to tell ggplot to ignore the x-categories when calculating denominator of the proportion, and use the total number observations instead.\n\nTo do so we specify group = 1 inside the aes() call.\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = aes(x = bigregion))\np + geom_bar(mapping = aes(y = ..prop.., group = 1))"
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-14",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-14",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Show the right number",
     "text": "Show the right number\nGeoms can transform data\n\nLet’s look at another question from the survey. The gss_sm data contains a religion variable derived from a question asking:\n\n“What is your religious preference? Is it Protestant, Catholic, Jewish, some other religion, or no religion?”\n\n\ntable(gss_sm$religion)"
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-15",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-15",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Show the right number",
     "text": "Show the right number\nGeoms can transform data\np &lt;- ggplot(data = gss_sm,\n            mapping = aes(x = religion, color = religion))\np + geom_bar()\n\nIf we map religion to color, only the border lines of the bars will be assigned colors, and the insides will remain gray."
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-16",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-16",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Show the right number",
     "text": "Show the right number\nGeoms can transform data\n\nIf the gray bars look boring and we want to fill them with color instead, we can map the religion variable to fill in addition to mapping it to x.\n\np &lt;- ggplot(data = gss_sm,\n            mapping = aes(x = religion, fill = religion))\np + geom_bar() + guides( fill = \"none\" )\n\nIf we set guides(fill = \"none\"), the legend about the fill mapping is removed."
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-17",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-17",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Show the right number",
     "text": "Show the right number\nFrequency plots the slightly awkward way\n\nA more appropriate use of the fill aesthetic with geom_bar() is to cross-classify two categorical variables.\n\nThe default output of such geom_bar() is a stacked bar chart, with counts on the y-axis.\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = aes(x = bigregion, fill = religion))\np + geom_bar(position = \"fill\")\n\nAn alternative choice is to set the position argument to \"fill\".\n\nIt is to compare proportions across groups."
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-18",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-18",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Show the right number",
     "text": "Show the right number\nFrequency plots the slightly awkward way\n\nWe can use position = \"dodge\" to make the bars within each region of the country appear side by side.\n\np &lt;- ggplot(data = gss_sm,\n            mapping = aes(x = bigregion, fill = religion))\np + geom_bar(position = \"dodge\",\n             mapping = aes(y = ..prop..))\n\nWhat happened?"
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-19",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-19",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Show the right number",
     "text": "Show the right number\nFrequency plots the slightly awkward way\n\nIn this case we should consider grouping variable, religion, so we map religion to the group aesthetic.\n\np &lt;- ggplot(data = gss_sm,\n            mapping = aes(x = bigregion, fill = religion))\np + geom_bar(position = \"dodge\",\n             mapping = aes(y = ..prop.., group = religion))"
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-20",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-20",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Show the right number",
     "text": "Show the right number\nFrequency plots the slightly awkward way\n\nHow can we have a proportional bar chart such that the sum of all bars in each bigregion is 1?\n\nThere are various ways to do so, and faceting is one of them.\nThe proportions are calculated within each panel, which is the breakdown we wanted.\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = aes(x = religion))\np + geom_bar(position = \"dodge\",\n             mapping = aes(y = ..prop.., group = bigregion)) +\n    facet_wrap(~ bigregion, ncol = 1)"
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-21",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-21",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Show the right number",
     "text": "Show the right number\nHistograms and density plots\n\nggplot comes with a dataset, midwest, containing information on counties in several midwestern states of the USA.\n\n?midwest\nglimpse(midwest)\nskim(midwest)\nview(midwest)"
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-22",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-22",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Show the right number",
     "text": "Show the right number\nHistograms and density plots\n\nBy default, the geom_histogram() function will choose a bin size for us based on a rule of thumb.\n\np &lt;- ggplot(data = midwest,\n            mapping = aes(x = area))\np + geom_histogram()"
   },
   {
     "objectID": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-23",
     "href": "danl-lec/danl-310-lec-04-2025-0203.html#show-the-right-number-23",
-    "title": "Lecture 3",
+    "title": "Lecture 4",
     "section": "Show the right number",
     "text": "Show the right number\nHistograms and density plots\n\nWhen drawing histograms it is worth experimenting with bins and also optionally the origin of the x-axis.\n\np &lt;- ggplot(data = midwest,\n            mapping = aes(x = area))\np + geom_histogram(bins = 10)"
   },
