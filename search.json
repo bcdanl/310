@@ -1222,14 +1222,14 @@
     "href": "danl-lec/danl-310-lec-03-2025-0129.html#the-use-of-log-1",
     "title": "Lecture 3",
     "section": "The use of log()",
-    "text": "The use of log()\nPercentage Change\n1. We should consider using a logarithmic scale when percent change, or change in orders of magnitude, is more important than changes in absolute units.\n\nFor small changes in variable \\(x\\) from \\(x_{0}\\) to \\(x_{1}\\), the following can be shown:\n\n\\[\\Delta \\log(x) \\,= \\, \\log(x_{1}) \\,-\\, \\log(x_{0})\n\\approx\\, \\frac{x_{1} \\,-\\, x_{0}}{x_{0}}\n\\,=\\, \\frac{\\Delta\\, x}{x_{0}}.\\]\n\nFor example, a difference in sale.price of $10,000 means something very different across people with different income/wealth levels."
+    "text": "The use of log()\nPercentage Change\n\nWe should consider using a logarithmic scale when percent change, or change in orders of magnitude, is more important than changes in absolute units.\n\n\nFor small changes in variable \\(x\\) from \\(x_{0}\\) to \\(x_{1}\\), the following can be shown:\n\n\\[\\Delta \\log(x) \\,= \\, \\log(x_{1}) \\,-\\, \\log(x_{0})\n\\approx\\, \\frac{x_{1} \\,-\\, x_{0}}{x_{0}}\n\\,=\\, \\frac{\\Delta\\, x}{x_{0}}.\\]\n\nFor example, a difference in sale.price of $10,000 means something very different across people with different income/wealth levels."
   },
   {
     "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#the-use-of-log-2",
     "href": "danl-lec/danl-310-lec-03-2025-0129.html#the-use-of-log-2",
     "title": "Lecture 3",
     "section": "The use of log()",
-    "text": "The use of log()\nWide Range of Skewed Data\n2. We should consider using a log scale when a variable is heavily skewed. - It can help visualize both small and large values effectively.\n\n\nggplot(sale_df, \n       aes(x = sale.price), \n       bins = 500) +\n  geom_histogram()"
+    "text": "The use of log()\nWide Range of Skewed Data\n\nWe should consider using a log scale when a variable is heavily skewed.\n\n\nIt can help visualize both small and large values effectively.\n\n\n\nggplot(sale_df, \n       aes(x = sale.price), \n       bins = 500) +\n  geom_histogram()"
   },
   {
     "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#statistical-transformation-5",
