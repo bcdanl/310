@@ -1972,5 +1972,26 @@
     "title": "Lecture 5",
     "section": "Show the right number",
     "text": "Show the right number\nAvoid transformations when necessary\n\n\np &lt;- ggplot(data = socviz::oecd_sum,\n            mapping = \n              aes(x = year, \n                  y = diff, \n                  fill = hi_lo))\np + geom_col() + \n  guides(fill = \"none\") +\n  labs(x = NULL, \n       y = \"Difference in Years\",\n       title = \"The US Life Expectancy Gap\",\n       subtitle = \"Difference between US and OECD\n                   average life expectancies, 1960-2015\",\n       caption = \"Data: OECD. After a chart by Christopher Ingraham,\n                  Washington Post, December 27th 2017.\") +\n  theme_minimal()"
+  },
+  {
+    "objectID": "danl-cw/danl-310-cw-04.html#q3a.",
+    "href": "danl-cw/danl-310-cw-04.html#q3a.",
+    "title": "Classwork 4",
+    "section": "Q3a.",
+    "text": "Q3a.\n\nWhat happens when you put the geom_smooth() function before geom_point() instead of after it?\nWhat does this tell you about how the plot is drawn? Think about how this might be useful when drawing plots."
+  },
+  {
+    "objectID": "danl-cw/danl-310-cw-04.html#q3b.",
+    "href": "danl-cw/danl-310-cw-04.html#q3b.",
+    "title": "Classwork 4",
+    "section": "Q3b.",
+    "text": "Q3b.\n\nChange the mappings in the aes() function so that you plot Life Expectancy against population (pop) rather than per capita GDP.\n\nWhat does that look like?\nWhat does it tell you about the unit of observation in the dataset?"
+  },
+  {
+    "objectID": "danl-cw/danl-310-cw-04.html#q3c.",
+    "href": "danl-cw/danl-310-cw-04.html#q3c.",
+    "title": "Classwork 4",
+    "section": "Q3c.",
+    "text": "Q3c.\n\nWhat happens if you map color to year instead of continent?\n\nIs the result what you expected?\nThink about what class of object year is.\nRemember you can get a quick look at the top of the data, which includes some shorthand information on the class of each variable, by typing gapminder.\nInstead of mapping color = year, what happens if you try color = factor(year)?"
   }
 ]

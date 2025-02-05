@@ -641,40 +641,6 @@ Byeong-Hak Choe
 </ul>
 <div class="sourceCode" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a><span class="fu">ggsave</span>(<span class="st">"lifexp_vs_gdp_gradient.pdf"</span>,</span>
 <span id="cb15-2"><a href="#cb15-2"></a>       <span class="at">plot =</span> p_out, <span class="at">height =</span> <span class="dv">8</span>, <span class="at">width =</span> <span class="dv">10</span>, <span class="at">units =</span> <span class="st">"in"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="make-a-plot-13" class="slide level2">
-<h2>Make a plot</h2>
-<h3 id="work-a-little-more-with-gapminder-data">Work a little more with <code>gapminder</code> data</h3>
-<ul>
-<li>What happens when you put the <code>geom_smooth()</code> function before <code>geom_point()</code> instead of after it?
-<ul>
-<li>What does this tell you about how the plot is drawn? Think about how this might be useful when drawing plots.</li>
-</ul></li>
-</ul>
-</section>
-<section id="make-a-plot-14" class="slide level2">
-<h2>Make a plot</h2>
-<h3 id="work-a-little-more-with-gapminder-data-1">Work a little more with <code>gapminder</code> data</h3>
-<ul>
-<li>Change the mappings in the <code>aes()</code> function so that you plot Life Expectancy against population (<code>pop</code>) rather than per capita GDP.
-<ul>
-<li>What does that look like?</li>
-<li>What does it tell you about the unit of observation in the dataset?</li>
-</ul></li>
-</ul>
-</section>
-<section id="make-a-plot-15" class="slide level2">
-<h2>Make a plot</h2>
-<h3 id="work-a-little-more-with-gapminder-data-2">Work a little more with <code>gapminder</code> data</h3>
-<ul>
-<li>What happens if you map color to <code>year</code> instead of <code>continent</code>?
-<ul>
-<li>Is the result what you expected?</li>
-<li>Think about what class of object year is.</li>
-<li>Remember you can get a quick look at the top of the data, which includes some shorthand information on the class of each variable, by typing <code>gapminder</code>.</li>
-<li>Instead of mapping <code>color = year</code>, what happens if you try <code>color = factor(year)</code>?</li>
-</ul></li>
-</ul>
 
 <div class="footer footer-default">
 
