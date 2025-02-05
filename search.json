@@ -1670,7 +1670,7 @@
     "href": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-1",
     "title": "Lecture 5",
     "section": "Show the right number",
-    "text": "Show the right number\nGrouped data and the group aesthetic\n\nLet’s get a line plot that draws the trajectory of life expectancy over time for each country in the gapminder data.frame.\n\n\n\nlibrary(gapminder)\np &lt;- ggplot(data = gapminder,\n            mapping = \n              aes( x = year,\n                   y = gdpPercap ) )\np + geom_line()"
+    "text": "Show the right number\nGrouped data and the group aesthetic\n\nLet’s get a line plot that draws the trajectory of life expectancy over time for each country in the gapminder data.frame.\n\n\n\nlibrary(gapminder)\np &lt;- ggplot(data = gapminder,\n            mapping = \n              aes( x = year,\n                   y = gdpPercap ) )\np + \n  geom_line()"
   },
   {
     "objectID": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-2",
@@ -1684,7 +1684,7 @@
     "href": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-3",
     "title": "Lecture 5",
     "section": "Show the right number",
-    "text": "Show the right number\nGrouped data and the group aesthetic\n\nWithout group related parameters, ggplot() does not know that the yearly observations in the data are grouped by country.\n\n\n\np &lt;- ggplot(data = gapminder,\n            mapping = \n              aes( x = year,\n                   y = gdpPercap ) )\n\np + geom_line( aes( group = country ) )"
+    "text": "Show the right number\nGrouped data and the group aesthetic\n\nWithout group related parameters, ggplot() does not know that the yearly observations in the data are grouped by country.\n\n\n\np &lt;- ggplot(data = gapminder,\n            mapping = \n              aes( x = year,\n                   y = gdpPercap ) )\n\np + \n  geom_line( aes( group = country ) )"
   },
   {
     "objectID": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-4",
@@ -1698,14 +1698,14 @@
     "href": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-5",
     "title": "Lecture 5",
     "section": "Show the right number",
-    "text": "Show the right number\nGrouped data and the group aesthetic\n\nHow about color aesthetic, instead of group?\n\n\n\np &lt;- ggplot(data = gapminder,\n            mapping = \n              aes( x = year,\n                   y = gdpPercap ) )\n\np + geom_line( aes( color = country ) )"
+    "text": "Show the right number\nGrouped data and the group aesthetic\n\nHow about color aesthetic, instead of group?\n\n\n\np &lt;- ggplot(data = gapminder,\n            mapping = \n              aes( x = year,\n                   y = gdpPercap ) )\n\np + \n  geom_line( aes( color = country ) )"
   },
   {
     "objectID": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-6",
     "href": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-6",
     "title": "Lecture 5",
     "section": "Show the right number",
-    "text": "Show the right number\nGrouped data and the group aesthetic\n\n\np &lt;- ggplot(data = gapminder,\n            mapping = \n              aes( x = year,\n                   y = gdpPercap ) )\n\np + geom_line( aes( color = country ),\n               show.legend = F)"
+    "text": "Show the right number\nGrouped data and the group aesthetic\n\n\np &lt;- ggplot(data = gapminder,\n            mapping = \n              aes( x = year,\n                   y = gdpPercap ) )\n\np + \n  geom_line( aes( color = country ),\n               show.legend = F)"
   },
   {
     "objectID": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-7",
@@ -1719,14 +1719,14 @@
     "href": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-8",
     "title": "Lecture 5",
     "section": "Show the right number",
-    "text": "Show the right number\nFacet to make small multiples\n\n\np + geom_line( aes( group = country ) ) + \n  facet_wrap(~ continent)"
+    "text": "Show the right number\nFacet to make small multiples\n\n\np + \n  geom_line( aes( group = country ) ) + \n  facet_wrap(~ continent)"
   },
   {
     "objectID": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-9",
     "href": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-9",
     "title": "Lecture 5",
     "section": "Show the right number",
-    "text": "Show the right number\nFacet to make small multiples\n\nLet’s have all the facetted plots in a single row:\n\n\n\np + geom_line(color=\"gray70\", \n              aes(group = country)) +\n    geom_smooth(size = 1.1, \n                method = \"loess\", \n                se = FALSE) +\n    facet_wrap(.~ continent, nrow = 1) +\n    scale_y_log10(labels=scales::dollar) + \n    theme(axis.text.x = \n            element_text(\n              angle = 45),\n          axis.title.x = \n            element_text(\n              margin = margin(t = 25))) +\n    labs(x = \"Year\", \n         y = \"GDP per capita\",\n         title = \"GDP per capita on Five Continents\")"
+    "text": "Show the right number\nFacet to make small multiples\n\nLet’s have all the facetted plots in a single row:\n\n\n\np + \n  geom_line(color=\"gray70\", \n            aes(group = country)) +\n  geom_smooth(size = 1.1, \n              method = \"loess\", \n              se = FALSE) +\n  facet_wrap(.~ continent, nrow = 1) +\n  scale_y_log10(labels=scales::dollar) + \n  theme(axis.text.x = \n          element_text(\n            angle = 45),\n        axis.title.x = \n          element_text(\n            margin = margin(t = 25))) +\n  labs(x = \"Year\", \n       y = \"GDP per capita\",\n       title = \"GDP per capita on Five Continents\")"
   },
   {
     "objectID": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-10",
@@ -1740,28 +1740,28 @@
     "href": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-11",
     "title": "Lecture 5",
     "section": "Show the right number",
-    "text": "Show the right number\nFacet to make small multiples\n\nDescribe the relationship between the age of the respondent and the number of children they have using a scatterplot and a fitted curve.\n\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = \n              aes( x = age, \n                   y = childs ))\n\np + geom_point(alpha = 0.2) +\n    geom_smooth()"
+    "text": "Show the right number\nFacet to make small multiples\n\nDescribe the relationship between the age of the respondent and the number of children they have using a scatterplot and a fitted curve.\n\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = \n              aes( x = age, \n                   y = childs ))\n\np + \n  geom_point(alpha = 0.2) +\n  geom_smooth()"
   },
   {
     "objectID": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-12",
     "href": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-12",
     "title": "Lecture 5",
     "section": "Show the right number",
-    "text": "Show the right number\nFacet to make small multiples\n\nDescribe how the relationship between the age of the respondent and the number of children they have varies by sex and race.\n\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = \n              aes( x = age, \n                   y = childs ))\n\np + geom_point(alpha = 0.2) +\n    geom_smooth() +\n    facet_grid(sex ~ race)"
+    "text": "Show the right number\nFacet to make small multiples\n\nDescribe how the relationship between the age of the respondent and the number of children they have varies by sex and race.\n\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = \n              aes( x = age, \n                   y = childs ))\n\np + \n  geom_point(alpha = 0.2) +\n  geom_smooth() +\n  facet_grid(sex ~ race)"
   },
   {
     "objectID": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-13",
     "href": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-13",
     "title": "Lecture 5",
     "section": "Show the right number",
-    "text": "Show the right number\nFacet to make small multiples\n\nThe facet_grid() function is best used when you cross-classify some data by two categorical variables.\n\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = \n              aes( x = age, \n                   y = childs ))\n\np + geom_point(alpha = 0.2) +\n    geom_smooth() +\n    facet_grid(sex ~ race + degree)"
+    "text": "Show the right number\nFacet to make small multiples\n\nThe facet_grid() function is best used when you cross-classify some data by two categorical variables.\n\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = \n              aes( x = age, \n                   y = childs ))\n\np + \n  geom_point(alpha = 0.2) +\n  geom_smooth() +\n  facet_grid(sex ~ race + degree)"
   },
   {
     "objectID": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-14",
     "href": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-14",
     "title": "Lecture 5",
     "section": "Show the right number",
-    "text": "Show the right number\nGeoms can transform data\n\nLet’s plot a bar char:\n\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = \n              aes(x = bigregion))\np + geom_bar()"
+    "text": "Show the right number\nGeoms can transform data\n\nLet’s plot a bar char:\n\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = \n              aes(x = bigregion))\np + \n  geom_bar()"
   },
   {
     "objectID": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-15",
@@ -1782,7 +1782,7 @@
     "href": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-17",
     "title": "Lecture 5",
     "section": "Show the right number",
-    "text": "Show the right number\nGeoms can transform data\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = \n              aes(x = bigregion))\np + geom_bar(mapping = \n               aes(y = ..prop..))"
+    "text": "Show the right number\nGeoms can transform data\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = \n              aes(x = bigregion))\np + \n  geom_bar(mapping = \n             aes(y = ..prop..))"
   },
   {
     "objectID": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-18",
@@ -1796,7 +1796,7 @@
     "href": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-19",
     "title": "Lecture 5",
     "section": "Show the right number",
-    "text": "Show the right number\nGeoms can transform data\n\nTo do so we specify group = 1 inside the aes() call.\n\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = \n              aes(x = bigregion))\np + geom_bar(mapping = \n               aes(y = ..prop.., \n                   group = 1))"
+    "text": "Show the right number\nGeoms can transform data\n\nTo do so we specify group = 1 inside the aes() call.\n\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = \n              aes(x = bigregion))\np + \n  geom_bar(mapping = \n             aes(y = ..prop.., \n                 group = 1))"
   },
   {
     "objectID": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-20",
@@ -1810,7 +1810,7 @@
     "href": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-21",
     "title": "Lecture 5",
     "section": "Show the right number",
-    "text": "Show the right number\nGeoms can transform data\n\nIf we map religion to color, only the border lines of the bars will be assigned colors, and the insides will remain gray.\n\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = \n              aes(x = religion, \n                  color = religion))\np + geom_bar()"
+    "text": "Show the right number\nGeoms can transform data\n\nIf we map religion to color, only the border lines of the bars will be assigned colors, and the insides will remain gray.\n\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = \n              aes(x = religion, \n                  color = religion))\np + \n  geom_bar()"
   },
   {
     "objectID": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-22",
@@ -1824,7 +1824,7 @@
     "href": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-23",
     "title": "Lecture 5",
     "section": "Show the right number",
-    "text": "Show the right number\nGeoms can transform data\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = \n              aes(x = religion, \n                  fill = religion))\np + geom_bar() + \n  guides( fill = \"none\" )"
+    "text": "Show the right number\nGeoms can transform data\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = \n              aes(x = religion, \n                  fill = religion))\np + \n  geom_bar() + \n  guides( fill = \"none\" )"
   },
   {
     "objectID": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-24",
@@ -1838,21 +1838,21 @@
     "href": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-25",
     "title": "Lecture 5",
     "section": "Show the right number",
-    "text": "Show the right number\nFrequency plots the slightly awkward way\n\nAn alternative choice is to set the position argument to \"fill\". \n\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = \n              aes(x = bigregion, \n                  fill = religion))\np + geom_bar(position = \"fill\")"
+    "text": "Show the right number\nFrequency plots the slightly awkward way\n\nAn alternative choice is to set the position argument to \"fill\". \n\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = \n              aes(x = bigregion, \n                  fill = religion))\np + \n  geom_bar(position = \"fill\")"
   },
   {
     "objectID": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-26",
     "href": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-26",
     "title": "Lecture 5",
     "section": "Show the right number",
-    "text": "Show the right number\nFrequency plots the slightly awkward way\n\nWe can use position = \"dodge\" to make the bars within each region of the country appear side by side.\n\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = \n              aes(x = bigregion, \n                  fill = religion))\np + geom_bar(position = \"dodge\",\n             mapping = \n               aes(y = ..prop..))"
+    "text": "Show the right number\nFrequency plots the slightly awkward way\n\nWe can use position = \"dodge\" to make the bars within each region of the country appear side by side.\n\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = \n              aes(x = bigregion, \n                  fill = religion))\np + \n  geom_bar(position = \"dodge\",\n           mapping = \n             aes(y = ..prop..))"
   },
   {
     "objectID": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-27",
     "href": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-27",
     "title": "Lecture 5",
     "section": "Show the right number",
-    "text": "Show the right number\nFrequency plots the slightly awkward way\n\nIn this case we should consider grouping variable, religion, so we map religion to the group aesthetic.\n\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = \n              aes(x = bigregion, \n                  fill = religion))\np + geom_bar(position = \"dodge\",\n             mapping = \n               aes(y = ..prop.., \n                   group = religion))"
+    "text": "Show the right number\nFrequency plots the slightly awkward way\n\nIn this case we should consider grouping variable, religion, so we map religion to the group aesthetic.\n\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = \n              aes(x = bigregion, \n                  fill = religion))\np + \n  geom_bar(position = \"dodge\",\n           mapping = \n             aes(y = ..prop.., \n                 group = religion))"
   },
   {
     "objectID": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-28",
@@ -1866,7 +1866,7 @@
     "href": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-29",
     "title": "Lecture 5",
     "section": "Show the right number",
-    "text": "Show the right number\nFrequency plots the slightly awkward way\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = \n              aes(x = religion))\np + geom_bar(position = \"dodge\",\n             mapping = \n               aes(y = ..prop.., \n                   group = bigregion)) +\n    facet_wrap(~ bigregion, \n               ncol = 1)"
+    "text": "Show the right number\nFrequency plots the slightly awkward way\n\n\np &lt;- ggplot(data = gss_sm,\n            mapping = \n              aes(x = religion))\np + \n  geom_bar(position = \"dodge\",\n           mapping = \n             aes(y = ..prop.., \n                 group = bigregion)) +\n  facet_wrap(~ bigregion, \n             ncol = 1)"
   },
   {
     "objectID": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-30",
@@ -1880,14 +1880,14 @@
     "href": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-31",
     "title": "Lecture 5",
     "section": "Show the right number",
-    "text": "Show the right number\nHistograms and density plots\n\nBy default, the geom_histogram() function will choose a bin size for us based on a rule of thumb.\n\n\n\np &lt;- ggplot(data = midwest,\n            mapping = \n              aes(x = area))\np + geom_histogram()"
+    "text": "Show the right number\nHistograms and density plots\n\nBy default, the geom_histogram() function will choose a bin size for us based on a rule of thumb.\n\n\n\np &lt;- ggplot(data = midwest,\n            mapping = \n              aes(x = area))\np + \n  geom_histogram()"
   },
   {
     "objectID": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-32",
     "href": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-32",
     "title": "Lecture 5",
     "section": "Show the right number",
-    "text": "Show the right number\nHistograms and density plots\n\nWhen drawing histograms it is worth experimenting with bins and also optionally the origin of the x-axis.\n\n\n\np &lt;- ggplot(data = midwest,\n            mapping = \n              aes(x = area))\np + geom_histogram(bins = 10)"
+    "text": "Show the right number\nHistograms and density plots\n\nWhen drawing histograms it is worth experimenting with bins and also optionally the origin of the x-axis.\n\n\n\np &lt;- ggplot(data = midwest,\n            mapping = \n              aes(x = area))\np + \n  geom_histogram(bins = 10)"
   },
   {
     "objectID": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-33",
@@ -1901,7 +1901,7 @@
     "href": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-34",
     "title": "Lecture 5",
     "section": "Show the right number",
-    "text": "Show the right number\nHistograms and density plots\n\n\np &lt;- ggplot(data = \n              filter(midwest, \n                     state %in% \n                       c(\"OH\", \"WI\")),\n            mapping = \n              aes(x = percollege, \n                  fill = state) )\np + geom_histogram(alpha = 0.4, \n                   bins = 20)"
+    "text": "Show the right number\nHistograms and density plots\n\n\np &lt;- ggplot(data = \n              filter(midwest, \n                     state %in% \n                       c(\"OH\", \"WI\")),\n            mapping = \n              aes(x = percollege, \n                  fill = state) )\np + \n  geom_histogram(alpha = 0.4, \n                 bins = 20)"
   },
   {
     "objectID": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-35",
@@ -1915,14 +1915,14 @@
     "href": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-36",
     "title": "Lecture 5",
     "section": "Show the right number",
-    "text": "Show the right number\nHistograms and density plots\n\n\np &lt;- ggplot(data = midwest,\n            mapping = \n              aes(x = area))\np + geom_density()"
+    "text": "Show the right number\nHistograms and density plots\n\n\np &lt;- ggplot(data = midwest,\n            mapping = \n              aes(x = area))\np + \n  geom_density()"
   },
   {
     "objectID": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-37",
     "href": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-37",
     "title": "Lecture 5",
     "section": "Show the right number",
-    "text": "Show the right number\nHistograms and density plots\n\nHere we can use color (for the lines) and fill (for the body of the density curve) for aesthetic mappings.\n\n\n\np &lt;- ggplot(data = midwest,\n            mapping = \n              aes(x = area, \n                  fill = state, \n                  color = state))\np + geom_density(alpha = 0.3)"
+    "text": "Show the right number\nHistograms and density plots\n\nHere we can use color (for the lines) and fill (for the body of the density curve) for aesthetic mappings.\n\n\n\np &lt;- ggplot(data = midwest,\n            mapping = \n              aes(x = area, \n                  fill = state, \n                  color = state))\np + \n  geom_density(alpha = 0.3)"
   },
   {
     "objectID": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-38",
@@ -1936,7 +1936,7 @@
     "href": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-39",
     "title": "Lecture 5",
     "section": "Show the right number",
-    "text": "Show the right number\nHistograms and density plots\n\n\np &lt;- ggplot(data = \n              filter(midwest, \n                     state %in% \n                       c(\"OH\", \"WI\")),\n            mapping = \n              aes(x = area, \n                  fill = state, \n                  color = state))\np + geom_density( alpha = 0.3, \n                  mapping =  \n                    aes(y = after_stat(scaled) ))"
+    "text": "Show the right number\nHistograms and density plots\n\n\np &lt;- ggplot(data = \n              filter(midwest, \n                     state %in% \n                       c(\"OH\", \"WI\")),\n            mapping = \n              aes(x = area, \n                  fill = state, \n                  color = state))\np + \n  geom_density( alpha = 0.3, \n                mapping = \n                  aes(y = after_stat(scaled) ))"
   },
   {
     "objectID": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-40",
@@ -1957,7 +1957,7 @@
     "href": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-42",
     "title": "Lecture 5",
     "section": "Show the right number",
-    "text": "Show the right number\nAvoid transformations when necessary\n\nShould we avoid transforming data if we want to describe the relationship between fate and percent?\n\n\n\np &lt;- ggplot(data = titanic,\n            mapping = \n              aes(x = fate, \n                  y = percent, \n                  fill = sex))\np + geom_bar(position = \"dodge\", \n             stat = \"identity\") +\n  theme(legend.position = \"top\")"
+    "text": "Show the right number\nAvoid transformations when necessary\n\nShould we avoid transforming data if we want to describe the relationship between fate and percent?\n\n\n\np &lt;- ggplot(data = titanic,\n            mapping = \n              aes(x = fate, \n                  y = percent, \n                  fill = sex))\np + \n  geom_bar(position = \"dodge\", \n           stat = \"identity\") +\n  theme(legend.position = \"top\")"
   },
   {
     "objectID": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-43",
@@ -1971,7 +1971,7 @@
     "href": "danl-lec/danl-310-lec-05-2025-0205.html#show-the-right-number-44",
     "title": "Lecture 5",
     "section": "Show the right number",
-    "text": "Show the right number\nAvoid transformations when necessary\n\n\np &lt;- ggplot(data = socviz::oecd_sum,\n            mapping = \n              aes(x = year, \n                  y = diff, \n                  fill = hi_lo))\np + geom_col() + \n  guides(fill = \"none\") +\n  labs(x = NULL, \n       y = \"Difference in Years\",\n       title = \"The US Life Expectancy Gap\",\n       subtitle = \"Difference between US and OECD\n                   average life expectancies, 1960-2015\",\n       caption = \"Data: OECD. After a chart by Christopher Ingraham,\n                  Washington Post, December 27th 2017.\") +\n  theme_minimal()"
+    "text": "Show the right number\nAvoid transformations when necessary\n\n\np &lt;- ggplot(data = socviz::oecd_sum,\n            mapping = \n              aes(x = year, \n                  y = diff, \n                  fill = hi_lo))\np + \n  geom_col() + \n  guides(fill = \"none\") +\n  labs(x = NULL, \n       y = \"Difference in Years\",\n       title = \"The US Life Expectancy Gap\",\n       subtitle = \"Difference between US and OECD\n                   average life expectancies, 1960-2015\",\n       caption = \"Data: OECD. After a chart by Christopher Ingraham,\n                  Washington Post, December 27th 2017.\") +\n  theme_minimal()"
   },
   {
     "objectID": "danl-cw/danl-310-cw-04.html#q3a.",

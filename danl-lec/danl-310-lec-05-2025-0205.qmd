@@ -77,7 +77,8 @@ p <- ggplot(data = gapminder,
             mapping = 
               aes( x = year,
                    y = gdpPercap ) )
-p + geom_line() 
+p + 
+  geom_line() 
 ```
 
 
@@ -106,7 +107,8 @@ p <- ggplot(data = gapminder,
               aes( x = year,
                    y = gdpPercap ) )
 
-p + geom_line( aes( group = country ) ) 
+p + 
+  geom_line( aes( group = country ) ) 
 ```
 
 
@@ -136,7 +138,8 @@ p <- ggplot(data = gapminder,
               aes( x = year,
                    y = gdpPercap ) )
 
-p + geom_line( aes( color = country ) ) 
+p + 
+  geom_line( aes( color = country ) ) 
 ```
 
 
@@ -154,7 +157,8 @@ p <- ggplot(data = gapminder,
               aes( x = year,
                    y = gdpPercap ) )
 
-p + geom_line( aes( color = country ),
+p + 
+  geom_line( aes( color = country ),
                show.legend = F) 
 ```
 
@@ -174,7 +178,8 @@ p + geom_line( aes( color = country ),
 #| fig-asp: .85
 #| output-location: column-fragment
 
-p + geom_line( aes( group = country ) ) + 
+p + 
+  geom_line( aes( group = country ) ) + 
   facet_wrap(~ continent)
 ```
 
@@ -189,22 +194,23 @@ p + geom_line( aes( group = country ) ) +
 #| fig-asp: .85
 #| output-location: column-fragment
 
-p + geom_line(color="gray70", 
-              aes(group = country)) +
-    geom_smooth(size = 1.1, 
-                method = "loess", 
-                se = FALSE) +
-    facet_wrap(.~ continent, nrow = 1) +
-    scale_y_log10(labels=scales::dollar) + 
-    theme(axis.text.x = 
-            element_text(
-              angle = 45),
-          axis.title.x = 
-            element_text(
-              margin = margin(t = 25))) +
-    labs(x = "Year", 
-         y = "GDP per capita",
-         title = "GDP per capita on Five Continents")
+p + 
+  geom_line(color="gray70", 
+            aes(group = country)) +
+  geom_smooth(size = 1.1, 
+              method = "loess", 
+              se = FALSE) +
+  facet_wrap(.~ continent, nrow = 1) +
+  scale_y_log10(labels=scales::dollar) + 
+  theme(axis.text.x = 
+          element_text(
+            angle = 45),
+        axis.title.x = 
+          element_text(
+            margin = margin(t = 25))) +
+  labs(x = "Year", 
+       y = "GDP per capita",
+       title = "GDP per capita on Five Continents")
 ```
 
 
@@ -240,8 +246,9 @@ p <- ggplot(data = gss_sm,
               aes( x = age, 
                    y = childs ))
 
-p + geom_point(alpha = 0.2) +
-    geom_smooth() 
+p + 
+  geom_point(alpha = 0.2) +
+  geom_smooth() 
 ```
 
 
@@ -261,9 +268,10 @@ p <- ggplot(data = gss_sm,
               aes( x = age, 
                    y = childs ))
 
-p + geom_point(alpha = 0.2) +
-    geom_smooth() +
-    facet_grid(sex ~ race)
+p + 
+  geom_point(alpha = 0.2) +
+  geom_smooth() +
+  facet_grid(sex ~ race)
 ```
 
 
@@ -285,9 +293,10 @@ p <- ggplot(data = gss_sm,
               aes( x = age, 
                    y = childs ))
 
-p + geom_point(alpha = 0.2) +
-    geom_smooth() +
-    facet_grid(sex ~ race + degree)
+p + 
+  geom_point(alpha = 0.2) +
+  geom_smooth() +
+  facet_grid(sex ~ race + degree)
 ```
 
 
@@ -305,7 +314,8 @@ p + geom_point(alpha = 0.2) +
 p <- ggplot(data = gss_sm,
             mapping = 
               aes(x = bigregion))
-p + geom_bar()
+p + 
+  geom_bar()
 ```
 
 
@@ -348,8 +358,9 @@ p + geom_bar()
 p <- ggplot(data = gss_sm,
             mapping = 
               aes(x = bigregion))
-p + geom_bar(mapping = 
-               aes(y = ..prop..))
+p + 
+  geom_bar(mapping = 
+             aes(y = ..prop..))
 ```
 
 
@@ -375,9 +386,10 @@ p + geom_bar(mapping =
 p <- ggplot(data = gss_sm,
             mapping = 
               aes(x = bigregion))
-p + geom_bar(mapping = 
-               aes(y = ..prop.., 
-                   group = 1)) 
+p + 
+  geom_bar(mapping = 
+             aes(y = ..prop.., 
+                 group = 1)) 
 ```
 
 
@@ -409,7 +421,8 @@ p <- ggplot(data = gss_sm,
             mapping = 
               aes(x = religion, 
                   color = religion))
-p + geom_bar()
+p + 
+  geom_bar()
 ```
 
 
@@ -435,7 +448,8 @@ p <- ggplot(data = gss_sm,
             mapping = 
               aes(x = religion, 
                   fill = religion))
-p + geom_bar() + 
+p + 
+  geom_bar() + 
   guides( fill = "none" )
 ```
 
@@ -464,7 +478,8 @@ p <- ggplot(data = gss_sm,
             mapping = 
               aes(x = bigregion, 
                   fill = religion))
-p + geom_bar(position = "fill")
+p + 
+  geom_bar(position = "fill")
 ```
 
 
@@ -485,10 +500,10 @@ p <- ggplot(data = gss_sm,
             mapping = 
               aes(x = bigregion, 
                   fill = religion))
-p + geom_bar(position = "dodge",
-             mapping = 
-               aes(y = ..prop..))
-
+p + 
+  geom_bar(position = "dodge",
+           mapping = 
+             aes(y = ..prop..))
 ```
 
 
@@ -507,10 +522,11 @@ p <- ggplot(data = gss_sm,
             mapping = 
               aes(x = bigregion, 
                   fill = religion))
-p + geom_bar(position = "dodge",
-             mapping = 
-               aes(y = ..prop.., 
-                   group = religion))
+p + 
+  geom_bar(position = "dodge",
+           mapping = 
+             aes(y = ..prop.., 
+                 group = religion))
 ```
 
 
@@ -536,12 +552,13 @@ p + geom_bar(position = "dodge",
 p <- ggplot(data = gss_sm,
             mapping = 
               aes(x = religion))
-p + geom_bar(position = "dodge",
-             mapping = 
-               aes(y = ..prop.., 
-                   group = bigregion)) +
-    facet_wrap(~ bigregion, 
-               ncol = 1)
+p + 
+  geom_bar(position = "dodge",
+           mapping = 
+             aes(y = ..prop.., 
+                 group = bigregion)) +
+  facet_wrap(~ bigregion, 
+             ncol = 1)
 ```
 
 
@@ -573,7 +590,8 @@ view(midwest)
 p <- ggplot(data = midwest,
             mapping = 
               aes(x = area))
-p + geom_histogram()
+p + 
+  geom_histogram()
 ```
 
 
@@ -591,7 +609,8 @@ p + geom_histogram()
 p <- ggplot(data = midwest,
             mapping = 
               aes(x = area))
-p + geom_histogram(bins = 10)
+p + 
+  geom_histogram(bins = 10)
 ```
 
 
@@ -622,8 +641,9 @@ p <- ggplot(data =
             mapping = 
               aes(x = percollege, 
                   fill = state) )
-p + geom_histogram(alpha = 0.4, 
-                   bins = 20)
+p + 
+  geom_histogram(alpha = 0.4, 
+                 bins = 20)
 ```
 
 
@@ -645,7 +665,8 @@ p + geom_histogram(alpha = 0.4,
 p <- ggplot(data = midwest,
             mapping = 
               aes(x = area))
-p + geom_density()
+p + 
+  geom_density()
 ```
 
 
@@ -665,7 +686,8 @@ p <- ggplot(data = midwest,
               aes(x = area, 
                   fill = state, 
                   color = state))
-p + geom_density(alpha = 0.3)
+p + 
+  geom_density(alpha = 0.3)
 ```
 
 
@@ -693,9 +715,10 @@ p <- ggplot(data =
               aes(x = area, 
                   fill = state, 
                   color = state))
-p + geom_density( alpha = 0.3, 
-                  mapping =  
-                    aes(y = after_stat(scaled) ))
+p + 
+  geom_density( alpha = 0.3, 
+                mapping = 
+                  aes(y = after_stat(scaled) ))
 ```
 
 
@@ -739,8 +762,9 @@ p <- ggplot(data = titanic,
               aes(x = fate, 
                   y = percent, 
                   fill = sex))
-p + geom_bar(position = "dodge", 
-             stat = "identity") +
+p + 
+  geom_bar(position = "dodge", 
+           stat = "identity") +
   theme(legend.position = "top")
 ```
 
@@ -777,7 +801,8 @@ p <- ggplot(data = socviz::oecd_sum,
               aes(x = year, 
                   y = diff, 
                   fill = hi_lo))
-p + geom_col() + 
+p + 
+  geom_col() + 
   guides(fill = "none") +
   labs(x = NULL, 
        y = "Difference in Years",

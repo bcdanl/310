@@ -430,7 +430,8 @@ Byeong-Hak Choe
 <span id="cb1-3"><a href="#cb1-3"></a>            <span class="at">mapping =</span> </span>
 <span id="cb1-4"><a href="#cb1-4"></a>              <span class="fu">aes</span>( <span class="at">x =</span> year,</span>
 <span id="cb1-5"><a href="#cb1-5"></a>                   <span class="at">y =</span> gdpPercap ) )</span>
-<span id="cb1-6"><a href="#cb1-6"></a>p <span class="sc">+</span> <span class="fu">geom_line</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-6"><a href="#cb1-6"></a>p <span class="sc">+</span> </span>
+<span id="cb1-7"><a href="#cb1-7"></a>  <span class="fu">geom_line</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output-display">
 <p><img data-src="danl-310-lec-05-2025-0205_files/figure-revealjs/unnamed-chunk-1-1.png" width="960"></p>
@@ -459,7 +460,8 @@ Byeong-Hak Choe
 <span id="cb2-3"><a href="#cb2-3"></a>              <span class="fu">aes</span>( <span class="at">x =</span> year,</span>
 <span id="cb2-4"><a href="#cb2-4"></a>                   <span class="at">y =</span> gdpPercap ) )</span>
 <span id="cb2-5"><a href="#cb2-5"></a></span>
-<span id="cb2-6"><a href="#cb2-6"></a>p <span class="sc">+</span> <span class="fu">geom_line</span>( <span class="fu">aes</span>( <span class="at">group =</span> country ) ) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-6"><a href="#cb2-6"></a>p <span class="sc">+</span> </span>
+<span id="cb2-7"><a href="#cb2-7"></a>  <span class="fu">geom_line</span>( <span class="fu">aes</span>( <span class="at">group =</span> country ) ) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output-display">
 <p><img data-src="danl-310-lec-05-2025-0205_files/figure-revealjs/unnamed-chunk-2-1.png" width="960"></p>
@@ -487,7 +489,8 @@ Byeong-Hak Choe
 <span id="cb3-3"><a href="#cb3-3"></a>              <span class="fu">aes</span>( <span class="at">x =</span> year,</span>
 <span id="cb3-4"><a href="#cb3-4"></a>                   <span class="at">y =</span> gdpPercap ) )</span>
 <span id="cb3-5"><a href="#cb3-5"></a></span>
-<span id="cb3-6"><a href="#cb3-6"></a>p <span class="sc">+</span> <span class="fu">geom_line</span>( <span class="fu">aes</span>( <span class="at">color =</span> country ) ) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-6"><a href="#cb3-6"></a>p <span class="sc">+</span> </span>
+<span id="cb3-7"><a href="#cb3-7"></a>  <span class="fu">geom_line</span>( <span class="fu">aes</span>( <span class="at">color =</span> country ) ) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output-display">
 <p><img data-src="danl-310-lec-05-2025-0205_files/figure-revealjs/unnamed-chunk-3-1.png" width="960"></p>
@@ -505,8 +508,9 @@ Byeong-Hak Choe
 <span id="cb4-3"><a href="#cb4-3"></a>              <span class="fu">aes</span>( <span class="at">x =</span> year,</span>
 <span id="cb4-4"><a href="#cb4-4"></a>                   <span class="at">y =</span> gdpPercap ) )</span>
 <span id="cb4-5"><a href="#cb4-5"></a></span>
-<span id="cb4-6"><a href="#cb4-6"></a>p <span class="sc">+</span> <span class="fu">geom_line</span>( <span class="fu">aes</span>( <span class="at">color =</span> country ),</span>
-<span id="cb4-7"><a href="#cb4-7"></a>               <span class="at">show.legend =</span> F) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-6"><a href="#cb4-6"></a>p <span class="sc">+</span> </span>
+<span id="cb4-7"><a href="#cb4-7"></a>  <span class="fu">geom_line</span>( <span class="fu">aes</span>( <span class="at">color =</span> country ),</span>
+<span id="cb4-8"><a href="#cb4-8"></a>               <span class="at">show.legend =</span> F) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output-display">
 <p><img data-src="danl-310-lec-05-2025-0205_files/figure-revealjs/unnamed-chunk-4-1.png" width="960"></p>
@@ -532,8 +536,9 @@ Byeong-Hak Choe
 <h3 id="facet-to-make-small-multiples-1">Facet to make small multiples</h3>
 <div class="cell columns column-output-location" data-fig.asp="0.85">
 <div class="column">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>p <span class="sc">+</span> <span class="fu">geom_line</span>( <span class="fu">aes</span>( <span class="at">group =</span> country ) ) <span class="sc">+</span> </span>
-<span id="cb5-2"><a href="#cb5-2"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> continent)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>p <span class="sc">+</span> </span>
+<span id="cb5-2"><a href="#cb5-2"></a>  <span class="fu">geom_line</span>( <span class="fu">aes</span>( <span class="at">group =</span> country ) ) <span class="sc">+</span> </span>
+<span id="cb5-3"><a href="#cb5-3"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> continent)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output-display">
 <p><img data-src="danl-310-lec-05-2025-0205_files/figure-revealjs/unnamed-chunk-5-1.png" width="960"></p>
@@ -549,22 +554,23 @@ Byeong-Hak Choe
 </ul>
 <div class="cell columns column-output-location" data-fig.asp="0.85">
 <div class="column">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>p <span class="sc">+</span> <span class="fu">geom_line</span>(<span class="at">color=</span><span class="st">"gray70"</span>, </span>
-<span id="cb6-2"><a href="#cb6-2"></a>              <span class="fu">aes</span>(<span class="at">group =</span> country)) <span class="sc">+</span></span>
-<span id="cb6-3"><a href="#cb6-3"></a>    <span class="fu">geom_smooth</span>(<span class="at">size =</span> <span class="fl">1.1</span>, </span>
-<span id="cb6-4"><a href="#cb6-4"></a>                <span class="at">method =</span> <span class="st">"loess"</span>, </span>
-<span id="cb6-5"><a href="#cb6-5"></a>                <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
-<span id="cb6-6"><a href="#cb6-6"></a>    <span class="fu">facet_wrap</span>(.<span class="sc">~</span> continent, <span class="at">nrow =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
-<span id="cb6-7"><a href="#cb6-7"></a>    <span class="fu">scale_y_log10</span>(<span class="at">labels=</span>scales<span class="sc">::</span>dollar) <span class="sc">+</span> </span>
-<span id="cb6-8"><a href="#cb6-8"></a>    <span class="fu">theme</span>(<span class="at">axis.text.x =</span> </span>
-<span id="cb6-9"><a href="#cb6-9"></a>            <span class="fu">element_text</span>(</span>
-<span id="cb6-10"><a href="#cb6-10"></a>              <span class="at">angle =</span> <span class="dv">45</span>),</span>
-<span id="cb6-11"><a href="#cb6-11"></a>          <span class="at">axis.title.x =</span> </span>
-<span id="cb6-12"><a href="#cb6-12"></a>            <span class="fu">element_text</span>(</span>
-<span id="cb6-13"><a href="#cb6-13"></a>              <span class="at">margin =</span> <span class="fu">margin</span>(<span class="at">t =</span> <span class="dv">25</span>))) <span class="sc">+</span></span>
-<span id="cb6-14"><a href="#cb6-14"></a>    <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Year"</span>, </span>
-<span id="cb6-15"><a href="#cb6-15"></a>         <span class="at">y =</span> <span class="st">"GDP per capita"</span>,</span>
-<span id="cb6-16"><a href="#cb6-16"></a>         <span class="at">title =</span> <span class="st">"GDP per capita on Five Continents"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>p <span class="sc">+</span> </span>
+<span id="cb6-2"><a href="#cb6-2"></a>  <span class="fu">geom_line</span>(<span class="at">color=</span><span class="st">"gray70"</span>, </span>
+<span id="cb6-3"><a href="#cb6-3"></a>            <span class="fu">aes</span>(<span class="at">group =</span> country)) <span class="sc">+</span></span>
+<span id="cb6-4"><a href="#cb6-4"></a>  <span class="fu">geom_smooth</span>(<span class="at">size =</span> <span class="fl">1.1</span>, </span>
+<span id="cb6-5"><a href="#cb6-5"></a>              <span class="at">method =</span> <span class="st">"loess"</span>, </span>
+<span id="cb6-6"><a href="#cb6-6"></a>              <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb6-7"><a href="#cb6-7"></a>  <span class="fu">facet_wrap</span>(.<span class="sc">~</span> continent, <span class="at">nrow =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb6-8"><a href="#cb6-8"></a>  <span class="fu">scale_y_log10</span>(<span class="at">labels=</span>scales<span class="sc">::</span>dollar) <span class="sc">+</span> </span>
+<span id="cb6-9"><a href="#cb6-9"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> </span>
+<span id="cb6-10"><a href="#cb6-10"></a>          <span class="fu">element_text</span>(</span>
+<span id="cb6-11"><a href="#cb6-11"></a>            <span class="at">angle =</span> <span class="dv">45</span>),</span>
+<span id="cb6-12"><a href="#cb6-12"></a>        <span class="at">axis.title.x =</span> </span>
+<span id="cb6-13"><a href="#cb6-13"></a>          <span class="fu">element_text</span>(</span>
+<span id="cb6-14"><a href="#cb6-14"></a>            <span class="at">margin =</span> <span class="fu">margin</span>(<span class="at">t =</span> <span class="dv">25</span>))) <span class="sc">+</span></span>
+<span id="cb6-15"><a href="#cb6-15"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Year"</span>, </span>
+<span id="cb6-16"><a href="#cb6-16"></a>       <span class="at">y =</span> <span class="st">"GDP per capita"</span>,</span>
+<span id="cb6-17"><a href="#cb6-17"></a>       <span class="at">title =</span> <span class="st">"GDP per capita on Five Continents"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output-display">
 <p><img data-src="danl-310-lec-05-2025-0205_files/figure-revealjs/unnamed-chunk-6-1.png" width="960"></p>
@@ -600,8 +606,9 @@ Byeong-Hak Choe
 <span id="cb8-3"><a href="#cb8-3"></a>              <span class="fu">aes</span>( <span class="at">x =</span> age, </span>
 <span id="cb8-4"><a href="#cb8-4"></a>                   <span class="at">y =</span> childs ))</span>
 <span id="cb8-5"><a href="#cb8-5"></a></span>
-<span id="cb8-6"><a href="#cb8-6"></a>p <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.2</span>) <span class="sc">+</span></span>
-<span id="cb8-7"><a href="#cb8-7"></a>    <span class="fu">geom_smooth</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-6"><a href="#cb8-6"></a>p <span class="sc">+</span> </span>
+<span id="cb8-7"><a href="#cb8-7"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.2</span>) <span class="sc">+</span></span>
+<span id="cb8-8"><a href="#cb8-8"></a>  <span class="fu">geom_smooth</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output-display">
 <p><img data-src="danl-310-lec-05-2025-0205_files/figure-revealjs/unnamed-chunk-7-1.png" width="960"></p>
@@ -622,9 +629,10 @@ Byeong-Hak Choe
 <span id="cb9-3"><a href="#cb9-3"></a>              <span class="fu">aes</span>( <span class="at">x =</span> age, </span>
 <span id="cb9-4"><a href="#cb9-4"></a>                   <span class="at">y =</span> childs ))</span>
 <span id="cb9-5"><a href="#cb9-5"></a></span>
-<span id="cb9-6"><a href="#cb9-6"></a>p <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.2</span>) <span class="sc">+</span></span>
-<span id="cb9-7"><a href="#cb9-7"></a>    <span class="fu">geom_smooth</span>() <span class="sc">+</span></span>
-<span id="cb9-8"><a href="#cb9-8"></a>    <span class="fu">facet_grid</span>(sex <span class="sc">~</span> race)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-6"><a href="#cb9-6"></a>p <span class="sc">+</span> </span>
+<span id="cb9-7"><a href="#cb9-7"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.2</span>) <span class="sc">+</span></span>
+<span id="cb9-8"><a href="#cb9-8"></a>  <span class="fu">geom_smooth</span>() <span class="sc">+</span></span>
+<span id="cb9-9"><a href="#cb9-9"></a>  <span class="fu">facet_grid</span>(sex <span class="sc">~</span> race)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output-display">
 <p><img data-src="danl-310-lec-05-2025-0205_files/figure-revealjs/unnamed-chunk-8-1.png" width="960"></p>
@@ -645,9 +653,10 @@ Byeong-Hak Choe
 <span id="cb10-3"><a href="#cb10-3"></a>              <span class="fu">aes</span>( <span class="at">x =</span> age, </span>
 <span id="cb10-4"><a href="#cb10-4"></a>                   <span class="at">y =</span> childs ))</span>
 <span id="cb10-5"><a href="#cb10-5"></a></span>
-<span id="cb10-6"><a href="#cb10-6"></a>p <span class="sc">+</span> <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.2</span>) <span class="sc">+</span></span>
-<span id="cb10-7"><a href="#cb10-7"></a>    <span class="fu">geom_smooth</span>() <span class="sc">+</span></span>
-<span id="cb10-8"><a href="#cb10-8"></a>    <span class="fu">facet_grid</span>(sex <span class="sc">~</span> race <span class="sc">+</span> degree)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb10-6"><a href="#cb10-6"></a>p <span class="sc">+</span> </span>
+<span id="cb10-7"><a href="#cb10-7"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.2</span>) <span class="sc">+</span></span>
+<span id="cb10-8"><a href="#cb10-8"></a>  <span class="fu">geom_smooth</span>() <span class="sc">+</span></span>
+<span id="cb10-9"><a href="#cb10-9"></a>  <span class="fu">facet_grid</span>(sex <span class="sc">~</span> race <span class="sc">+</span> degree)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output-display">
 <p><img data-src="danl-310-lec-05-2025-0205_files/figure-revealjs/unnamed-chunk-9-1.png" width="960"></p>
@@ -666,7 +675,8 @@ Byeong-Hak Choe
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> gss_sm,</span>
 <span id="cb11-2"><a href="#cb11-2"></a>            <span class="at">mapping =</span> </span>
 <span id="cb11-3"><a href="#cb11-3"></a>              <span class="fu">aes</span>(<span class="at">x =</span> bigregion))</span>
-<span id="cb11-4"><a href="#cb11-4"></a>p <span class="sc">+</span> <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb11-4"><a href="#cb11-4"></a>p <span class="sc">+</span> </span>
+<span id="cb11-5"><a href="#cb11-5"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output-display">
 <p><img data-src="danl-310-lec-05-2025-0205_files/figure-revealjs/unnamed-chunk-10-1.png" width="960"></p>
@@ -707,8 +717,9 @@ Byeong-Hak Choe
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> gss_sm,</span>
 <span id="cb12-2"><a href="#cb12-2"></a>            <span class="at">mapping =</span> </span>
 <span id="cb12-3"><a href="#cb12-3"></a>              <span class="fu">aes</span>(<span class="at">x =</span> bigregion))</span>
-<span id="cb12-4"><a href="#cb12-4"></a>p <span class="sc">+</span> <span class="fu">geom_bar</span>(<span class="at">mapping =</span> </span>
-<span id="cb12-5"><a href="#cb12-5"></a>               <span class="fu">aes</span>(<span class="at">y =</span> ..prop..))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb12-4"><a href="#cb12-4"></a>p <span class="sc">+</span> </span>
+<span id="cb12-5"><a href="#cb12-5"></a>  <span class="fu">geom_bar</span>(<span class="at">mapping =</span> </span>
+<span id="cb12-6"><a href="#cb12-6"></a>             <span class="fu">aes</span>(<span class="at">y =</span> ..prop..))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output-display">
 <p><img data-src="danl-310-lec-05-2025-0205_files/figure-revealjs/unnamed-chunk-11-1.png" width="960"></p>
@@ -734,9 +745,10 @@ Byeong-Hak Choe
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> gss_sm,</span>
 <span id="cb13-2"><a href="#cb13-2"></a>            <span class="at">mapping =</span> </span>
 <span id="cb13-3"><a href="#cb13-3"></a>              <span class="fu">aes</span>(<span class="at">x =</span> bigregion))</span>
-<span id="cb13-4"><a href="#cb13-4"></a>p <span class="sc">+</span> <span class="fu">geom_bar</span>(<span class="at">mapping =</span> </span>
-<span id="cb13-5"><a href="#cb13-5"></a>               <span class="fu">aes</span>(<span class="at">y =</span> ..prop.., </span>
-<span id="cb13-6"><a href="#cb13-6"></a>                   <span class="at">group =</span> <span class="dv">1</span>)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb13-4"><a href="#cb13-4"></a>p <span class="sc">+</span> </span>
+<span id="cb13-5"><a href="#cb13-5"></a>  <span class="fu">geom_bar</span>(<span class="at">mapping =</span> </span>
+<span id="cb13-6"><a href="#cb13-6"></a>             <span class="fu">aes</span>(<span class="at">y =</span> ..prop.., </span>
+<span id="cb13-7"><a href="#cb13-7"></a>                 <span class="at">group =</span> <span class="dv">1</span>)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output-display">
 <p><img data-src="danl-310-lec-05-2025-0205_files/figure-revealjs/unnamed-chunk-12-1.png" width="960"></p>
@@ -769,7 +781,8 @@ Byeong-Hak Choe
 <span id="cb15-2"><a href="#cb15-2"></a>            <span class="at">mapping =</span> </span>
 <span id="cb15-3"><a href="#cb15-3"></a>              <span class="fu">aes</span>(<span class="at">x =</span> religion, </span>
 <span id="cb15-4"><a href="#cb15-4"></a>                  <span class="at">color =</span> religion))</span>
-<span id="cb15-5"><a href="#cb15-5"></a>p <span class="sc">+</span> <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb15-5"><a href="#cb15-5"></a>p <span class="sc">+</span> </span>
+<span id="cb15-6"><a href="#cb15-6"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output-display">
 <p><img data-src="danl-310-lec-05-2025-0205_files/figure-revealjs/unnamed-chunk-13-1.png" width="960"></p>
@@ -794,8 +807,9 @@ Byeong-Hak Choe
 <span id="cb16-2"><a href="#cb16-2"></a>            <span class="at">mapping =</span> </span>
 <span id="cb16-3"><a href="#cb16-3"></a>              <span class="fu">aes</span>(<span class="at">x =</span> religion, </span>
 <span id="cb16-4"><a href="#cb16-4"></a>                  <span class="at">fill =</span> religion))</span>
-<span id="cb16-5"><a href="#cb16-5"></a>p <span class="sc">+</span> <span class="fu">geom_bar</span>() <span class="sc">+</span> </span>
-<span id="cb16-6"><a href="#cb16-6"></a>  <span class="fu">guides</span>( <span class="at">fill =</span> <span class="st">"none"</span> )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb16-5"><a href="#cb16-5"></a>p <span class="sc">+</span> </span>
+<span id="cb16-6"><a href="#cb16-6"></a>  <span class="fu">geom_bar</span>() <span class="sc">+</span> </span>
+<span id="cb16-7"><a href="#cb16-7"></a>  <span class="fu">guides</span>( <span class="at">fill =</span> <span class="st">"none"</span> )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output-display">
 <p><img data-src="danl-310-lec-05-2025-0205_files/figure-revealjs/unnamed-chunk-14-1.png" width="960"></p>
@@ -825,7 +839,8 @@ Byeong-Hak Choe
 <span id="cb17-2"><a href="#cb17-2"></a>            <span class="at">mapping =</span> </span>
 <span id="cb17-3"><a href="#cb17-3"></a>              <span class="fu">aes</span>(<span class="at">x =</span> bigregion, </span>
 <span id="cb17-4"><a href="#cb17-4"></a>                  <span class="at">fill =</span> religion))</span>
-<span id="cb17-5"><a href="#cb17-5"></a>p <span class="sc">+</span> <span class="fu">geom_bar</span>(<span class="at">position =</span> <span class="st">"fill"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb17-5"><a href="#cb17-5"></a>p <span class="sc">+</span> </span>
+<span id="cb17-6"><a href="#cb17-6"></a>  <span class="fu">geom_bar</span>(<span class="at">position =</span> <span class="st">"fill"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output-display">
 <p><img data-src="danl-310-lec-05-2025-0205_files/figure-revealjs/unnamed-chunk-15-1.png" width="960"></p>
@@ -845,9 +860,10 @@ Byeong-Hak Choe
 <span id="cb18-2"><a href="#cb18-2"></a>            <span class="at">mapping =</span> </span>
 <span id="cb18-3"><a href="#cb18-3"></a>              <span class="fu">aes</span>(<span class="at">x =</span> bigregion, </span>
 <span id="cb18-4"><a href="#cb18-4"></a>                  <span class="at">fill =</span> religion))</span>
-<span id="cb18-5"><a href="#cb18-5"></a>p <span class="sc">+</span> <span class="fu">geom_bar</span>(<span class="at">position =</span> <span class="st">"dodge"</span>,</span>
-<span id="cb18-6"><a href="#cb18-6"></a>             <span class="at">mapping =</span> </span>
-<span id="cb18-7"><a href="#cb18-7"></a>               <span class="fu">aes</span>(<span class="at">y =</span> ..prop..))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb18-5"><a href="#cb18-5"></a>p <span class="sc">+</span> </span>
+<span id="cb18-6"><a href="#cb18-6"></a>  <span class="fu">geom_bar</span>(<span class="at">position =</span> <span class="st">"dodge"</span>,</span>
+<span id="cb18-7"><a href="#cb18-7"></a>           <span class="at">mapping =</span> </span>
+<span id="cb18-8"><a href="#cb18-8"></a>             <span class="fu">aes</span>(<span class="at">y =</span> ..prop..))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output-display">
 <p><img data-src="danl-310-lec-05-2025-0205_files/figure-revealjs/unnamed-chunk-16-1.png" width="960"></p>
@@ -867,10 +883,11 @@ Byeong-Hak Choe
 <span id="cb19-2"><a href="#cb19-2"></a>            <span class="at">mapping =</span> </span>
 <span id="cb19-3"><a href="#cb19-3"></a>              <span class="fu">aes</span>(<span class="at">x =</span> bigregion, </span>
 <span id="cb19-4"><a href="#cb19-4"></a>                  <span class="at">fill =</span> religion))</span>
-<span id="cb19-5"><a href="#cb19-5"></a>p <span class="sc">+</span> <span class="fu">geom_bar</span>(<span class="at">position =</span> <span class="st">"dodge"</span>,</span>
-<span id="cb19-6"><a href="#cb19-6"></a>             <span class="at">mapping =</span> </span>
-<span id="cb19-7"><a href="#cb19-7"></a>               <span class="fu">aes</span>(<span class="at">y =</span> ..prop.., </span>
-<span id="cb19-8"><a href="#cb19-8"></a>                   <span class="at">group =</span> religion))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb19-5"><a href="#cb19-5"></a>p <span class="sc">+</span> </span>
+<span id="cb19-6"><a href="#cb19-6"></a>  <span class="fu">geom_bar</span>(<span class="at">position =</span> <span class="st">"dodge"</span>,</span>
+<span id="cb19-7"><a href="#cb19-7"></a>           <span class="at">mapping =</span> </span>
+<span id="cb19-8"><a href="#cb19-8"></a>             <span class="fu">aes</span>(<span class="at">y =</span> ..prop.., </span>
+<span id="cb19-9"><a href="#cb19-9"></a>                 <span class="at">group =</span> religion))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output-display">
 <p><img data-src="danl-310-lec-05-2025-0205_files/figure-revealjs/unnamed-chunk-17-1.png" width="960"></p>
@@ -897,12 +914,13 @@ Byeong-Hak Choe
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> gss_sm,</span>
 <span id="cb20-2"><a href="#cb20-2"></a>            <span class="at">mapping =</span> </span>
 <span id="cb20-3"><a href="#cb20-3"></a>              <span class="fu">aes</span>(<span class="at">x =</span> religion))</span>
-<span id="cb20-4"><a href="#cb20-4"></a>p <span class="sc">+</span> <span class="fu">geom_bar</span>(<span class="at">position =</span> <span class="st">"dodge"</span>,</span>
-<span id="cb20-5"><a href="#cb20-5"></a>             <span class="at">mapping =</span> </span>
-<span id="cb20-6"><a href="#cb20-6"></a>               <span class="fu">aes</span>(<span class="at">y =</span> ..prop.., </span>
-<span id="cb20-7"><a href="#cb20-7"></a>                   <span class="at">group =</span> bigregion)) <span class="sc">+</span></span>
-<span id="cb20-8"><a href="#cb20-8"></a>    <span class="fu">facet_wrap</span>(<span class="sc">~</span> bigregion, </span>
-<span id="cb20-9"><a href="#cb20-9"></a>               <span class="at">ncol =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb20-4"><a href="#cb20-4"></a>p <span class="sc">+</span> </span>
+<span id="cb20-5"><a href="#cb20-5"></a>  <span class="fu">geom_bar</span>(<span class="at">position =</span> <span class="st">"dodge"</span>,</span>
+<span id="cb20-6"><a href="#cb20-6"></a>           <span class="at">mapping =</span> </span>
+<span id="cb20-7"><a href="#cb20-7"></a>             <span class="fu">aes</span>(<span class="at">y =</span> ..prop.., </span>
+<span id="cb20-8"><a href="#cb20-8"></a>                 <span class="at">group =</span> bigregion)) <span class="sc">+</span></span>
+<span id="cb20-9"><a href="#cb20-9"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> bigregion, </span>
+<span id="cb20-10"><a href="#cb20-10"></a>             <span class="at">ncol =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output-display">
 <p><img data-src="danl-310-lec-05-2025-0205_files/figure-revealjs/unnamed-chunk-18-1.png" width="960"></p>
@@ -932,7 +950,8 @@ Byeong-Hak Choe
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> midwest,</span>
 <span id="cb22-2"><a href="#cb22-2"></a>            <span class="at">mapping =</span> </span>
 <span id="cb22-3"><a href="#cb22-3"></a>              <span class="fu">aes</span>(<span class="at">x =</span> area))</span>
-<span id="cb22-4"><a href="#cb22-4"></a>p <span class="sc">+</span> <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb22-4"><a href="#cb22-4"></a>p <span class="sc">+</span> </span>
+<span id="cb22-5"><a href="#cb22-5"></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output-display">
 <p><img data-src="danl-310-lec-05-2025-0205_files/figure-revealjs/unnamed-chunk-19-1.png" width="960"></p>
@@ -951,7 +970,8 @@ Byeong-Hak Choe
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> midwest,</span>
 <span id="cb23-2"><a href="#cb23-2"></a>            <span class="at">mapping =</span> </span>
 <span id="cb23-3"><a href="#cb23-3"></a>              <span class="fu">aes</span>(<span class="at">x =</span> area))</span>
-<span id="cb23-4"><a href="#cb23-4"></a>p <span class="sc">+</span> <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb23-4"><a href="#cb23-4"></a>p <span class="sc">+</span> </span>
+<span id="cb23-5"><a href="#cb23-5"></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output-display">
 <p><img data-src="danl-310-lec-05-2025-0205_files/figure-revealjs/unnamed-chunk-20-1.png" width="960"></p>
@@ -982,8 +1002,9 @@ Byeong-Hak Choe
 <span id="cb24-5"><a href="#cb24-5"></a>            <span class="at">mapping =</span> </span>
 <span id="cb24-6"><a href="#cb24-6"></a>              <span class="fu">aes</span>(<span class="at">x =</span> percollege, </span>
 <span id="cb24-7"><a href="#cb24-7"></a>                  <span class="at">fill =</span> state) )</span>
-<span id="cb24-8"><a href="#cb24-8"></a>p <span class="sc">+</span> <span class="fu">geom_histogram</span>(<span class="at">alpha =</span> <span class="fl">0.4</span>, </span>
-<span id="cb24-9"><a href="#cb24-9"></a>                   <span class="at">bins =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb24-8"><a href="#cb24-8"></a>p <span class="sc">+</span> </span>
+<span id="cb24-9"><a href="#cb24-9"></a>  <span class="fu">geom_histogram</span>(<span class="at">alpha =</span> <span class="fl">0.4</span>, </span>
+<span id="cb24-10"><a href="#cb24-10"></a>                 <span class="at">bins =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output-display">
 <p><img data-src="danl-310-lec-05-2025-0205_files/figure-revealjs/unnamed-chunk-21-1.png" width="960"></p>
@@ -1006,7 +1027,8 @@ Byeong-Hak Choe
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> midwest,</span>
 <span id="cb25-2"><a href="#cb25-2"></a>            <span class="at">mapping =</span> </span>
 <span id="cb25-3"><a href="#cb25-3"></a>              <span class="fu">aes</span>(<span class="at">x =</span> area))</span>
-<span id="cb25-4"><a href="#cb25-4"></a>p <span class="sc">+</span> <span class="fu">geom_density</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb25-4"><a href="#cb25-4"></a>p <span class="sc">+</span> </span>
+<span id="cb25-5"><a href="#cb25-5"></a>  <span class="fu">geom_density</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output-display">
 <p><img data-src="danl-310-lec-05-2025-0205_files/figure-revealjs/unnamed-chunk-22-1.png" width="960"></p>
@@ -1027,7 +1049,8 @@ Byeong-Hak Choe
 <span id="cb26-3"><a href="#cb26-3"></a>              <span class="fu">aes</span>(<span class="at">x =</span> area, </span>
 <span id="cb26-4"><a href="#cb26-4"></a>                  <span class="at">fill =</span> state, </span>
 <span id="cb26-5"><a href="#cb26-5"></a>                  <span class="at">color =</span> state))</span>
-<span id="cb26-6"><a href="#cb26-6"></a>p <span class="sc">+</span> <span class="fu">geom_density</span>(<span class="at">alpha =</span> <span class="fl">0.3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb26-6"><a href="#cb26-6"></a>p <span class="sc">+</span> </span>
+<span id="cb26-7"><a href="#cb26-7"></a>  <span class="fu">geom_density</span>(<span class="at">alpha =</span> <span class="fl">0.3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output-display">
 <p><img data-src="danl-310-lec-05-2025-0205_files/figure-revealjs/unnamed-chunk-23-1.png" width="960"></p>
@@ -1055,9 +1078,10 @@ Byeong-Hak Choe
 <span id="cb27-6"><a href="#cb27-6"></a>              <span class="fu">aes</span>(<span class="at">x =</span> area, </span>
 <span id="cb27-7"><a href="#cb27-7"></a>                  <span class="at">fill =</span> state, </span>
 <span id="cb27-8"><a href="#cb27-8"></a>                  <span class="at">color =</span> state))</span>
-<span id="cb27-9"><a href="#cb27-9"></a>p <span class="sc">+</span> <span class="fu">geom_density</span>( <span class="at">alpha =</span> <span class="fl">0.3</span>, </span>
-<span id="cb27-10"><a href="#cb27-10"></a>                  <span class="at">mapping =</span>  </span>
-<span id="cb27-11"><a href="#cb27-11"></a>                    <span class="fu">aes</span>(<span class="at">y =</span> <span class="fu">after_stat</span>(scaled) ))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb27-9"><a href="#cb27-9"></a>p <span class="sc">+</span> </span>
+<span id="cb27-10"><a href="#cb27-10"></a>  <span class="fu">geom_density</span>( <span class="at">alpha =</span> <span class="fl">0.3</span>, </span>
+<span id="cb27-11"><a href="#cb27-11"></a>                <span class="at">mapping =</span> </span>
+<span id="cb27-12"><a href="#cb27-12"></a>                  <span class="fu">aes</span>(<span class="at">y =</span> <span class="fu">after_stat</span>(scaled) ))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output-display">
 <p><img data-src="danl-310-lec-05-2025-0205_files/figure-revealjs/unnamed-chunk-24-1.png" width="960"></p>
@@ -1097,9 +1121,10 @@ Byeong-Hak Choe
 <span id="cb29-3"><a href="#cb29-3"></a>              <span class="fu">aes</span>(<span class="at">x =</span> fate, </span>
 <span id="cb29-4"><a href="#cb29-4"></a>                  <span class="at">y =</span> percent, </span>
 <span id="cb29-5"><a href="#cb29-5"></a>                  <span class="at">fill =</span> sex))</span>
-<span id="cb29-6"><a href="#cb29-6"></a>p <span class="sc">+</span> <span class="fu">geom_bar</span>(<span class="at">position =</span> <span class="st">"dodge"</span>, </span>
-<span id="cb29-7"><a href="#cb29-7"></a>             <span class="at">stat =</span> <span class="st">"identity"</span>) <span class="sc">+</span></span>
-<span id="cb29-8"><a href="#cb29-8"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"top"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb29-6"><a href="#cb29-6"></a>p <span class="sc">+</span> </span>
+<span id="cb29-7"><a href="#cb29-7"></a>  <span class="fu">geom_bar</span>(<span class="at">position =</span> <span class="st">"dodge"</span>, </span>
+<span id="cb29-8"><a href="#cb29-8"></a>           <span class="at">stat =</span> <span class="st">"identity"</span>) <span class="sc">+</span></span>
+<span id="cb29-9"><a href="#cb29-9"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"top"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output-display">
 <p><img data-src="danl-310-lec-05-2025-0205_files/figure-revealjs/unnamed-chunk-25-1.png" width="960"></p>
@@ -1132,16 +1157,17 @@ Byeong-Hak Choe
 <span id="cb31-3"><a href="#cb31-3"></a>              <span class="fu">aes</span>(<span class="at">x =</span> year, </span>
 <span id="cb31-4"><a href="#cb31-4"></a>                  <span class="at">y =</span> diff, </span>
 <span id="cb31-5"><a href="#cb31-5"></a>                  <span class="at">fill =</span> hi_lo))</span>
-<span id="cb31-6"><a href="#cb31-6"></a>p <span class="sc">+</span> <span class="fu">geom_col</span>() <span class="sc">+</span> </span>
-<span id="cb31-7"><a href="#cb31-7"></a>  <span class="fu">guides</span>(<span class="at">fill =</span> <span class="st">"none"</span>) <span class="sc">+</span></span>
-<span id="cb31-8"><a href="#cb31-8"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>, </span>
-<span id="cb31-9"><a href="#cb31-9"></a>       <span class="at">y =</span> <span class="st">"Difference in Years"</span>,</span>
-<span id="cb31-10"><a href="#cb31-10"></a>       <span class="at">title =</span> <span class="st">"The US Life Expectancy Gap"</span>,</span>
-<span id="cb31-11"><a href="#cb31-11"></a>       <span class="at">subtitle =</span> <span class="st">"Difference between US and OECD</span></span>
-<span id="cb31-12"><a href="#cb31-12"></a><span class="st">                   average life expectancies, 1960-2015"</span>,</span>
-<span id="cb31-13"><a href="#cb31-13"></a>       <span class="at">caption =</span> <span class="st">"Data: OECD. After a chart by Christopher Ingraham,</span></span>
-<span id="cb31-14"><a href="#cb31-14"></a><span class="st">                  Washington Post, December 27th 2017."</span>) <span class="sc">+</span></span>
-<span id="cb31-15"><a href="#cb31-15"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb31-6"><a href="#cb31-6"></a>p <span class="sc">+</span> </span>
+<span id="cb31-7"><a href="#cb31-7"></a>  <span class="fu">geom_col</span>() <span class="sc">+</span> </span>
+<span id="cb31-8"><a href="#cb31-8"></a>  <span class="fu">guides</span>(<span class="at">fill =</span> <span class="st">"none"</span>) <span class="sc">+</span></span>
+<span id="cb31-9"><a href="#cb31-9"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>, </span>
+<span id="cb31-10"><a href="#cb31-10"></a>       <span class="at">y =</span> <span class="st">"Difference in Years"</span>,</span>
+<span id="cb31-11"><a href="#cb31-11"></a>       <span class="at">title =</span> <span class="st">"The US Life Expectancy Gap"</span>,</span>
+<span id="cb31-12"><a href="#cb31-12"></a>       <span class="at">subtitle =</span> <span class="st">"Difference between US and OECD</span></span>
+<span id="cb31-13"><a href="#cb31-13"></a><span class="st">                   average life expectancies, 1960-2015"</span>,</span>
+<span id="cb31-14"><a href="#cb31-14"></a>       <span class="at">caption =</span> <span class="st">"Data: OECD. After a chart by Christopher Ingraham,</span></span>
+<span id="cb31-15"><a href="#cb31-15"></a><span class="st">                  Washington Post, December 27th 2017."</span>) <span class="sc">+</span></span>
+<span id="cb31-16"><a href="#cb31-16"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
