@@ -17,6 +17,7 @@ execute:
 callout-icon: false
 
 from: markdown+emoji
+include-after-body: target-hover.html # effect.html
 
 # bibliography: refs.bib
 # include-after-body: backwards.html
