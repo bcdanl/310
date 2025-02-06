@@ -50,6 +50,26 @@ knitr::opts_chunk$set(fig.width=8, fig.height=5,
 
 2. Add a "ggplot Basics" blog post to your blog using Quarto document.
   - In your "ggplot Basics" blog post, briefly explain ggplot basics we discussed in [Lecture 3](https://bcdanl.github.io/310/danl-lec/danl-310-lec-03-2025-0129.html), [Lecture 4](https://bcdanl.github.io/310/danl-lec/danl-310-lec-04-2025-0203.html), and [Classwork 4](https://bcdanl.github.io/310/danl-cw/danl-310-cw-04.html)
+  - Choose a proper image file for a thumbnail for a blog post.
+  - An YAML header template for a blog post can be found below, including an image option:
+  
+```{markdown}
+---
+title: BLOG_TITLE
+author: YOUR_NAME
+date: 2025-02-14
+categories: [tag_1, tag_2, tag_3] # tags for a blog post (e.g., python)
+image: image.png 
+
+execute: 
+  warning: false
+  message: false
+  
+toc: true
+---
+```
+
+
 
 3. Use the 3-step git commands (`git add .`, `git commit -m "..."`, and `git push`) to update your online website.
 
