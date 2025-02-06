@@ -4,7 +4,7 @@
     "href": "listing-danl-310-hw.html",
     "title": "DANL 310 - Homework",
     "section": "",
-    "text": "Title\n\n\nSubtitle\n\n\nDate\n\n\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+    "text": "Title\n\n\nSubtitle\n\n\nDate\n\n\n\n\n\n\nHomework 1\n\n\nPersonal Website; ggplot Visualization\n\n\nFebruary 5, 2025\n\n\n\n\n\n\nNo matching items\n\n Back to top"
   },
   {
     "objectID": "econml.html",
@@ -74,7 +74,7 @@
     "href": "index.html#bullet-homework",
     "title": "DANL 310-01: Data Visualization and Presentation, Spring 2025",
     "section": "\\(\\bullet\\,\\) Homework 💻",
-    "text": "\\(\\bullet\\,\\) Homework 💻\n\n\n\n\n\n\nTitle\n\n\nDate\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "\\(\\bullet\\,\\) Homework 💻\n\n\n\n\n\n\nTitle\n\n\nDate\n\n\n\n\n\n\nHomework 1\n\n\nFebruary 5, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "danl-cw/danl-310-cw-03.html",
@@ -1993,5 +1993,82 @@
     "title": "Classwork 4",
     "section": "Q3c.",
     "text": "Q3c.\n\nWhat happens if you map color to year instead of continent?\n\nIs the result what you expected?\nThink about what class of object year is.\nRemember you can get a quick look at the top of the data, which includes some shorthand information on the class of each variable, by typing gapminder.\nInstead of mapping color = year, what happens if you try color = factor(year)?"
+  },
+  {
+    "objectID": "danl-hw/danl-310-hw-01.html",
+    "href": "danl-hw/danl-310-hw-01.html",
+    "title": "Homework 1",
+    "section": "",
+    "text": "Please submit your Quarto Document for Part 2 in Homework 1 to Brightspace with the name below:\n\ndanl-310-hw1-LASTNAME-FIRSTNAME.qmd\n( e.g., danl-310-hw1-choe-byeonghak.qmd )\n\nThe due is February 17, 2024, 2:00 P.M.\nPlease send Byeong-Hak an email (bchoe@geneseo.edu) if you have any questions."
+  },
+  {
+    "objectID": "danl-hw/danl-310-hw-01.html#question-1",
+    "href": "danl-hw/danl-310-hw-01.html#question-1",
+    "title": "Homework 1",
+    "section": "Question 1",
+    "text": "Question 1"
+  },
+  {
+    "objectID": "danl-hw/danl-310-hw-01.html#question-2",
+    "href": "danl-hw/danl-310-hw-01.html#question-2",
+    "title": "Homework 1",
+    "section": "Question 2",
+    "text": "Question 2"
+  },
+  {
+    "objectID": "danl-hw/danl-310-hw-01.html#question-3",
+    "href": "danl-hw/danl-310-hw-01.html#question-3",
+    "title": "Homework 1",
+    "section": "Question 3",
+    "text": "Question 3\nUse ggridges::geom_density_ridges() for Question 3."
+  },
+  {
+    "objectID": "danl-hw/danl-310-hw-01.html#question-4",
+    "href": "danl-hw/danl-310-hw-01.html#question-4",
+    "title": "Homework 1",
+    "section": "Question 4",
+    "text": "Question 4\nUse datasets::mtcars for Question 4."
+  },
+  {
+    "objectID": "danl-hw/danl-310-hw-01.html#question-5",
+    "href": "danl-hw/danl-310-hw-01.html#question-5",
+    "title": "Homework 1",
+    "section": "Question 5",
+    "text": "Question 5\nUse the following data.frame for Question 5.\n\npopgrowth_df &lt;- read_csv(\n  'https://bcdanl.github.io/data/popgrowth.csv')"
+  },
+  {
+    "objectID": "danl-hw/danl-310-hw-01.html#question-6",
+    "href": "danl-hw/danl-310-hw-01.html#question-6",
+    "title": "Homework 1",
+    "section": "Question 6",
+    "text": "Question 6\nUse the following data.frame for Question 6\n\nmale_Aus &lt;- read_csv(\n  'https://bcdanl.github.io/data/aus_athletics_male.csv')"
+  },
+  {
+    "objectID": "danl-hw/danl-310-hw-01.html#question-7",
+    "href": "danl-hw/danl-310-hw-01.html#question-7",
+    "title": "Homework 1",
+    "section": "Question 7",
+    "text": "Question 7\nUse the following data.frame for Question 7\n\ntitanic &lt;- read_csv(\n  'https://bcdanl.github.io/data/titanic_cleaned.csv')"
+  },
+  {
+    "objectID": "danl-hw/danl-310-hw-01.html#question-8",
+    "href": "danl-hw/danl-310-hw-01.html#question-8",
+    "title": "Homework 1",
+    "section": "Question 8",
+    "text": "Question 8\nUse the following data.frame for Question 8.\n\ncows_filtered &lt;- read_csv(\n  'https://bcdanl.github.io/data/cows_filtered.csv')"
+  },
+  {
+    "objectID": "danl-hw/danl-310-hw-01.html#question-0",
+    "href": "danl-hw/danl-310-hw-01.html#question-0",
+    "title": "Homework 1",
+    "section": "Question 0",
+    "text": "Question 0\nProvide your GitHub username.\n\nProvide ggplot codes to replicate the given figures.\nUse the following data.frame for Question 1, 2, and 3.\n\nncdc_temp &lt;- read_csv(\n  'https://bcdanl.github.io/data/ncdc_temp_cleaned.csv')"
+  },
+  {
+    "objectID": "danl-hw/danl-310-hw-01.html#question-9",
+    "href": "danl-hw/danl-310-hw-01.html#question-9",
+    "title": "Homework 1",
+    "section": "Question 9",
+    "text": "Question 9\nProvide your GitHub username."
   }
 ]
