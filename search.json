@@ -60,7 +60,7 @@
     "href": "index.html#bullet-lecture-slides",
     "title": "DANL 310-01: Data Visualization and Presentation, Spring 2025",
     "section": "\\(\\bullet\\,\\) Lecture Slides 🚀",
-    "text": "\\(\\bullet\\,\\) Lecture Slides 🚀\n\n\n\n\n\n\nTitle\n\n\nDate\n\n\n\n\n\n\nLecture 5\n\n\nFebruary 5, 2025\n\n\n\n\nLecture 4\n\n\nFebruary 3, 2025\n\n\n\n\nLecture 3\n\n\nJanuary 29, 2025\n\n\n\n\nLecture 2\n\n\nJanuary 27, 2025\n\n\n\n\nLecture 1\n\n\nJanuary 22, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "\\(\\bullet\\,\\) Lecture Slides 🚀\n\n\n\n\n\n\nTitle\n\n\nDate\n\n\n\n\n\n\nLecture 6\n\n\nFebruary 12, 2025\n\n\n\n\nLecture 5\n\n\nFebruary 5, 2025\n\n\n\n\nLecture 4\n\n\nFebruary 3, 2025\n\n\n\n\nLecture 3\n\n\nJanuary 29, 2025\n\n\n\n\nLecture 2\n\n\nJanuary 27, 2025\n\n\n\n\nLecture 1\n\n\nJanuary 22, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html#bullet-classwork",
@@ -158,7 +158,7 @@
     "href": "listing-danl-310-lec.html",
     "title": "DANL 310 - Lecture",
     "section": "",
-    "text": "Title\n\n\nSubtitle\n\n\nDate\n\n\n\n\n\n\nLecture 1\n\n\nSyllabus, Course Outline, and Introduction\n\n\nJanuary 22, 2025\n\n\n\n\nLecture 2\n\n\nGetting Started with Quarto\n\n\nJanuary 27, 2025\n\n\n\n\nLecture 3\n\n\nggplot basics\n\n\nJanuary 29, 2025\n\n\n\n\nLecture 4\n\n\nMake a plot with ggplot\n\n\nFebruary 3, 2025\n\n\n\n\nLecture 5\n\n\nShow the right number\n\n\nFebruary 5, 2025\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+    "text": "Title\n\n\nSubtitle\n\n\nDate\n\n\n\n\n\n\nLecture 1\n\n\nSyllabus, Course Outline, and Introduction\n\n\nJanuary 22, 2025\n\n\n\n\nLecture 2\n\n\nGetting Started with Quarto\n\n\nJanuary 27, 2025\n\n\n\n\nLecture 3\n\n\nggplot basics\n\n\nJanuary 29, 2025\n\n\n\n\nLecture 4\n\n\nMake a plot with ggplot\n\n\nFebruary 3, 2025\n\n\n\n\nLecture 5\n\n\nShow the right number\n\n\nFebruary 5, 2025\n\n\n\n\nLecture 6\n\n\nGraph tables, add labels, make notes\n\n\nFebruary 12, 2025\n\n\n\n\n\n\nNo matching items\n\n Back to top"
   },
   {
     "objectID": "danl-lec/danl-310-lec-03-2025-0129.html#make-a-plot",
@@ -2070,5 +2070,383 @@
     "title": "Homework 1",
     "section": "Question 9",
     "text": "Question 9\nProvide your GitHub username."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#data-visualization-with-ggplot-1",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#data-visualization-with-ggplot-1",
+    "title": "Lecture 6",
+    "section": "Data Visualization with ggplot()",
+    "text": "Data Visualization with ggplot()\n\nStep 1. Figure out whether variables of interests are categorical or continuous.\nStep 2. Think which geometric objects, aesthetic mappings, and faceting are appropriate to visualize distributions and relationships.\nStep 3. If needed, transform a given data.frame (e.g., filtered observations, new variables, summarized data) and try new visualizations."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#data-visualization-with-ggplot-2",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#data-visualization-with-ggplot-2",
+    "title": "Lecture 6",
+    "section": "Data Visualization with ggplot()",
+    "text": "Data Visualization with ggplot()\nGeometric objects\n\nA distribution of a categorical variable (e.g., geom_bar() and more)\nA distribution of a continuous variable (e.g., geom_histogram() and more)\nA relationship between two categorical variables (e.g., geom_bar() and more)\nA relationship between two continuous variables (e.g., geom_point() with geom_smooth() and more)\nA relationship between a categorical variable and a continuous variable (e.g., geom_boxplot() and more)\nA time trend of a categorical variable (e.g., geom_bar() and more)\nA time trend of a continuous variable (e.g., geom_line() and more)"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-1",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-1",
+    "title": "Lecture 6",
+    "section": "Graph tables, add labels, make notes",
+    "text": "Graph tables, add labels, make notes\n\nWe will learn about how to transform data.frame before we send it to ggplot to be turned into a figure.\n\nWe will learn how to use some of dplyr’s “action verbs” to filter, select, group, mutate, summarize and transform our data.\n\nWe will expand the number of geoms we know about, and learn more about how to choose between them.\n\nDifferent geoms potentially requires different aesthetic mappings.\n\nWe discuss the five key dplyr functions to solve various data manipulation challenges"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#data-transformation",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#data-transformation",
+    "title": "Lecture 6",
+    "section": "Data Transformation",
+    "text": "Data Transformation\ndplyr basics\n\nFilter observations by logical conditions about values of variables (filter()).\nArrange/sort rows (arrange()).\nSelect variables by their names (select()).\nRename variables by their names (rename()).\nCreate new variables with functions of existing variables (mutate()).\nRelocate existing variables by their names (relocate()).\nCollapse a data.frame down to a summarized version of it (summarize()).\nGroup a data.frame by a categorical variable (group_by())."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#data-transformation-1",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#data-transformation-1",
+    "title": "Lecture 6",
+    "section": "Data Transformation",
+    "text": "Data Transformation\ndplyr basics\nTools -&gt; Global Options -&gt; Code -&gt; Check “User native pipe operator”"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#data-transformation-2",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#data-transformation-2",
+    "title": "Lecture 6",
+    "section": "Data Transformation",
+    "text": "Data Transformation\n\nBecause the first argument is a data.frame and the output is a data.frame, dplyr verbs work well with the pipe, |&gt;\n\nCtrl + Shift + M for Windows; command + Shift + M for Mac.\n\nThe pipe (|&gt;) takes the thing on its left and passes it along to the function on its right so that\n\nf(x, y) is equivalent to x |&gt; f(y).\ne.g., filter(DATA_FRAME, LOGICAL_STATEMENT) is equivalent to DATA_FRAME |&gt;  filter(LOGICAL_STATEMENT).\n\nThe easiest way to pronounce the pipe (|&gt;) is “then”.\n\nThe pipe (|&gt;) is super useful when we have a chain of data transforming operations to do."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#data-transformation-3",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#data-transformation-3",
+    "title": "Lecture 6",
+    "section": "Data Transformation",
+    "text": "Data Transformation\ndplyr basics\n\nDATA_FRAME |&gt; filter(LOGICAL_CONDITIONS)\nDATA_FRAME |&gt; arrange(VARIABLES)\nDATA_FRAME |&gt; select(VARIABLES)\nDATA_FRAME |&gt; rename(NEW_VAR = EXISTING_VAR)\nDATA_FRAME |&gt; mutate(NEW_VARIABLE = ... )\nDATA_FRAME |&gt; relocate(VARIABLES)\nDATA_FRAME |&gt; group_by(VARIABLES)\nDATA_FRAME |&gt; summarize(NEW_VARIABLE = ...)\nThe subsequent arguments describe what to do with the data.frame, mostly using variable names."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-2",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-2",
+    "title": "Lecture 6",
+    "section": "Graph tables, add labels, make notes",
+    "text": "Graph tables, add labels, make notes\nUse pipes to summarize data\n\n\n\n\nLet’s describe how the distribution of religious preferences varies by regions in the US using the socviz::gss_sm data.frame."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-3",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-3",
+    "title": "Lecture 6",
+    "section": "Graph tables, add labels, make notes",
+    "text": "Graph tables, add labels, make notes\nUse pipes to summarize data\n\nGroup the data into the nested structure we want for our summary, such as “Religion by Region” or “Authors by Publications by Year”.\nFilter or select pieces of the data by row, column, or both.\nMutate the data by creating new variables at the current level of grouping.\n\nThis adds new columns to the table without aggregating it.\n\nSummarize or aggregate the grouped data.\n\nThis creates new variables (e.g., means with mean(), sums with sum(), and counts with n()) at a higher level of grouping."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-4",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-4",
+    "title": "Lecture 6",
+    "section": "Graph tables, add labels, make notes",
+    "text": "Graph tables, add labels, make notes\nUse pipes to summarize data\n\nrel_by_region &lt;- gss_sm |&gt;\n    group_by( bigregion, religion ) |&gt;\n    summarize( N = n() ) |&gt;\n    mutate( freq = N / sum(N),\n            pct = round( (freq*100), 0) )\n\n\nWe use the dplyr functions, group_by(), filter(), select(), mutate(), and summarize(), to carry out these data transformation tasks within our pipeline (|&gt;, Ctrl/Cmd + Shift + M).\nHere we create a new data.frame called rel_by_region."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-5",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-5",
+    "title": "Lecture 6",
+    "section": "Graph tables, add labels, make notes",
+    "text": "Graph tables, add labels, make notes\nUse pipes to summarize data\n\n\np &lt;- ggplot( rel_by_region, \n             aes( x = bigregion, \n                  y = pct, \n                  fill = religion))\n\np + geom_col( position = \"dodge2\" ) +\n    labs(x = \"Region\", \n         y = \"Percent\", \n         fill = \"Religion\") +\n    theme(legend.position \n            = \"top\") \n\n\n\n\n\n\n\nNow that we are working directly with percentage values in a summary table, we can use geom_col() instead of geom_bar()."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-6",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-6",
+    "title": "Lecture 6",
+    "section": "Graph tables, add labels, make notes",
+    "text": "Graph tables, add labels, make notes\nUse pipes to summarize data\n\n\nLet’s replicate the above bar chart."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-7",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-7",
+    "title": "Lecture 6",
+    "section": "Graph tables, add labels, make notes",
+    "text": "Graph tables, add labels, make notes\nContinuous variables by group or category\n\norgandata\nskimr::skim(organdata)\n\n\nLet’s move to a new dataset, the socviz::organdata data.frame."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-8",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-8",
+    "title": "Lecture 6",
+    "section": "Graph tables, add labels, make notes",
+    "text": "Graph tables, add labels, make notes\nContinuous variables by group or category\n\n\np &lt;- ggplot(data = organdata,\n            mapping = \n              aes(x = year, \n                  y = donors))\np + geom_point()"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-9",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-9",
+    "title": "Lecture 6",
+    "section": "Graph tables, add labels, make notes",
+    "text": "Graph tables, add labels, make notes\nContinuous variables by group or category\n\n\np &lt;- ggplot(data = organdata,\n            mapping = aes(x = year, y = donors))\np + \n  geom_line(aes(group = country)) + \n  facet_wrap(~ country) +\n  theme(axis.text.x = \n          element_text(angle = 45))\n\n\n\n\n\n\n\nThe above describes a yearly trend of donors for each country."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-10",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-10",
+    "title": "Lecture 6",
+    "section": "Graph tables, add labels, make notes",
+    "text": "Graph tables, add labels, make notes\nContinuous variables by group or category\n\n\nLet’s focus on the country-level variation of donors using geom_boxplot(), but without paying attention to the time trend."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-11",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-11",
+    "title": "Lecture 6",
+    "section": "Graph tables, add labels, make notes",
+    "text": "Graph tables, add labels, make notes\nContinuous variables by group or category\n\nlevels(organdata$country)\n\n\norgandata &lt;- organdata |&gt;\n  mutate(country = \n           fct_reorder(country, \n                       donors, na.rm = T) ) \n\n\nWe can reorder the levels using fct_reorder(f, x, fun), which can take three arguments.\n\nf: the factor whose levels we want to modify.\nx: a numeric vector that we want to use to reorder the levels.\nOptionally, fun: a function that’s used if there are multiple values of x for each value of f. The default value is median."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-12",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-12",
+    "title": "Lecture 6",
+    "section": "Graph tables, add labels, make notes",
+    "text": "Graph tables, add labels, make notes\nContinuous variables by group or category\n\n\np &lt;- ggplot(data = organdata,\n            mapping = \n              aes(x = country, \n                  y = donors))\np + geom_boxplot() + \n  labs(x = NULL) + \n  coord_flip()"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-13",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-13",
+    "title": "Lecture 6",
+    "section": "Graph tables, add labels, make notes",
+    "text": "Graph tables, add labels, make notes\nContinuous variables by group or category\n\n\np &lt;- ggplot(data = organdata,\n            mapping = \n              aes(x = \n                    reorder(\n                      country, \n                      donors, \n                      na.rm=TRUE),\n                  y = donors, \n                  fill = world))\np + geom_boxplot() + \n  labs(x=NULL) +\n  coord_flip() + \n  theme(legend.position = \"top\")"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-14",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-14",
+    "title": "Lecture 6",
+    "section": "Graph tables, add labels, make notes",
+    "text": "Graph tables, add labels, make notes\nContinuous variables by group or category\n\nSometimes it is better to sort the data with a categorical variable when plotting a bar chart or a Cleveland dotplot."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-15",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-15",
+    "title": "Lecture 6",
+    "section": "Graph tables, add labels, make notes",
+    "text": "Graph tables, add labels, make notes\nContinuous variables by group or category\n\nby_country &lt;- organdata |&gt; group_by(consent_law, country) |&gt;\n    summarize(donors_mean= mean(donors, na.rm = TRUE),\n              donors_sd = sd(donors, na.rm = TRUE),\n              gdp_mean = mean(gdp, na.rm = TRUE),\n              health_mean = mean(health, na.rm = TRUE),\n              roads_mean = mean(roads, na.rm = TRUE),\n              cerebvas_mean = mean(cerebvas, na.rm = TRUE))\n\n\nSummarize the data.frame organdata to calculate the mean and the standard deviation of each numeric variable for each consent_law-country pair.\nWould there be a simpler way to do the task above?"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-16",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-16",
+    "title": "Lecture 6",
+    "section": "Graph tables, add labels, make notes",
+    "text": "Graph tables, add labels, make notes\nContinuous variables by group or category\n\nby_country &lt;- organdata |&gt; group_by(consent_law, country) |&gt;\n  summarize_if(is.numeric, lst(mean, sd), na.rm = TRUE) |&gt;\n  ungroup()\n\n\nWhat we would like to do is apply the mean() and sd() functions to every numerical variable in organdata, but only the numerical ones.\n\nsummarize_if( is.numeric, lst(mean, sd), na.rm = T) works really well."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-17",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-17",
+    "title": "Lecture 6",
+    "section": "Graph tables, add labels, make notes",
+    "text": "Graph tables, add labels, make notes\nContinuous variables by group or category\n\n\nLet’s draw the above dot plot."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-18",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-18",
+    "title": "Lecture 6",
+    "section": "Graph tables, add labels, make notes",
+    "text": "Graph tables, add labels, make notes\nContinuous variables by group or category\n\n\nLet’s draw the above faceted dot plot."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-19",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-19",
+    "title": "Lecture 6",
+    "section": "Graph tables, add labels, make notes",
+    "text": "Graph tables, add labels, make notes\nContinuous variables by group or category\n\nCleveland dotplots are generally preferred to bar or column charts.\n\nWhen making them, put the categories on the y-axis and order them in the way that is most relevant to the numerical summary you are providing.\nThis sort of plot is also an excellent way to summarize model results or any data with error ranges."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-20",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-20",
+    "title": "Lecture 6",
+    "section": "Graph tables, add labels, make notes",
+    "text": "Graph tables, add labels, make notes\nContinuous variables by group or category\n\nUsing geom_pointrange(), we can tell ggplot to show us a point estimate and a range around it.\n\nWith geom_pointrange(), we map our x and y variables as usual, but the function needs a little more information than geom_point(), for example (ymin, ymax) or (xmin, xmax)."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-21",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-21",
+    "title": "Lecture 6",
+    "section": "Graph tables, add labels, make notes",
+    "text": "Graph tables, add labels, make notes\nContinuous variables by group or category\n\n\nLet’s draw the above dot-and-whisker plot."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#understanding-scales-guides-and-themes-1",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#understanding-scales-guides-and-themes-1",
+    "title": "Lecture 6",
+    "section": "Understanding Scales, Guides, and Themes",
+    "text": "Understanding Scales, Guides, and Themes\n\nWe have used scale_x_log10(), scale_x_continuous() and otherscale_*_*() functions to adjust axis labels.\nWe used the guides() function to remove the legends for a color mapping and a label mapping.\nWe also used the theme() function to move the position of a legend from the side to the top of a figure.\nWhat are the differences between the scale_*_*() functions, the guides() function, and the theme() function?\nWhen do we know to use one rather than the other? Why are there so many scale_*_*() functions? How can we tell which one we need?"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#understanding-scales-guides-and-themes-2",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#understanding-scales-guides-and-themes-2",
+    "title": "Lecture 6",
+    "section": "Understanding Scales, Guides, and Themes",
+    "text": "Understanding Scales, Guides, and Themes\n\nHere is a rough and ready starting point:\nEvery aesthetic mapping has a scale.\n\nIf we want to adjust how that scale is marked or graduated, then we use a scale_*_*() function."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#understanding-scales-guides-and-themes-3",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#understanding-scales-guides-and-themes-3",
+    "title": "Lecture 6",
+    "section": "Understanding Scales, Guides, and Themes",
+    "text": "Understanding Scales, Guides, and Themes\n\nMany scales come with a legend or key to help the reader interpret the graph. These are called guides.\n\nWe can make adjustments to them with the guides() function.\nPerhaps the most common use case is to make the legend disappear.\nAnother is to adjust the arrangement of the key in legends and colorbars.\nguides is also one of the parameters in scales_*_*()."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#understanding-scales-guides-and-themes-4",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#understanding-scales-guides-and-themes-4",
+    "title": "Lecture 6",
+    "section": "Understanding Scales, Guides, and Themes",
+    "text": "Understanding Scales, Guides, and Themes\n\nGraphs have other features not strictly connected to the logical structure of the data being displayed.\n\nThese include things like their background color, the typeface used for labels, or the placement of the legend on the graph.\nTo adjust these, use the theme() function."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#understanding-scales-guides-and-themes-5",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#understanding-scales-guides-and-themes-5",
+    "title": "Lecture 6",
+    "section": "Understanding Scales, Guides, and Themes",
+    "text": "Understanding Scales, Guides, and Themes\n\np &lt;- ggplot(data = organdata,\n            mapping = aes(x = roads, y = donors, color = world))\np + geom_point()\n\n\nscale_*_*() and guides() are closely connected.\n\nThe guides() provides information about the scale, such as in a legend or colorbar.\nSo, it is possible to make adjustments to guides from inside the various scale_*_*() functions.\n\nThe x and y scales are both continuous.\nThe color scale is discrete.\n\nA color or fill mapping can also be a continuous quantity (colorbar)."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#understanding-scales-guides-and-themes-6",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#understanding-scales-guides-and-themes-6",
+    "title": "Lecture 6",
+    "section": "Understanding Scales, Guides, and Themes",
+    "text": "Understanding Scales, Guides, and Themes\nscale_&lt;MAPPING&gt;_&lt;KIND&gt;\n\n\n\n\nBecause we have several potential mappings, and each mapping might be to one of several different scales, we end up with a lot of individual scale_*_* functions.\n\nEach deals with one combination of mapping and scale. Too many to memorize.\nThey are named according to a consistent logic:\n\nhttps://ggplot2tor.com/scales provides a complete guide to scales.\n\nThis app makes it easy for you to find the right scales and arguments for your variable types and aesthetics."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#understanding-scales-guides-and-themes-7",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#understanding-scales-guides-and-themes-7",
+    "title": "Lecture 6",
+    "section": "Understanding Scales, Guides, and Themes",
+    "text": "Understanding Scales, Guides, and Themes\n\nLet’s replicate the following:"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#understanding-scales-guides-and-themes-8",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#understanding-scales-guides-and-themes-8",
+    "title": "Lecture 6",
+    "section": "Understanding Scales, Guides, and Themes",
+    "text": "Understanding Scales, Guides, and Themes\n \n\n\nLet’s replicate the above."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#understanding-scales-guides-and-themes-9",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#understanding-scales-guides-and-themes-9",
+    "title": "Lecture 6",
+    "section": "Understanding Scales, Guides, and Themes",
+    "text": "Understanding Scales, Guides, and Themes\n \n\n\nLet’s replicate the above."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#understanding-scales-guides-and-themes-10",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#understanding-scales-guides-and-themes-10",
+    "title": "Lecture 6",
+    "section": "Understanding Scales, Guides, and Themes",
+    "text": "Understanding Scales, Guides, and Themes\n \n\n\nLet’s replicate the above using theme()."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-1",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-1",
+    "title": "Lecture 6",
+    "section": "Add Labels and Make Notes",
+    "text": "Add Labels and Make Notes\nPlot text directly\n\n\np &lt;- ggplot(data = by_country,\n            mapping = \n              aes(x = roads_mean, \n                  y = donors_mean))\np + geom_point() + \n  geom_text(mapping = \n              aes(label = country))\n\n\n\n\n\n\n\nIt can sometimes be useful to plot the labels along with the points in a scatterplot, or just plot informative labels directly using geom_text()."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-2",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-2",
+    "title": "Lecture 6",
+    "section": "Add Labels and Make Notes",
+    "text": "Add Labels and Make Notes\nPlot text directly\n\n\np + geom_point() + \n  geom_text(mapping = \n              aes(label = country), \n            hjust = 0)\n\n\n\n\n\n\n\nBy default, the text is plotted right on top of the points.\nhjust = 0 will left justify the label; hjust = 1 will right justify it."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-3",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-3",
+    "title": "Lecture 6",
+    "section": "Add Labels and Make Notes",
+    "text": "Add Labels and Make Notes"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-4",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-4",
+    "title": "Lecture 6",
+    "section": "Add Labels and Make Notes",
+    "text": "Add Labels and Make Notes\nPlot text directly\n\ninstall.packages(\"ggrepel\")\nlibrary(ggrepel)\n\n\nInstead of wrestling any further with geom_text(), we can use ggrepel::geom_text_repel() instead."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-5",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-5",
+    "title": "Lecture 6",
+    "section": "Add Labels and Make Notes",
+    "text": "Add Labels and Make Notes\nPlot text directly\n\nsocviz::elections_historic |&gt; select(2:7) \n\n\nLet’s use some historical U.S. presidential election data provided in the socviz library."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-6",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-6",
+    "title": "Lecture 6",
+    "section": "Add Labels and Make Notes",
+    "text": "Add Labels and Make Notes\nPlot text directly\n\np &lt;- ggplot(elections_historic, aes(x = popular_pct, y = ec_pct,\n                                    label = winner_label))\n\n\nStep 1. Let’s map aethetics to variables"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-7",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-7",
+    "title": "Lecture 6",
+    "section": "Add Labels and Make Notes",
+    "text": "Add Labels and Make Notes\nPlot text directly\n\n\np &lt;- p + \n    geom_hline(yintercept = 0.5, \n               linewidth = 1.4, \n               color = \"gray80\") +\n    geom_vline(xintercept = 0.5, \n               linewidth = 1.4, \n               color = \"gray80\") +\n    geom_point() +\n    geom_text_repel()\np\n\n\n\n\n\n\n\nStep 2. Then, add geometric objects to ggplot."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-8",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-8",
+    "title": "Lecture 6",
+    "section": "Add Labels and Make Notes",
+    "text": "Add Labels and Make Notes\nPlot text directly\n\n\np &lt;- p + \n     scale_x_continuous(\n       labels = scales::percent) +\n     scale_y_continuous(\n       labels = scales::percent) \np\n\n\n\n\n\n\n\nStep 3. Let’s set the scales for x and y."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-9",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-9",
+    "title": "Lecture 6",
+    "section": "Add Labels and Make Notes",
+    "text": "Add Labels and Make Notes\nPlot text directly\n\n\np_title &lt;- \"Presidential Elections: Popular & Electoral College Margins\"\np_subtitle &lt;- \"1824-2016\"\np_caption &lt;- \"Data for 2016 are provisional.\"\nx_label &lt;- \"Winner's share of Popular Vote\"\ny_label &lt;- \"Winner's share of Electoral College Votes\"\n\np + labs(x = x_label, \n         y = y_label, \n         title = p_title, \n         subtitle = p_subtitle,\n         caption = p_caption)\n\n\n\n\n\n\n\nStep 4. Let’s set the labels."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-10",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-10",
+    "title": "Lecture 6",
+    "section": "Add Labels and Make Notes",
+    "text": "Add Labels and Make Notes\nLabel Outliers\n\n\np &lt;- ggplot(data = by_country,\n            mapping = \n              aes(x = gdp_mean, \n                  y = health_mean))\n\np + geom_point() +\n    geom_text_repel(\n      data = filter(by_country, \n                    gdp_mean &gt; 25000),\n      mapping = \n        aes(label = country))\n\n\n\n\n\n\n\nSometimes we want to pick out some points of interest in the data without labeling every single item.\n\nWe do this using the filter() function."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-11",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-11",
+    "title": "Lecture 6",
+    "section": "Add Labels and Make Notes",
+    "text": "Add Labels and Make Notes\nLabel Outliers\n\n\np &lt;- ggplot(data = by_country,\n            mapping = \n              aes(x = gdp_mean, \n                  y = health_mean))\np + geom_point() +\n    geom_text_repel(\n      data = \n        filter(by_country,\n               gdp_mean &gt; 25000 | \n                 health_mean &lt; 1500 |\n                 country %in% \"Belgium\"),\n      mapping = \n        aes(label = country))"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-12",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-12",
+    "title": "Lecture 6",
+    "section": "Add Labels and Make Notes",
+    "text": "Add Labels and Make Notes\nLabel Outliers\n\n\n# creating a dummy variable for labels\norgandata$ind &lt;- \n  organdata$ccode %in% c(\"Ita\", \"Spa\") & \n  organdata$year &gt; 1998   \np &lt;- ggplot(data = organdata,\n            mapping = \n              aes(x = roads, \n                  y = donors, \n                  color = ind))\np + geom_point() +\n    geom_text_repel(\n      data = filter(organdata, ind),\n      mapping = aes(label = ccode)) +\n    guides(label = \"none\", \n           color = \"none\")\n\n\n\n\n\n\n\nWe can also add a logical variable (either TRUE or FALSE) to label specific points using filter()."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-13",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-13",
+    "title": "Lecture 6",
+    "section": "Add Labels and Make Notes",
+    "text": "Add Labels and Make Notes\nLabel Outliers\n\n\nLet’s replicate the above using ggplot::mtcars:"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-14",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-14",
+    "title": "Lecture 6",
+    "section": "Add Labels and Make Notes",
+    "text": "Add Labels and Make Notes\nWrite and draw in the plot area with annotate(geom = \"text\")\n\n\n\np &lt;- ggplot(data = organdata, \n            mapping = \n              aes(x = roads, \n                  y = donors))\np + geom_point() + \n  annotate(geom = \"text\", \n           x = 91, y = 33,\n           label = \"A surprisingly high \\n recovery rate.\",\n           hjust = 0)\n\n\n\n\n\n\n\nWe can use annotate() to annotate the figure directly."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-15",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-15",
+    "title": "Lecture 6",
+    "section": "Add Labels and Make Notes",
+    "text": "Add Labels and Make Notes\nWrite and draw in the plot area with annotate(geom = \"rect\")\n\n\np &lt;- ggplot(data = organdata,\n            mapping = aes(x = roads, y = donors))\np + geom_point() +\n    annotate(geom = \"rect\", \n             xmin = 125, xmax = 155,\n             ymin = 30, ymax = 35, \n             fill = \"red\", \n             alpha = 0.2) + \n    annotate(geom = \"text\", \n             x = 157, y = 33,\n             label = \"A surprisingly high \\n recovery rate.\", \n             hjust = 0)"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-16",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-16",
+    "title": "Lecture 6",
+    "section": "Add Labels and Make Notes",
+    "text": "Add Labels and Make Notes\nWrite and draw in the plot area with annotate(geom = \"point\")\n\n\np &lt;- ggplot(mpg, aes(displ, hwy)) +\n  geom_point(\n    data = \n      filter(mpg, \n             manufacturer == \"subaru\"), \n    color = \"orange\", \n    size = 3) +\n  geom_point() \np + \n  annotate(geom = \"point\", \n           x = 5.5, y = 40, \n           colour = \"orange\", \n           size = 3) + \n  annotate(geom = \"point\", \n           x = 5.5, y = 40) + \n  annotate(geom = \"text\", \n           x = 5.6, y = 40, \n           label = \"subaru\", \n           hjust = \"left\")"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-17",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-17",
+    "title": "Lecture 6",
+    "section": "Add Labels and Make Notes",
+    "text": "Add Labels and Make Notes\nWrite and draw in the plot area with annotate(geom = \"curve\")\n\n\np + \n  annotate(\n    geom = \"curve\", \n    x = 4, y = 35, \n    xend = 2.65, yend = 27, \n    curvature = .3, \n    arrow = \n      arrow(length = unit(2, \"mm\"))\n  ) +\n  annotate(geom = \"text\", \n           x = 4.1, y = 35, \n           label = \"subaru\", \n           hjust = \"left\")"
   }
 ]
