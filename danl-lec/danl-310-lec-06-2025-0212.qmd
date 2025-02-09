@@ -609,7 +609,6 @@ p + geom_point()
 
 ## Understanding Scales, Guides, and Themes
 
-- Let's replicate the following:
   <!-- - Use the `log10` scale on x-axis. -->
   <!-- - Break y-axis at `c(5, 15, 25)`, and label them as `c("Five", "Fifteen", "Twenty Five")`. -->
 
@@ -625,6 +624,7 @@ p + geom_point() +
 
 ```
 
+- Let's replicate the above.
 
 ## Understanding Scales, Guides, and Themes
 
