@@ -238,7 +238,7 @@ p + geom_col( position = "dodge2" ) +
 ## Graph tables, add labels, make notes
 ### Use pipes to summarize data
 
-- Let's do **Question 1** in [**Classwork 5](https://bcdanl.github.io/310/danl-cw/danl-310-cw-05.html)
+- Let's do **Question 1** in [**Classwork 5**](https://bcdanl.github.io/310/danl-cw/danl-310-cw-05.html)
 
 
 
@@ -421,7 +421,7 @@ by_country <- organdata |> group_by(consent_law, country) |>
 ### Continuous variables by group or category
 
 
-- Let's do **Question 2a-2b** in [**Classwork 5](https://bcdanl.github.io/310/danl-cw/danl-310-cw-05.html)
+- Let's do **Question 2a-2b** in [**Classwork 5**](https://bcdanl.github.io/310/danl-cw/danl-310-cw-05.html)
 
 
 
@@ -447,7 +447,7 @@ by_country <- organdata |> group_by(consent_law, country) |>
 ### Dot-and-whisker plot
 
 
-- Let's do **Question 2c** in [**Classwork 5](https://bcdanl.github.io/310/danl-cw/danl-310-cw-05.html)
+- Let's do **Question 2c** in [**Classwork 5**](https://bcdanl.github.io/310/danl-cw/danl-310-cw-05.html)
 
 
 
@@ -546,7 +546,7 @@ p + geom_point()
 ## Understanding Scales, Guides, and Themes
 
 
-- Let's do **Question 2d-2g** in [**Classwork 5](https://bcdanl.github.io/310/danl-cw/danl-310-cw-05.html)
+- Let's do **Question 2d-2g** in [**Classwork 5**](https://bcdanl.github.io/310/danl-cw/danl-310-cw-05.html)
 
 
 
