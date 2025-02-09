@@ -12,7 +12,7 @@ system(paste("rm", shQuote("index.html")))
 # Sys.sleep(2)
 
 # Next lecture number & dates
-lec_dates <- c('0122', 
+lec_dates <- c('0122',
                '0127', '0129',
                '0203', '0205',
                '0212')
