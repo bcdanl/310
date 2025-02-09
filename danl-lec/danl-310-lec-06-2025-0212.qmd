@@ -797,24 +797,8 @@ p +
 ## Add Labels and Make Notes
 ### Label Outliers
 
-```{r}
-#| echo: false
-dat <- filter(mtcars, 
-              wt > 5 & mpg < 15)
-dat$car <- rownames(dat)
 
-p <- ggplot() + 
-  geom_point(data = mtcars, 
-             aes(wt, mpg), 
-             color = 'red')
-p1 <- p + geom_text_repel(data = dat, 
-                          aes(wt, mpg, 
-                              label = car))
-p1
-```
-
-- Let's replicate the above using `ggplot::mtcars`:
-
+- Let's do **Question 3** in [**Classwork 5**](https://bcdanl.github.io/310/danl-cw/danl-310-cw-05.html)
 
 ## Add Labels and Make Notes
 ### Write and draw in the plot area with `annotate(geom = "text")`
