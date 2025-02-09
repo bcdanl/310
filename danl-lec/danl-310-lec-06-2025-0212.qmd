@@ -100,16 +100,15 @@ theme_set(theme_fivethirtyeight()+
 ## Data Transformation
 ### `dplyr` basics
 
-  - Filter observations by logical conditions about values of variables (`filter()`).
-  - Arrange/sort rows (`arrange()`).
-  - Select variables by their names (`select()`).
-  - Rename variables by their names (`rename()`).
-  - Create new variables with functions of existing variables (`mutate()`).
-  - Relocate existing variables by their names (`relocate()`).
-  - Collapse a data.frame down to a summarized version of it (`summarize()`).
-  - Group a data.frame by a categorical variable (`group_by()`).
-
-
+- Filter observations by logical conditions about values of variables (`filter()`).
+- Arrange/sort rows (`arrange()`).
+- Select variables by their names (`select()`).
+- Rename variables by their names (`rename()`).
+- Create new variables with functions of existing variables (`mutate()`).
+- Relocate existing variables by their names (`relocate()`).
+- Collapse a data.frame down to a summarized version of it (`summarize()`).
+- Group a data.frame by a categorical variable (`group_by()`).
+- **Reference**: [R for Data Science](https://r4ds.hadley.nz)
 
 
 ## Data Transformation
@@ -239,22 +238,7 @@ p + geom_col( position = "dodge2" ) +
 ## Graph tables, add labels, make notes
 ### Use pipes to summarize data
 
-
-```{r}
-#| echo: false
-p <- ggplot(rel_by_region, 
-            aes(x = pct, 
-                y = religion, 
-                fill = religion))
-p + geom_col(position = "dodge2") +
-    labs(x = NULL, 
-         y = "Percent", 
-         fill = "Religion") +
-    guides(fill = FALSE) + 
-    facet_grid(~ bigregion)
-```
-
-- Let's replicate the above bar chart.
+- Let's do **Question 1** in [**Classwork 5](https://bcdanl.github.io/310/danl-cw/danl-310-cw-05.html)
 
 
 
@@ -437,46 +421,8 @@ by_country <- organdata |> group_by(consent_law, country) |>
 ### Continuous variables by group or category
 
 
-```{r}
-#| echo: false
-by_country <- organdata |> group_by(consent_law, country) |>
-  summarize_if(is.numeric, lst(mean, sd), na.rm = TRUE) |>
-  ungroup()
+- Let's do **Question 2a-2b** in [**Classwork 5](https://bcdanl.github.io/310/danl-cw/danl-310-cw-05.html)
 
-p <- ggplot(data = by_country,
-            mapping = aes(x = donors_mean, y = reorder(country, donors_mean),
-                          color = consent_law))
-p + geom_point(size=3) +
-    labs(x = "Donor Procurement Rate",
-         y = "", color = "Consent Law") +
-    theme(legend.position="top")
-
-```
-
-- Let's draw the above dot plot.
-
-
-## Graph tables, add labels, make notes
-### Continuous variables by group or category
-
-
-```{r}
-#| echo: false
-by_country <- organdata |> group_by(consent_law, country) |>
-  summarize_if(is.numeric, lst(mean, sd), na.rm = TRUE) |>
-  ungroup()
-
-p <- ggplot(data = by_country,
-            mapping = aes(x = donors_mean,
-                          y = reorder(country, donors_mean)))
-
-p + geom_point(size=3) +
-    facet_wrap(~ consent_law, scales = "free_y", ncol = 1) +
-    labs(x= "Donor Procurement Rate",
-         y= "") 
-```
-
-- Let's draw the above faceted dot plot.
 
 
 ## Graph tables, add labels, make notes
@@ -498,26 +444,16 @@ p + geom_point(size=3) +
 
 
 ## Graph tables, add labels, make notes
-### Continuous variables by group or category
+### Dot-and-whisker plot
 
 
+- Let's do **Question 2c** in [**Classwork 5](https://bcdanl.github.io/310/danl-cw/danl-310-cw-05.html)
 
-```{r}
-#| echo: false
-p <- ggplot(data = by_country, mapping = aes(x = reorder(country,
-              donors_mean), y = donors_mean))
 
-p + geom_pointrange(mapping = aes(ymin = donors_mean - donors_sd,
-       ymax = donors_mean + donors_sd)) +
-     labs(x= "", y= "Donor Procurement Rate") + coord_flip()
-```
-
-- Let's draw the above dot-and-whisker plot.
 
 
 
 # Understanding Scales, Guides, and Themes {background-color="#1c4982"}
-
 
 
 ## Understanding Scales, Guides, and Themes
@@ -609,91 +545,9 @@ p + geom_point()
 
 ## Understanding Scales, Guides, and Themes
 
-  <!-- - Use the `log10` scale on x-axis. -->
-  <!-- - Break y-axis at `c(5, 15, 25)`, and label them as `c("Five", "Fifteen", "Twenty Five")`. -->
 
-```{r}
-#| echo: false
-p <- ggplot(data = organdata,
-            mapping = aes(x = roads,
-                          y = donors,
-                          color = world))
-p + geom_point() +
-    scale_y_continuous(breaks = c(5, 15, 25),
-                       labels = c("Five", "Fifteen", "Twenty Five"))
+- Let's do **Question 2d-2g** in [**Classwork 5](https://bcdanl.github.io/310/danl-cw/danl-310-cw-05.html)
 
-```
-
-- Let's replicate the above.
-
-## Understanding Scales, Guides, and Themes
-
-  <!-- - Label colors to `c("Corporatist", "Liberal", "Social Democratic", "Unclassified")` -->
-  <!-- - Label `x`-axis, `y`-axis, and a title of `color` legend using `labs()`. -->
-
-```{r}
-#| echo: false
-p <- ggplot(data = organdata,
-            mapping = aes(x = roads,
-                          y = donors,
-                          color = world))
-p + geom_point() +
-    scale_color_discrete(labels =
-                             c("Corporatist", "Liberal",
-                               "Social Democratic", "Unclassified")) +
-    labs(x = "Road Deaths",
-         y = "Donor Procurement",
-        color = "Welfare State")
-```
-
-- Let's replicate the above.
-
-## Understanding Scales, Guides, and Themes
-
-  <!-- - Use the `log10` scale on x-axis. -->
-  <!-- - Break y-axis at `c(5, 15, 25)`, and label them as `c("Five", "Fifteen", "Twenty Five")`. -->
-
-```{r}
-#| echo: false
-organdata |> 
-  ggplot(mapping = aes(x = roads,
-                       y = donors,
-                       color = consent_law)) + 
-  geom_point() +
-  facet_wrap(~ consent_law, ncol = 1) +
-  guides(color = "none") + 
-  labs(x = "Road Deaths",
-       y = "Donor Procurement")
-
-```
-
-- Let's replicate the above.
-
-
-## Understanding Scales, Guides, and Themes
-
-  <!-- - Use the `log10` scale on x-axis. -->
-  <!-- - Break y-axis at `c(5, 15, 25)`, and label them as `c("Five", "Fifteen", "Twenty Five")`. -->
-
-```{r}
-#| echo: false
-## Using the "classic" ggplot theme here
-organdata |> 
-  ggplot(mapping = aes(x = roads,
-                       y = donors,
-                       color = consent_law)) + 
-  geom_point() +
-  labs(title = "By Consent Law",
-    x = "Road Deaths",
-    y = "Donor Procurement", 
-    color = "Legal Regime:") + 
-  theme(legend.position = "bottom", 
-        plot.title = element_text(color = "darkred",
-                                  face = "bold"))
-
-```
-
-- Let's replicate the above using `theme()`.
 
 
 # Add Labels and Make Notes  {background-color="#1c4982"}
@@ -916,20 +770,23 @@ p + geom_point() +
 #| fig-asp: .85
 #| output-location: column-fragment
 # creating a dummy variable for labels
-organdata$ind <- 
-  organdata$ccode %in% c("Ita", "Spa") & 
-  organdata$year > 1998   
+organdata <- organdata |> 
+  mutate(ind = ccode %in% 
+                  c("Ita", "Spa") & 
+               year > 1998)  
+
 p <- ggplot(data = organdata,
             mapping = 
               aes(x = roads, 
                   y = donors, 
                   color = ind))
-p + geom_point() +
-    geom_text_repel(
-      data = filter(organdata, ind),
-      mapping = aes(label = ccode)) +
-    guides(label = "none", 
-           color = "none")
+p + 
+  geom_point() +
+  geom_text_repel(
+    data = filter(organdata, ind),
+    mapping = aes(label = ccode)) +
+  guides(label = "none", 
+         color = "none")
 ```
 
 - We can also add a logical variable (either `TRUE` or `FALSE`) to label specific points using `filter()`.

@@ -1,0 +1,283 @@
+---
+title: Classwork 5
+subtitle: Graph Tables; Add Labels; Make Notes 
+date: 2025-02-10
+from: markdown+emoji
+
+fig-width: 9
+fig-height: 6
+---
+
+```{r}
+#| include: false
+library(tidyverse)
+library(skimr)
+library(ggthemes)
+library(hrbrthemes)
+library(DT)
+library(socviz)
+
+theme_set(theme_fivethirtyeight()+
+          theme(strip.background =element_rect(fill="lightgray"),
+                axis.title.x = 
+                  element_text(angle = 0,
+                               size = rel(1.33),
+                               margin = margin(10,0,0,0)),
+                axis.title.y = 
+                  element_text(angle = 90,
+                               size = rel(1.33),
+                               margin = margin(0,10,0,0))
+                )
+          )
+```
+
+
+
+<br>
+
+```{r}
+library(tidyverse)
+library(ggthemes)
+library(socviz)
+library(ggrepel)
+
+# Setting a default ggplot theme 
+theme_set(theme_fivethirtyeight() +
+          theme(strip.background = element_rect(fill="lightgray"),
+                axis.title.x = 
+                  element_text(angle = 0,
+                               size = rel(1.33),
+                               margin = margin(10,0,0,0)),
+                axis.title.y = 
+                  element_text(angle = 90,
+                               size = rel(1.33),
+                               margin = margin(0,10,0,0))
+                )
+          )
+
+```
+
+Recreate the R code necessary to generate the following graphs.
+
+# Question 1
+
+```{r}
+gss_sm <- socviz::gss_sm
+
+DT::datatable(gss_sm) # displaying an interactive data.frame
+```
+
+<br>
+
+```{r}
+#| echo: false
+
+rel_by_region <- gss_sm |>
+    group_by( bigregion, religion ) |>
+    summarize( N = n() ) |>
+    mutate( freq = N / sum(N),
+            pct = round( (freq*100), 0) )
+
+p <- ggplot(rel_by_region, 
+            aes(x = pct, 
+                y = religion, 
+                fill = religion))
+p + geom_col(position = "dodge2") +
+    labs(x = NULL, 
+         y = "Percent", 
+         fill = "Religion") +
+    guides(fill = FALSE) + 
+    facet_grid(~ bigregion)
+```
+
+<br><br><br>
+
+# Question 2
+
+```{r}
+organdata <- socviz::organdata
+
+DT::datatable(organdata)
+```
+
+<br>
+
+
+<br><br>
+
+## Q2a
+
+```{r}
+#| echo: false
+
+by_country <- organdata |> group_by(consent_law, country) |>
+  summarize_if(is.numeric, lst(mean, sd), na.rm = TRUE) |>
+  ungroup()
+
+p <- ggplot(data = by_country,
+            mapping = aes(x = donors_mean, y = reorder(country, donors_mean),
+                          color = consent_law))
+p + geom_point(size=3) +
+    labs(x = "Donor Procurement Rate",
+         y = "", color = "Consent Law") +
+    theme(legend.position="top")
+```
+
+<br><br>
+
+## Q2b
+
+```{r}
+#| echo: false
+
+by_country <- organdata |> group_by(consent_law, country) |>
+  summarize_if(is.numeric, lst(mean, sd), na.rm = TRUE) |>
+  ungroup()
+
+p <- ggplot(data = by_country,
+            mapping = aes(x = donors_mean,
+                          y = reorder(country, donors_mean)))
+
+p + geom_point(size=3) +
+    facet_wrap(~ consent_law, scales = "free_y", ncol = 1) +
+    labs(x= "Donor Procurement Rate",
+         y= "") 
+```
+
+
+
+## Q2c
+```{r}
+#| echo: false
+p <- ggplot(data = by_country, mapping = aes(x = reorder(country,
+              donors_mean), y = donors_mean))
+
+p + geom_pointrange(mapping = aes(ymin = donors_mean - donors_sd,
+       ymax = donors_mean + donors_sd)) +
+     labs(x= "", y= "Donor Procurement Rate") + coord_flip()
+```
+
+<br><br>
+
+## Q2d
+```{r}
+#| echo: false
+
+p <- ggplot(data = organdata,
+            mapping = aes(x = roads,
+                          y = donors,
+                          color = world))
+p + geom_point() +
+    scale_y_continuous(breaks = c(5, 15, 25),
+                       labels = c("Five", "Fifteen", "Twenty Five"))
+```
+
+<br><br>
+
+## Q2e
+
+```{r}
+#| echo: false
+
+p <- ggplot(data = organdata,
+            mapping = aes(x = roads,
+                          y = donors,
+                          color = world))
+p + geom_point() +
+    scale_color_discrete(labels =
+                             c("Corporatist", "Liberal",
+                               "Social Democratic", "Unclassified")) +
+    labs(x = "Road Deaths",
+         y = "Donor Procurement",
+        color = "Welfare State")
+```
+
+<br><br>
+
+## Q2f
+
+```{r}
+#| echo: false
+
+organdata |> 
+  ggplot(mapping = aes(x = roads,
+                       y = donors,
+                       color = consent_law)) + 
+  geom_point() +
+  facet_wrap(~ consent_law, ncol = 1) +
+  guides(color = "none") + 
+  labs(x = "Road Deaths",
+       y = "Donor Procurement")
+```
+
+<br><br>
+
+
+## Q2g
+
+```{r}
+#| echo: false
+
+organdata |> 
+  ggplot(mapping = aes(x = roads,
+                       y = donors,
+                       color = consent_law)) + 
+  geom_point() +
+  labs(title = "By Consent Law",
+    x = "Road Deaths",
+    y = "Donor Procurement", 
+    color = "Legal Regime:") + 
+  theme(legend.position = "bottom", 
+        plot.title = element_text(color = "darkred",
+                                  face = "bold"))
+```
+
+
+<br><br><br>
+
+
+# Question 3
+
+```{r}
+mtcars <- datasets::mtcars
+mtcars <- mtcars %>%   # A native pipe (|>) does not work here.
+  mutate(car = rownames(.))
+rownames(mtcars) <- 1:nrow(mtcars)
+
+DT::datatable(mtcars)
+```
+
+<br>
+
+```{r}
+#| echo: false
+
+dat <- filter(mtcars, 
+              wt > 5 & mpg < 15)
+
+p <- ggplot() + 
+  geom_point(data = mtcars, 
+             aes(wt, mpg), 
+             color = 'red')
+p1 <- p + geom_text_repel(data = dat, 
+                          aes(wt, mpg, 
+                              label = car))
+p1
+```
+
+<br><br><br>
+
+
+# Discussion
+
+<font size = "5">Welcome to our Classwork 5 Discussion Board! 👋 </font>
+
+This space is designed for you to engage with your classmates about the material covered in Classwork 5.
+
+Whether you are looking to delve deeper into the content, share insights, or have questions about the content, this is the perfect place for you.
+
+If you have any specific questions for Byeong-Hak (**@bcdanl**) regarding the Classwork 5 materials or need clarification on any points, don't hesitate to ask here. 
+
+All comments will be stored [here](https://github.com/bcdanl/310/discussions/).
+
+Let's collaborate and learn from each other!

@@ -46,7 +46,7 @@
     "href": "listing-danl-310-cw.html",
     "title": "DANL 310 - Classwork",
     "section": "",
-    "text": "Title\n\n\nSubtitle\n\n\nDate\n\n\n\n\n\n\nClasswork 4\n\n\nThe Layered Grammar of Graphics\n\n\nFebruary 3, 2025\n\n\n\n\nClasswork 3\n\n\nQuarto Website Basics\n\n\nJanuary 27, 2025\n\n\n\n\nClasswork 2\n\n\nMarkdown Basics\n\n\nJanuary 27, 2025\n\n\n\n\nClasswork 1\n\n\nBuilding a Personal Website using Git, GitHub, and RStudio with Quarto\n\n\nJanuary 22, 2025\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+    "text": "Title\n\n\nSubtitle\n\n\nDate\n\n\n\n\n\n\nClasswork 5\n\n\nGraph Tables; Add Labels; Make Notes\n\n\nFebruary 10, 2025\n\n\n\n\nClasswork 4\n\n\nThe Layered Grammar of Graphics\n\n\nFebruary 3, 2025\n\n\n\n\nClasswork 3\n\n\nQuarto Website Basics\n\n\nJanuary 27, 2025\n\n\n\n\nClasswork 2\n\n\nMarkdown Basics\n\n\nJanuary 27, 2025\n\n\n\n\nClasswork 1\n\n\nBuilding a Personal Website using Git, GitHub, and RStudio with Quarto\n\n\nJanuary 22, 2025\n\n\n\n\n\n\nNo matching items\n\n Back to top"
   },
   {
     "objectID": "index.html",
@@ -67,7 +67,7 @@
     "href": "index.html#bullet-classwork",
     "title": "DANL 310-01: Data Visualization and Presentation, Spring 2025",
     "section": "\\(\\bullet\\,\\) Classwork ⌨️",
-    "text": "\\(\\bullet\\,\\) Classwork ⌨️\n\n\n\n\n\n\nTitle\n\n\nDate\n\n\n\n\n\n\nClasswork 4\n\n\nFebruary 3, 2025\n\n\n\n\nClasswork 3\n\n\nJanuary 27, 2025\n\n\n\n\nClasswork 2\n\n\nJanuary 27, 2025\n\n\n\n\nClasswork 1\n\n\nJanuary 22, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "\\(\\bullet\\,\\) Classwork ⌨️\n\n\n\n\n\n\nTitle\n\n\nDate\n\n\n\n\n\n\nClasswork 5\n\n\nFebruary 10, 2025\n\n\n\n\nClasswork 4\n\n\nFebruary 3, 2025\n\n\n\n\nClasswork 3\n\n\nJanuary 27, 2025\n\n\n\n\nClasswork 2\n\n\nJanuary 27, 2025\n\n\n\n\nClasswork 1\n\n\nJanuary 22, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html#bullet-homework",
@@ -2097,7 +2097,7 @@
     "href": "danl-lec/danl-310-lec-06-2025-0212.html#data-transformation",
     "title": "Lecture 6",
     "section": "Data Transformation",
-    "text": "Data Transformation\ndplyr basics\n\nFilter observations by logical conditions about values of variables (filter()).\nArrange/sort rows (arrange()).\nSelect variables by their names (select()).\nRename variables by their names (rename()).\nCreate new variables with functions of existing variables (mutate()).\nRelocate existing variables by their names (relocate()).\nCollapse a data.frame down to a summarized version of it (summarize()).\nGroup a data.frame by a categorical variable (group_by())."
+    "text": "Data Transformation\ndplyr basics\n\nFilter observations by logical conditions about values of variables (filter()).\nArrange/sort rows (arrange()).\nSelect variables by their names (select()).\nRename variables by their names (rename()).\nCreate new variables with functions of existing variables (mutate()).\nRelocate existing variables by their names (relocate()).\nCollapse a data.frame down to a summarized version of it (summarize()).\nGroup a data.frame by a categorical variable (group_by()).\nReference: R for Data Science"
   },
   {
     "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#data-transformation-1",
@@ -2153,7 +2153,7 @@
     "href": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-6",
     "title": "Lecture 6",
     "section": "Graph tables, add labels, make notes",
-    "text": "Graph tables, add labels, make notes\nUse pipes to summarize data\n\n\nLet’s replicate the above bar chart."
+    "text": "Graph tables, add labels, make notes\nUse pipes to summarize data\n\nLet’s do Question 1 in **Classwork 5"
   },
   {
     "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-7",
@@ -2230,28 +2230,28 @@
     "href": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-17",
     "title": "Lecture 6",
     "section": "Graph tables, add labels, make notes",
-    "text": "Graph tables, add labels, make notes\nContinuous variables by group or category\n\n\nLet’s draw the above dot plot."
+    "text": "Graph tables, add labels, make notes\nContinuous variables by group or category\n\nLet’s do Question 2a-2b in **Classwork 5"
   },
   {
     "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-18",
     "href": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-18",
     "title": "Lecture 6",
     "section": "Graph tables, add labels, make notes",
-    "text": "Graph tables, add labels, make notes\nContinuous variables by group or category\n\n\nLet’s draw the above faceted dot plot."
+    "text": "Graph tables, add labels, make notes\nContinuous variables by group or category\n\nCleveland dotplots are generally preferred to bar or column charts.\n\nWhen making them, put the categories on the y-axis and order them in the way that is most relevant to the numerical summary you are providing.\nThis sort of plot is also an excellent way to summarize model results or any data with error ranges."
   },
   {
     "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-19",
     "href": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-19",
     "title": "Lecture 6",
     "section": "Graph tables, add labels, make notes",
-    "text": "Graph tables, add labels, make notes\nContinuous variables by group or category\n\nCleveland dotplots are generally preferred to bar or column charts.\n\nWhen making them, put the categories on the y-axis and order them in the way that is most relevant to the numerical summary you are providing.\nThis sort of plot is also an excellent way to summarize model results or any data with error ranges."
+    "text": "Graph tables, add labels, make notes\nContinuous variables by group or category\n\nUsing geom_pointrange(), we can tell ggplot to show us a point estimate and a range around it.\n\nWith geom_pointrange(), we map our x and y variables as usual, but the function needs a little more information than geom_point(), for example (ymin, ymax) or (xmin, xmax)."
   },
   {
     "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-20",
     "href": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-20",
     "title": "Lecture 6",
     "section": "Graph tables, add labels, make notes",
-    "text": "Graph tables, add labels, make notes\nContinuous variables by group or category\n\nUsing geom_pointrange(), we can tell ggplot to show us a point estimate and a range around it.\n\nWith geom_pointrange(), we map our x and y variables as usual, but the function needs a little more information than geom_point(), for example (ymin, ymax) or (xmin, xmax)."
+    "text": "Graph tables, add labels, make notes\nDot-and-whisker plot\n\nLet’s do Question 2c in **Classwork 5"
   },
   {
     "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#graph-tables-add-labels-make-notes-21",
@@ -2307,7 +2307,7 @@
     "href": "danl-lec/danl-310-lec-06-2025-0212.html#understanding-scales-guides-and-themes-7",
     "title": "Lecture 6",
     "section": "Understanding Scales, Guides, and Themes",
-    "text": "Understanding Scales, Guides, and Themes\n \n\n\nLet’s replicate the above."
+    "text": "Understanding Scales, Guides, and Themes\n\nLet’s do Question 2d-2g in **Classwork 5"
   },
   {
     "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#understanding-scales-guides-and-themes-8",
@@ -2412,7 +2412,7 @@
     "href": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-12",
     "title": "Lecture 6",
     "section": "Add Labels and Make Notes",
-    "text": "Add Labels and Make Notes\nLabel Outliers\n\n\n# creating a dummy variable for labels\norgandata$ind &lt;- \n  organdata$ccode %in% c(\"Ita\", \"Spa\") & \n  organdata$year &gt; 1998   \np &lt;- ggplot(data = organdata,\n            mapping = \n              aes(x = roads, \n                  y = donors, \n                  color = ind))\np + geom_point() +\n    geom_text_repel(\n      data = filter(organdata, ind),\n      mapping = aes(label = ccode)) +\n    guides(label = \"none\", \n           color = \"none\")\n\n\n\n\n\n\n\nWe can also add a logical variable (either TRUE or FALSE) to label specific points using filter()."
+    "text": "Add Labels and Make Notes\nLabel Outliers\n\n\n# creating a dummy variable for labels\norgandata &lt;- organdata |&gt; \n  mutate(ind = ccode %in% \n                  c(\"Ita\", \"Spa\") & \n               year &gt; 1998)  \n\np &lt;- ggplot(data = organdata,\n            mapping = \n              aes(x = roads, \n                  y = donors, \n                  color = ind))\np + \n  geom_point() +\n  geom_text_repel(\n    data = filter(organdata, ind),\n    mapping = aes(label = ccode)) +\n  guides(label = \"none\", \n         color = \"none\")\n\n\n\n\n\n\n\nWe can also add a logical variable (either TRUE or FALSE) to label specific points using filter()."
   },
   {
     "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-13",
@@ -2448,5 +2448,117 @@
     "title": "Lecture 6",
     "section": "Add Labels and Make Notes",
     "text": "Add Labels and Make Notes\nWrite and draw in the plot area with annotate(geom = \"curve\")\n\n\np + \n  annotate(\n    geom = \"curve\", \n    x = 4, y = 35, \n    xend = 2.65, yend = 27, \n    curvature = .3, \n    arrow = \n      arrow(length = unit(2, \"mm\"))\n  ) +\n  annotate(geom = \"text\", \n           x = 4.1, y = 35, \n           label = \"subaru\", \n           hjust = \"left\")"
+  },
+  {
+    "objectID": "danl-cw/danl-310-cw-05.html",
+    "href": "danl-cw/danl-310-cw-05.html",
+    "title": "Classwork 5",
+    "section": "",
+    "text": "library(tidyverse)\nlibrary(ggthemes)\nlibrary(socviz)\nlibrary(ggrepel)\n\n# Setting a default ggplot theme \ntheme_set(theme_fivethirtyeight() +\n          theme(strip.background = element_rect(fill=\"lightgray\"),\n                axis.title.x = \n                  element_text(angle = 0,\n                               size = rel(1.33),\n                               margin = margin(10,0,0,0)),\n                axis.title.y = \n                  element_text(angle = 90,\n                               size = rel(1.33),\n                               margin = margin(0,10,0,0))\n                )\n          )\nRecreate the R code necessary to generate the following graphs."
+  },
+  {
+    "objectID": "danl-cw/danl-310-cw-05.html#question-1",
+    "href": "danl-cw/danl-310-cw-05.html#question-1",
+    "title": "Classwork 5",
+    "section": "Question 1",
+    "text": "Question 1"
+  },
+  {
+    "objectID": "danl-cw/danl-310-cw-05.html#question-2",
+    "href": "danl-cw/danl-310-cw-05.html#question-2",
+    "title": "Classwork 5",
+    "section": "Question 2",
+    "text": "Question 2\n\norgandata &lt;- socviz::organdata\n\nDT::datatable(organdata)"
+  },
+  {
+    "objectID": "danl-cw/danl-310-cw-05.html#question-3",
+    "href": "danl-cw/danl-310-cw-05.html#question-3",
+    "title": "Classwork 5",
+    "section": "Question 3",
+    "text": "Question 3"
+  },
+  {
+    "objectID": "danl-cw/danl-310-cw-05.html#question-4",
+    "href": "danl-cw/danl-310-cw-05.html#question-4",
+    "title": "Classwork 5",
+    "section": "Question 4",
+    "text": "Question 4"
+  },
+  {
+    "objectID": "danl-cw/danl-310-cw-05.html#question-5",
+    "href": "danl-cw/danl-310-cw-05.html#question-5",
+    "title": "Classwork 5",
+    "section": "Question 5",
+    "text": "Question 5"
+  },
+  {
+    "objectID": "danl-cw/danl-310-cw-05.html#question-7",
+    "href": "danl-cw/danl-310-cw-05.html#question-7",
+    "title": "Classwork 5",
+    "section": "Question 7",
+    "text": "Question 7\n\nlibrary(ggrepel)\nmtcars &lt;- datasets::mtcars\nmtcars &lt;- mtcars %&gt;%   # A native pipe (|&gt;) does not work here.\n  mutate(car = rownames(.))\nrownames(mtcars) &lt;- 1:nrow(mtcars)\n\nDT::datatable(mtcars)"
+  },
+  {
+    "objectID": "danl-cw/danl-310-cw-05.html#question-6",
+    "href": "danl-cw/danl-310-cw-05.html#question-6",
+    "title": "Classwork 5",
+    "section": "Question 6",
+    "text": "Question 6"
+  },
+  {
+    "objectID": "danl-cw/danl-310-cw-05.html#recreate-the-r-code-necessary-to-generate-the-following-graphs.",
+    "href": "danl-cw/danl-310-cw-05.html#recreate-the-r-code-necessary-to-generate-the-following-graphs.",
+    "title": "Classwork 5",
+    "section": "Recreate the R code necessary to generate the following graphs.",
+    "text": "Recreate the R code necessary to generate the following graphs."
+  },
+  {
+    "objectID": "danl-cw/danl-310-cw-05.html#q2a",
+    "href": "danl-cw/danl-310-cw-05.html#q2a",
+    "title": "Classwork 5",
+    "section": "Q2a",
+    "text": "Q2a"
+  },
+  {
+    "objectID": "danl-cw/danl-310-cw-05.html#q2b",
+    "href": "danl-cw/danl-310-cw-05.html#q2b",
+    "title": "Classwork 5",
+    "section": "Q2b",
+    "text": "Q2b"
+  },
+  {
+    "objectID": "danl-cw/danl-310-cw-05.html#q2c",
+    "href": "danl-cw/danl-310-cw-05.html#q2c",
+    "title": "Classwork 5",
+    "section": "Q2c",
+    "text": "Q2c"
+  },
+  {
+    "objectID": "danl-cw/danl-310-cw-05.html#q2d",
+    "href": "danl-cw/danl-310-cw-05.html#q2d",
+    "title": "Classwork 5",
+    "section": "Q2d",
+    "text": "Q2d"
+  },
+  {
+    "objectID": "danl-cw/danl-310-cw-05.html#q2e",
+    "href": "danl-cw/danl-310-cw-05.html#q2e",
+    "title": "Classwork 5",
+    "section": "Q2e",
+    "text": "Q2e"
+  },
+  {
+    "objectID": "danl-cw/danl-310-cw-05.html#q2f",
+    "href": "danl-cw/danl-310-cw-05.html#q2f",
+    "title": "Classwork 5",
+    "section": "Q2f",
+    "text": "Q2f"
+  },
+  {
+    "objectID": "danl-cw/danl-310-cw-05.html#q2g",
+    "href": "danl-cw/danl-310-cw-05.html#q2g",
+    "title": "Classwork 5",
+    "section": "Q2g",
+    "text": "Q2g"
   }
 ]

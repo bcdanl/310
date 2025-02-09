@@ -12,31 +12,6 @@ library(skimr)
 library(ggthemes)
 library(hrbrthemes)
 library(DT)
-library(gridExtra)
-library(gapminder)
-
-theme_set(theme_ipsum()+
-          theme(strip.background =element_rect(fill="lightgray"),
-                axis.title.x = 
-                  element_text(angle = 0,
-                               size = rel(1.33),
-                               margin = margin(10,0,0,0)),
-                axis.title.y = 
-                  element_text(angle = 90,
-                               size = rel(1.33),
-                               margin = margin(0,10,0,0))
-                )
-          )
-```
-
-
-```{r}
-#| include: false
-library(tidyverse)
-library(skimr)
-library(ggthemes)
-library(hrbrthemes)
-library(DT)
 
 theme_set(theme_ipsum()+
           theme(strip.background =element_rect(fill="lightgray"),
