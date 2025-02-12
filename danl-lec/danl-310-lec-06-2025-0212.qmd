@@ -52,6 +52,13 @@ theme_set(theme_fivethirtyeight()+
                 legend.title = element_text(size = rel(1.5))
                 )
           )
+
+
+# Set global options for color-blind-friendly scales
+# scale_colour_discrete <- function(...) scale_color_colorblind(...)
+# scale_fill_discrete <- function(...) scale_fill_colorblind(...)
+scale_colour_discrete <- function(...) scale_color_tableau(...)
+scale_fill_discrete <- function(...) scale_fill_tableau(...)
 ```
 
 
@@ -108,7 +115,7 @@ theme_set(theme_fivethirtyeight()+
 - Relocate existing variables by their names (`relocate()`).
 - Collapse a data.frame down to a summarized version of it (`summarize()`).
 - Group a data.frame by a categorical variable (`group_by()`).
-- **Reference**: [R for Data Science](https://r4ds.hadley.nz)
+- **Reference**: [**R for Data Science**](https://r4ds.hadley.nz)
 
 
 ## Data Transformation
@@ -281,7 +288,8 @@ p + geom_point()
 #| output-location: column-fragment
 
 p <- ggplot(data = organdata,
-            mapping = aes(x = year, y = donors))
+            mapping = aes(x = year, 
+                          y = donors))
 p + 
   geom_line(aes(group = country)) + 
   facet_wrap(~ country) +
@@ -361,7 +369,7 @@ p + geom_boxplot() +
 p <- ggplot(data = organdata,
             mapping = 
               aes(x = 
-                    reorder(
+                    fct_reorder(
                       country, 
                       donors, 
                       na.rm=TRUE),
@@ -388,13 +396,14 @@ p + geom_boxplot() +
 
 
 ```{r}
-by_country <- organdata |> group_by(consent_law, country) |>
-    summarize(donors_mean= mean(donors, na.rm = TRUE),
-              donors_sd = sd(donors, na.rm = TRUE),
-              gdp_mean = mean(gdp, na.rm = TRUE),
-              health_mean = mean(health, na.rm = TRUE),
-              roads_mean = mean(roads, na.rm = TRUE),
-              cerebvas_mean = mean(cerebvas, na.rm = TRUE))
+by_country <- organdata |> 
+  group_by(consent_law, country) |>
+  summarize(donors_mean= mean(donors, na.rm = TRUE),
+            donors_sd = sd(donors, na.rm = TRUE),
+            gdp_mean = mean(gdp, na.rm = TRUE),
+            health_mean = mean(health, na.rm = TRUE),
+            roads_mean = mean(roads, na.rm = TRUE),
+            cerebvas_mean = mean(cerebvas, na.rm = TRUE))
 ```
 
 - Summarize the data.frame `organdata` to calculate the mean and the standard deviation of each numeric variable for each `consent_law`-`country` pair.
@@ -408,7 +417,8 @@ by_country <- organdata |> group_by(consent_law, country) |>
 
 
 ```{r}
-by_country <- organdata |> group_by(consent_law, country) |>
+by_country <- organdata |> 
+  group_by(consent_law, country) |>
   summarize_if(is.numeric, lst(mean, sd), na.rm = TRUE) |>
   ungroup()
 ```
@@ -431,12 +441,6 @@ by_country <- organdata |> group_by(consent_law, country) |>
 - Cleveland dotplots are generally preferred to bar or column charts.
   - When making them, put the categories on the y-axis and order them in the way that is most relevant to the numerical summary you are providing.
   - This sort of plot is also an excellent way to summarize model results or any data with **error ranges**. 
-  
-  
-
-
-## Graph tables, add labels, make notes
-### Continuous variables by group or category
   
 - Using `geom_pointrange()`, we can tell ggplot to show us a point estimate and a range around it.
   -  With `geom_pointrange()`, we map our `x` and `y` variables as usual, but the function needs a little more information than `geom_point()`, for example (`ymin`, `ymax`) or (`xmin`, `xmax`). 
@@ -537,8 +541,8 @@ p + geom_point()
   - They are named according to a consistent logic:
   
 
-- [https://ggplot2tor.com/scales](https://ggplot2tor.com/scales) provides a complete guide to scales.
-  - This app makes it easy for you to find the right scales and arguments for your variable types and aesthetics.
+- [**https://ggplot2tor.com/apps**](https://ggplot2tor.com/apps) provides a complete guide to scales and themes, as well as aesthetics.
+  - This app makes it easy for you to find the right scales, themes, and arguments for your variable types and aesthetics.
 
 
 

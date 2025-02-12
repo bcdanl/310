@@ -261,7 +261,8 @@ p <- ggplot() +
              color = 'red')
 p1 <- p + geom_text_repel(data = dat, 
                           aes(wt, mpg, 
-                              label = car))
+                              label = car),
+                          box.padding = 0.5)
 p1
 ```
 
