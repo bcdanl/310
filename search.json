@@ -2560,5 +2560,47 @@
     "title": "Classwork 5",
     "section": "Q2g",
     "text": "Q2g"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#visualization-principle",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#visualization-principle",
+    "title": "Lecture 6",
+    "section": "Visualization Principle",
+    "text": "Visualization Principle\nDesign with Colorblind in Mind\n\n\n\n\n\nTypes of Colorblindness\n\n\n\n\nRoughly 8% of men and half a percent of women are colorblind.\nThere are several techniques to make visualization more colorblind-friendly:\n\nUse color palettes that are colorblind-friendly\nUse shape for scatterplots and linetype for line charts\nHave some additional visual cue to set the important numbers apart"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#colorblind-friendly-color-palettes",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#colorblind-friendly-color-palettes",
+    "title": "Lecture 6",
+    "section": "Colorblind-Friendly Color Palettes",
+    "text": "Colorblind-Friendly Color Palettes\nggthemes package\n\ninstall.packages(\"ggthemes\")\nlibrary(ggthemes)\n\n\nThe ggthemes package provides various themes for ggplot2 visualization:\n\nAccessible color palettes, including those optimized for colorblind viewers.\n\nE.g., scale_color_colorblind(), scale_color_tableau()\n\nUnique, predefined themes for specific styles\n\nE.g., theme_economist(), theme_wsj()"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#colorblind-friendly-color-palettes-1",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#colorblind-friendly-color-palettes-1",
+    "title": "Lecture 6",
+    "section": "Colorblind-Friendly Color Palettes",
+    "text": "Colorblind-Friendly Color Palettes\nggthemes::scale_color_colorblind()\n\n\nggplot( data = mpg,\n        mapping = \n          aes(x = displ,\n              y = hwy, \n              color = class) ) + \n  geom_point(size = 3) +\n  scale_color_colorblind()\n\n\n\n\n\n\n\nWhen mapping color in aes(), we can use scale_color_*()"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#colorblind-friendly-color-palettes-2",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#colorblind-friendly-color-palettes-2",
+    "title": "Lecture 6",
+    "section": "Colorblind-Friendly Color Palettes",
+    "text": "Colorblind-Friendly Color Palettes\nggthemes::scale_color_tableau()\n\n\nggplot( data = mpg,\n        mapping = \n          aes(x = displ,\n              y = hwy, \n              color = class) ) + \n  geom_point(size = 3) +\n  scale_color_tableau()\n\n\n\n\n\n\n\nscale_color_tableau() provides color palettes used in Tableau."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#ggplot-themes",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#ggplot-themes",
+    "title": "Lecture 6",
+    "section": "ggplot Themes",
+    "text": "ggplot Themes\nggthemes::theme_economist()\n\n\nggplot( data = mpg,\n        mapping = \n          aes(x = displ,\n              y = hwy, \n              color = class) ) + \n  geom_point(size = 3) +\n  scale_color_colorblind() +\n  theme_economist()\n\n\n\n\n\n\n\ntheme_economist() approximates the style of The Economist."
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#ggplot-themes-1",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#ggplot-themes-1",
+    "title": "Lecture 6",
+    "section": "ggplot Themes",
+    "text": "ggplot Themes\nggthemes::theme_wsj()\n\n\nggplot( data = mpg,\n        mapping = \n          aes(x = displ,\n              y = hwy, \n              color = class) ) + \n  geom_point(size = 3) +\n  scale_color_colorblind() +\n  theme_wsj()\n\n\n\n\n\n\n\ntheme_wsj() approximates the style of The Wall Street Journal."
   }
 ]

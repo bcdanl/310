@@ -546,6 +546,130 @@ p + geom_point()
 
 
 
+# Design with Colorblind in Mind {background-color="#1c4982"}
+
+
+## Visualization Principle
+### Design with Colorblind in Mind
+
+:::: {.columns}
+::: {.column width="50%"}
+<div style="text-align: center; width: 100%; margin: auto;">
+  <img src="https://bcdanl.github.io/lec_figs/types-of-color-blindness.png" style="width: 100%; margin-bottom: -20px;">
+  <p style="font-weight: bold;">Types of Colorblindness</p>
+</div>
+:::
+
+::: {.column width="50%"}
+- Roughly 8% of men and half a percent of women are colorblind. 
+
+- There are several techniques to make visualization more colorblind-friendly:
+  1. Use color palettes that are colorblind-friendly
+  2. Use `shape` for scatterplots and `linetype` for line charts
+  3. Have some additional visual cue to set the important numbers apart
+
+:::
+::::
+
+
+## Colorblind-Friendly Color Palettes
+### `ggthemes` package
+
+```{r}
+#| eval: false
+install.packages("ggthemes")
+library(ggthemes)
+```
+
+- The `ggthemes` package provides various themes for `ggplot2` visualization:
+  - Accessible color palettes, including those optimized for colorblind viewers.
+    - E.g., `scale_color_colorblind()`, `scale_color_tableau()`
+  - Unique, predefined themes for specific styles
+    - E.g., `theme_economist()`, `theme_wsj()`
+
+
+
+## Colorblind-Friendly Color Palettes
+### `ggthemes::scale_color_colorblind()`
+
+```{r}
+#| echo: true
+#| fig-asp: .85
+#| output-location: column
+
+ggplot( data = mpg,
+        mapping = 
+          aes(x = displ,
+              y = hwy, 
+              color = class) ) + 
+  geom_point(size = 3) +
+  scale_color_colorblind()
+```
+
+- When mapping `color` in `aes()`, we can use `scale_color_*()`
+
+## Colorblind-Friendly Color Palettes
+### `ggthemes::scale_color_tableau()` 
+
+```{r}
+#| echo: true
+#| fig-asp: .85
+#| output-location: column
+
+ggplot( data = mpg,
+        mapping = 
+          aes(x = displ,
+              y = hwy, 
+              color = class) ) + 
+  geom_point(size = 3) +
+  scale_color_tableau()
+```
+
+- `scale_color_tableau()` provides color palettes used in Tableau.
+
+
+## `ggplot` Themes
+### `ggthemes::theme_economist()`
+
+```{r}
+#| echo: true
+#| fig-asp: .85
+#| output-location: column
+
+ggplot( data = mpg,
+        mapping = 
+          aes(x = displ,
+              y = hwy, 
+              color = class) ) + 
+  geom_point(size = 3) +
+  scale_color_colorblind() +
+  theme_economist()
+```
+
+- `theme_economist()` approximates the style of The Economist.
+
+## `ggplot` Themes
+### `ggthemes::theme_wsj()`
+
+```{r}
+#| echo: true
+#| fig-asp: .85
+#| output-location: column
+
+ggplot( data = mpg,
+        mapping = 
+          aes(x = displ,
+              y = hwy, 
+              color = class) ) + 
+  geom_point(size = 3) +
+  scale_color_colorblind() +
+  theme_wsj()
+```
+
+- `theme_wsj()` approximates the style of The Wall Street Journal.
+
+
+
 
 ## Understanding Scales, Guides, and Themes
 
