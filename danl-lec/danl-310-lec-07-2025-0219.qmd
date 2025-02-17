@@ -57,6 +57,8 @@ theme_set(theme_fivethirtyeight()+
                 legend.title = element_text(size = rel(1.5))
                 )
           )
+scale_colour_discrete <- function(...) scale_color_tableau(...)
+scale_fill_discrete <- function(...) scale_fill_tableau(...)
 ```
 
 

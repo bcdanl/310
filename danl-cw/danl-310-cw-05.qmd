@@ -29,6 +29,8 @@ theme_set(theme_fivethirtyeight()+
                                margin = margin(0,10,0,0))
                 )
           )
+scale_colour_discrete <- function(...) scale_color_tableau(...)
+scale_fill_discrete <- function(...) scale_fill_tableau(...)
 ```
 
 
