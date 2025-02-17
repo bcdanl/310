@@ -32,7 +32,7 @@ knitr::opts_chunk$set(fig.width=8, fig.height=5,
   - `danl-310-hw1-LASTNAME-FIRSTNAME.qmd`\
   ( e.g., `danl-310-hw1-choe-byeonghak.qmd` )
 
-- The due is February 17, 2024, 2:00 P.M.
+- The due is February 19, 2024, 2:00 P.M.
 
 - Please send Byeong-Hak an email (`bchoe@geneseo.edu`) if you have any questions.
 
