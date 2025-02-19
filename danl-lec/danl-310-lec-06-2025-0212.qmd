@@ -841,6 +841,14 @@ p + labs(x = x_label,
 
 
 ## Add Labels and Make Notes
+### Plot text directly
+
+<p align="center">
+  <img src="https://bcdanl.github.io/lec_figs/starbucks-cal-caf" width="600px">
+</p>
+
+
+## Add Labels and Make Notes
 ### Label Outliers
 
 

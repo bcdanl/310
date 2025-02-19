@@ -2398,56 +2398,56 @@
     "href": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-10",
     "title": "Lecture 6",
     "section": "Add Labels and Make Notes",
-    "text": "Add Labels and Make Notes\nLabel Outliers\n\n\np &lt;- ggplot(data = by_country,\n            mapping = \n              aes(x = gdp_mean, \n                  y = health_mean))\n\np + geom_point() +\n    geom_text_repel(\n      data = filter(by_country, \n                    gdp_mean &gt; 25000),\n      mapping = \n        aes(label = country))\n\n\n\n\n\n\n\nSometimes we want to pick out some points of interest in the data without labeling every single item.\n\nWe do this using the filter() function."
+    "text": "Add Labels and Make Notes\nPlot text directly"
   },
   {
     "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-11",
     "href": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-11",
     "title": "Lecture 6",
     "section": "Add Labels and Make Notes",
-    "text": "Add Labels and Make Notes\nLabel Outliers\n\n\np &lt;- ggplot(data = by_country,\n            mapping = \n              aes(x = gdp_mean, \n                  y = health_mean))\np + geom_point() +\n    geom_text_repel(\n      data = \n        filter(by_country,\n               gdp_mean &gt; 25000 | \n                 health_mean &lt; 1500 |\n                 country %in% \"Belgium\"),\n      mapping = \n        aes(label = country))"
+    "text": "Add Labels and Make Notes\nLabel Outliers\n\n\np &lt;- ggplot(data = by_country,\n            mapping = \n              aes(x = gdp_mean, \n                  y = health_mean))\n\np + geom_point() +\n    geom_text_repel(\n      data = filter(by_country, \n                    gdp_mean &gt; 25000),\n      mapping = \n        aes(label = country))\n\n\n\n\n\n\n\nSometimes we want to pick out some points of interest in the data without labeling every single item.\n\nWe do this using the filter() function."
   },
   {
     "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-12",
     "href": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-12",
     "title": "Lecture 6",
     "section": "Add Labels and Make Notes",
-    "text": "Add Labels and Make Notes\nLabel Outliers\n\n\n# creating a dummy variable for labels\norgandata &lt;- organdata |&gt; \n  mutate(ind = ccode %in% \n                  c(\"Ita\", \"Spa\") & \n               year &gt; 1998)  \n\np &lt;- ggplot(data = organdata,\n            mapping = \n              aes(x = roads, \n                  y = donors, \n                  color = ind))\np + \n  geom_point() +\n  geom_text_repel(\n    data = filter(organdata, ind),\n    mapping = aes(label = ccode)) +\n  guides(label = \"none\", \n         color = \"none\")\n\n\n\n\n\n\n\nWe can also add a logical variable (either TRUE or FALSE) to label specific points using filter()."
+    "text": "Add Labels and Make Notes\nLabel Outliers\n\n\np &lt;- ggplot(data = by_country,\n            mapping = \n              aes(x = gdp_mean, \n                  y = health_mean))\np + geom_point() +\n    geom_text_repel(\n      data = \n        filter(by_country,\n               gdp_mean &gt; 25000 | \n                 health_mean &lt; 1500 |\n                 country %in% \"Belgium\"),\n      mapping = \n        aes(label = country))"
   },
   {
     "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-13",
     "href": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-13",
     "title": "Lecture 6",
     "section": "Add Labels and Make Notes",
-    "text": "Add Labels and Make Notes\nLabel Outliers\n\nLet’s do Question 3 in Classwork 5"
+    "text": "Add Labels and Make Notes\nLabel Outliers\n\n\n# creating a dummy variable for labels\norgandata &lt;- organdata |&gt; \n  mutate(ind = ccode %in% \n                  c(\"Ita\", \"Spa\") & \n               year &gt; 1998)  \n\np &lt;- ggplot(data = organdata,\n            mapping = \n              aes(x = roads, \n                  y = donors, \n                  color = ind))\np + \n  geom_point() +\n  geom_text_repel(\n    data = filter(organdata, ind),\n    mapping = aes(label = ccode)) +\n  guides(label = \"none\", \n         color = \"none\")\n\n\n\n\n\n\n\nWe can also add a logical variable (either TRUE or FALSE) to label specific points using filter()."
   },
   {
     "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-14",
     "href": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-14",
     "title": "Lecture 6",
     "section": "Add Labels and Make Notes",
-    "text": "Add Labels and Make Notes\nWrite and draw in the plot area with annotate(geom = \"text\")\n\n\n\np &lt;- ggplot(data = organdata, \n            mapping = \n              aes(x = roads, \n                  y = donors))\np + geom_point() + \n  annotate(geom = \"text\", \n           x = 91, y = 33,\n           label = \"A surprisingly high \\n recovery rate.\",\n           hjust = 0)\n\n\n\n\n\n\n\nWe can use annotate() to annotate the figure directly."
+    "text": "Add Labels and Make Notes\nLabel Outliers\n\nLet’s do Question 3 in Classwork 5"
   },
   {
     "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-15",
     "href": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-15",
     "title": "Lecture 6",
     "section": "Add Labels and Make Notes",
-    "text": "Add Labels and Make Notes\nWrite and draw in the plot area with annotate(geom = \"rect\")\n\n\np &lt;- ggplot(data = organdata,\n            mapping = aes(x = roads, y = donors))\np + geom_point() +\n    annotate(geom = \"rect\", \n             xmin = 125, xmax = 155,\n             ymin = 30, ymax = 35, \n             fill = \"red\", \n             alpha = 0.2) + \n    annotate(geom = \"text\", \n             x = 157, y = 33,\n             label = \"A surprisingly high \\n recovery rate.\", \n             hjust = 0)"
+    "text": "Add Labels and Make Notes\nWrite and draw in the plot area with annotate(geom = \"text\")\n\n\n\np &lt;- ggplot(data = organdata, \n            mapping = \n              aes(x = roads, \n                  y = donors))\np + geom_point() + \n  annotate(geom = \"text\", \n           x = 91, y = 33,\n           label = \"A surprisingly high \\n recovery rate.\",\n           hjust = 0)\n\n\n\n\n\n\n\nWe can use annotate() to annotate the figure directly."
   },
   {
     "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-16",
     "href": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-16",
     "title": "Lecture 6",
     "section": "Add Labels and Make Notes",
-    "text": "Add Labels and Make Notes\nWrite and draw in the plot area with annotate(geom = \"point\")\n\n\np &lt;- ggplot(mpg, aes(displ, hwy)) +\n  geom_point(\n    data = \n      filter(mpg, \n             manufacturer == \"subaru\"), \n    color = \"orange\", \n    size = 3) +\n  geom_point() \np + \n  annotate(geom = \"point\", \n           x = 5.5, y = 40, \n           colour = \"orange\", \n           size = 3) + \n  annotate(geom = \"point\", \n           x = 5.5, y = 40) + \n  annotate(geom = \"text\", \n           x = 5.6, y = 40, \n           label = \"subaru\", \n           hjust = \"left\")"
+    "text": "Add Labels and Make Notes\nWrite and draw in the plot area with annotate(geom = \"rect\")\n\n\np &lt;- ggplot(data = organdata,\n            mapping = aes(x = roads, y = donors))\np + geom_point() +\n    annotate(geom = \"rect\", \n             xmin = 125, xmax = 155,\n             ymin = 30, ymax = 35, \n             fill = \"red\", \n             alpha = 0.2) + \n    annotate(geom = \"text\", \n             x = 157, y = 33,\n             label = \"A surprisingly high \\n recovery rate.\", \n             hjust = 0)"
   },
   {
     "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-17",
     "href": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-17",
     "title": "Lecture 6",
     "section": "Add Labels and Make Notes",
-    "text": "Add Labels and Make Notes\nWrite and draw in the plot area with annotate(geom = \"curve\")\n\n\np + \n  annotate(\n    geom = \"curve\", \n    x = 4, y = 35, \n    xend = 2.65, yend = 27, \n    curvature = .3, \n    arrow = \n      arrow(length = unit(2, \"mm\"))\n  ) +\n  annotate(geom = \"text\", \n           x = 4.1, y = 35, \n           label = \"subaru\", \n           hjust = \"left\")"
+    "text": "Add Labels and Make Notes\nWrite and draw in the plot area with annotate(geom = \"point\")\n\n\np &lt;- ggplot(mpg, aes(displ, hwy)) +\n  geom_point(\n    data = \n      filter(mpg, \n             manufacturer == \"subaru\"), \n    color = \"orange\", \n    size = 3) +\n  geom_point() \np + \n  annotate(geom = \"point\", \n           x = 5.5, y = 40, \n           colour = \"orange\", \n           size = 3) + \n  annotate(geom = \"point\", \n           x = 5.5, y = 40) + \n  annotate(geom = \"text\", \n           x = 5.6, y = 40, \n           label = \"subaru\", \n           hjust = \"left\")"
   },
   {
     "objectID": "danl-cw/danl-310-cw-05.html",
@@ -2945,5 +2945,12 @@
     "title": "Lecture 7",
     "section": "Refine your plots",
     "text": "Refine your plots\nAdvanced Bar Chart 2\n\n\np7 &lt;- p6 +\n  theme(legend.position = \"top\",\n        axis.text.y = \n          element_text(\n            face = \"bold\",\n            hjust = 1, \n            size = 12),\n        axis.ticks.length = \n          unit(0, \"cm\"),\n        panel.grid.major.y = \n          element_blank())\np7"
+  },
+  {
+    "objectID": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-18",
+    "href": "danl-lec/danl-310-lec-06-2025-0212.html#add-labels-and-make-notes-18",
+    "title": "Lecture 6",
+    "section": "Add Labels and Make Notes",
+    "text": "Add Labels and Make Notes\nWrite and draw in the plot area with annotate(geom = \"curve\")\n\n\np + \n  annotate(\n    geom = \"curve\", \n    x = 4, y = 35, \n    xend = 2.65, yend = 27, \n    curvature = .3, \n    arrow = \n      arrow(length = unit(2, \"mm\"))\n  ) +\n  annotate(geom = \"text\", \n           x = 4.1, y = 35, \n           label = \"subaru\", \n           hjust = \"left\")"
   }
 ]
